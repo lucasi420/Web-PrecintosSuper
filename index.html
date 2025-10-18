@@ -19,10 +19,9 @@
     background-color: var(--gris-fondo);
     font-family: "Orbitron", "Segoe UI", sans-serif;
     color: var(--texto);
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
   }
 
   header {
@@ -34,7 +33,7 @@
     letter-spacing: 3px;
     text-shadow: 0 0 15px #00aaff;
     box-shadow: 0 3px 15px rgba(0,0,0,0.6);
-    user-select: none;
+    flex-shrink: 0; /* header no se encoge */
   }
 
   /* Desktop: grid 2x2 */
@@ -44,7 +43,7 @@
     grid-template-rows: 1fr 1fr;
     gap: 30px;
     padding: 20px;
-    height: calc(100vh - 80px); /* toda la pantalla menos header */
+    flex: 1; /* ocupa todo lo que queda del body */
   }
 
   .card {
@@ -78,20 +77,20 @@
     box-shadow: 0 0 15px rgba(0,174,255,0.4);
   }
 
-  /* MOBILE OPTIMIZATION: usa flex para que los botones llenen la pantalla */
+  /* MOBILE: flex column para que llenen toda la pantalla */
   @media (max-width: 768px) {
     .container {
       display: flex;
-      flex-direction: column;       /* apila verticalmente */
+      flex-direction: column;
       justify-content: space-between; /* separación uniforme */
-      height: calc(100vh - 60px);  /* toda la pantalla menos header */
-      padding: 0 20px;             /* padding horizontal */
-      gap: 15px;                   /* separación entre rectángulos */
+      flex: 1;
+      padding: 0 15px;
+      gap: 10px;
     }
 
     .card {
-      flex: 1;                     /* cada rectángulo ocupa el mismo espacio */
-      font-size: 2.2rem;           /* letras grandes */
+      flex: 1; /* cada rectángulo ocupa mismo espacio */
+      font-size: 2.2rem;
     }
 
     header {
