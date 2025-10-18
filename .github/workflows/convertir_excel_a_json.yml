@@ -1,0 +1,29 @@
+name: Convertir Excel a JSON
+
+on:
+  push:
+    paths:
+      - 'data/*.xlsx'
+
+jobs:
+  convertir:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+    - name: Instalar pandas
+      run: pip install pandas openpyxl
+    - name: Convertir Excel a JSON
+      run: |
+        python - <<EOF
+import pandas as pd, os
+archivos = ['clientes_cable.xlsx','clientes_internet.xlsx','clientes_gpon_borrados.xlsx','probable_gpon.xlsx']
+for f in archivos:
+    if os.path.exists(f'data/{f}'):
+        df = pd.read_excel(f'data/{f}')
+        json_file = f'data/{f.replace(".xlsx",".json")}'
+        df.to_json(json_file, orient='records', force_ascii=False, indent=2)
+EOF
