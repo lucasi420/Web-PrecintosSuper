@@ -1,50 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Panel de Clientes</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPER-USHUAIA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+    }
+    header {
+      background-color: #0057b8;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0057b8;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    .card:hover {
+      background-color: #0057b8;
+      color: white;
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>📡 Panel de Clientes</h1>
-  </header>
 
-  <nav>
-    <button class="tab-btn active" data-tab="cable">Cable</button>
-    <button class="tab-btn" data-tab="internet">Internet</button>
-    <button class="tab-btn" data-tab="gpon">GPON Borrados</button>
-  </nav>
+  <header>SUPER-USHUAIA</header>
 
-  <main>
-    <!-- Sección CABLE -->
-    <section id="cable" class="tab-content active">
-      <h2>Clientes Cable</h2>
-      <input type="text" id="busquedaCable" placeholder="Buscar por precinto..." />
-      <div id="resultadosCable" class="resultado"></div>
-    </section>
+  <div class="container">
+    <div class="card" onclick="location.href='precintos_catv.html'">PRECINTOS CATV</div>
+    <div class="card" onclick="location.href='precintos_gpon.html'">PRECINTOS GPON</div>
+    <div class="card" onclick="location.href='clientes_naps.html'">CLIENTES POR NAPs</div>
+    <div class="card" onclick="location.href='clientes_gpon_borrados.html'">CLIENTES GPON BORRADOS</div>
+  </div>
 
-    <!-- Sección INTERNET -->
-    <section id="internet" class="tab-content">
-      <h2>Clientes Internet</h2>
-      <input type="text" id="busquedaInternet" placeholder="Buscar por NAP o precinto..." />
-      <div id="resultadosInternet" class="resultado"></div>
-      <button id="copiarInternet">📋 Copiar todos los clientes</button>
-    </section>
-
-    <!-- Sección GPON -->
-    <section id="gpon" class="tab-content">
-      <h2>Clientes GPON Borrados</h2>
-      <input type="text" id="busquedaGpon" placeholder="Buscar por cliente..." />
-      <div id="resultadosGpon" class="resultado"></div>
-    </section>
-  </main>
-
-  <footer>
-    <p>Desarrollado por Lucas ⚙️</p>
-  </footer>
-
-  <script src="main.js"></script>
 </body>
 </html>
