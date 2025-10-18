@@ -77,20 +77,18 @@
     box-shadow: 0 0 15px rgba(0,174,255,0.4);
   }
 
-  /* MOBILE: flex column para que llenen toda la pantalla */
+  /* MOBILE: flex column con altura exacta */
   @media (max-width: 768px) {
     .container {
       display: flex;
       flex-direction: column;
-      justify-content: space-between; /* separación uniforme */
-      flex: 1;
-      padding: 0 15px;
-      gap: 10px;
+      padding: 0 15px;       /* solo horizontal */
+      gap: 0;                 /* sin altura extra */
     }
 
     .card {
-      flex: 1; /* cada rectángulo ocupa mismo espacio */
-      font-size: 2.2rem;
+      height: calc((100vh - 60px) / 4); /* 60px = altura del header */
+      font-size: 2rem;
     }
 
     header {
