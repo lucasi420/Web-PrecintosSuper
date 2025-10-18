@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Clientes Web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Portal de Clientes</h1>
+  </header>
+
+  <nav>
+    <button onclick="mostrarSeccion('cable')">Cable</button>
+    <button onclick="mostrarSeccion('internet')">Internet</button>
+    <button onclick="mostrarSeccion('gpon')">GPON Borrados</button>
+  </nav>
+
+  <main>
+    <section id="cable" class="seccion">
+      <h3>Consulta Cable</h3>
+      <input id="inputPrecintoCable" placeholder="Precinto Cable">
+      <button onclick="buscarPrecintoCable()">Buscar</button>
+      <div id="resultadoCable"></div>
+    </section>
+
+    <section id="internet" class="seccion">
+      <h3>Consulta Internet</h3>
+      <input id="inputNAP" placeholder="NAP">
+      <button onclick="buscarNAP()">Buscar</button>
+      <div id="resultadoNAP"></div>
+    </section>
+
+    <section id="gpon" class="seccion">
+      <h3>GPON Borrados</h3>
+      <input id="inputPrecintoGPON" placeholder="Precinto GPON">
+      <button onclick="buscarGPON()">Buscar</button>
+      <div id="resultadoGPON"></div>
+    </section>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
