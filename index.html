@@ -37,6 +37,7 @@
     user-select: none;
   }
 
+  /* Desktop: grid 2x2 */
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -63,9 +64,6 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-
-    height: 100%;   /* ahora ocupa toda la celda del grid */
-    margin: 0;      /* sin margen extra */
   }
 
   .card:hover {
@@ -80,19 +78,22 @@
     box-shadow: 0 0 15px rgba(0,174,255,0.4);
   }
 
-  /* MOBILE OPTIMIZATION */
+  /* MOBILE OPTIMIZATION: usa flex para que los botones llenen la pantalla */
   @media (max-width: 768px) {
     .container {
-      grid-template-columns: 1fr;            /* una columna */
-      grid-template-rows: repeat(4, 1fr);    /* cuatro filas iguales */
-      padding: 20px;
-      gap: 20px;
-      height: calc(100vh - 60px);           /* ajustar según header móvil */
+      display: flex;
+      flex-direction: column;       /* apila verticalmente */
+      justify-content: space-between; /* separación uniforme */
+      height: calc(100vh - 60px);  /* toda la pantalla menos header */
+      padding: 0 20px;             /* padding horizontal */
+      gap: 15px;                   /* separación entre rectángulos */
     }
+
     .card {
-      font-size: 2.2rem;                     /* letras grandes */
-      height: 100%;                           /* ocupa toda la fila */
+      flex: 1;                     /* cada rectángulo ocupa el mismo espacio */
+      font-size: 2.2rem;           /* letras grandes */
     }
+
     header {
       font-size: 2.4rem;
       padding: 1rem 0;
