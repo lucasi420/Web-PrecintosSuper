@@ -1,98 +1,97 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPER-USHUAIA</title>
-  <style>
-    :root {
-      --azul: #0057b8;
-      --azul-claro: #4da3ff;
-      --gris-fondo: #f4f7fb;
-      --gris-card: #ffffff;
-      --sombra: 0 6px 20px rgba(0, 0, 0, 0.1);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUPER-USHUAIA</title>
+<style>
+  :root {
+    --azul: #0072ff;
+    --azul-oscuro: #003366;
+    --gris-fondo: #0a0f1a;
+    --texto: #ffffff;
+    --sombra: 0 8px 25px rgba(0,0,0,0.4);
+  }
 
-    * { box-sizing: border-box; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    body {
-      margin: 0;
-      font-family: "Poppins", "Segoe UI", sans-serif;
-      background-color: var(--gris-fondo);
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-    }
+  body {
+    background-color: var(--gris-fondo);
+    font-family: "Orbitron", "Segoe UI", sans-serif;
+    color: var(--texto);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+  }
 
-    header {
-      background-color: var(--azul);
-      color: white;
-      text-align: center;
-      padding: 1.2rem 0;
-      font-size: 2.4rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-shadow: 0 2px 6px rgba(0,0,0,0.3);
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-      flex-shrink: 0;
-    }
+  header {
+    background: linear-gradient(90deg, var(--azul-oscuro), var(--azul));
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1.2rem 0;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px #00aaff;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.6);
+    user-select: none;
+  }
 
+  .container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+    padding: 40px;
+  }
+
+  .card {
+    border-radius: 25px;
+    background: radial-gradient(circle at top left, #0b1e3a, #020b18);
+    border: 2px solid rgba(0, 114, 255, 0.3);
+    box-shadow: var(--sombra);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #00aaff;
+    text-transform: uppercase;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .card:hover {
+    border-color: #00c8ff;
+    color: #ffffff;
+    box-shadow: 0 0 30px rgba(0, 174, 255, 0.7);
+    transform: scale(1.03);
+  }
+
+  .card:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 15px rgba(0,174,255,0.4);
+  }
+
+  @media (max-width: 768px) {
     .container {
-      flex: 1;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      gap: 24px;
-      padding: 30px;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      padding: 20px;
+      gap: 20px;
     }
-
     .card {
-      background: var(--gris-card);
-      border-radius: 20px;
-      box-shadow: var(--sombra);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.8rem;
-      font-weight: 600;
-      color: var(--azul);
-      transition: all 0.3s ease;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
+      font-size: 2rem;
     }
-
-    .card::before {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(135deg, rgba(77,163,255,0.15), rgba(0,87,184,0.15));
-      opacity: 0;
-      transition: opacity 0.3s ease;
+    header {
+      font-size: 2.4rem;
     }
-
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 25px rgba(0, 87, 184, 0.3);
-      color: var(--azul-claro);
-    }
-
-    .card:hover::before {
-      opacity: 1;
-    }
-
-    @media (max-width: 768px) {
-      .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(4, 1fr);
-        gap: 16px;
-        padding: 16px;
-      }
-      .card {
-        font-size: 1.6rem;
-      }
-    }
-  </style>
+  }
+</style>
 </head>
 <body>
 
