@@ -11,20 +11,27 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Checkout con token para poder hacer push
       - name: Descargar el repositorio
         uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
 
+      # Configurar Python
       - name: Configurar Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.x'
 
+      # Instalar dependencias
       - name: Instalar dependencias
         run: pip install pandas openpyxl
 
+      # Ejecutar script de conversión
       - name: Ejecutar script de conversión
         run: python convertir_excel_a_json.py
 
+      # Commit y push de los JSON generados
       - name: Commit y push de JSON
         run: |
           git config --global user.name "github-actions[bot]"
