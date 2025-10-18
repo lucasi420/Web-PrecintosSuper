@@ -1,43 +1,49 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Clientes Web</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel de Clientes</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Portal de Clientes</h1>
+    <h1>📡 Panel de Clientes</h1>
   </header>
 
   <nav>
-    <button onclick="mostrarSeccion('cable')">Cable</button>
-    <button onclick="mostrarSeccion('internet')">Internet</button>
-    <button onclick="mostrarSeccion('gpon')">GPON Borrados</button>
+    <button class="tab-btn active" data-tab="cable">Cable</button>
+    <button class="tab-btn" data-tab="internet">Internet</button>
+    <button class="tab-btn" data-tab="gpon">GPON Borrados</button>
   </nav>
 
   <main>
-    <section id="cable" class="seccion">
-      <h3>Consulta Cable</h3>
-      <input id="inputPrecintoCable" placeholder="Precinto Cable">
-      <button onclick="buscarPrecintoCable()">Buscar</button>
-      <div id="resultadoCable"></div>
+    <!-- Sección CABLE -->
+    <section id="cable" class="tab-content active">
+      <h2>Clientes Cable</h2>
+      <input type="text" id="busquedaCable" placeholder="Buscar por precinto..." />
+      <div id="resultadosCable" class="resultado"></div>
     </section>
 
-    <section id="internet" class="seccion">
-      <h3>Consulta Internet</h3>
-      <input id="inputNAP" placeholder="NAP">
-      <button onclick="buscarNAP()">Buscar</button>
-      <div id="resultadoNAP"></div>
+    <!-- Sección INTERNET -->
+    <section id="internet" class="tab-content">
+      <h2>Clientes Internet</h2>
+      <input type="text" id="busquedaInternet" placeholder="Buscar por NAP o precinto..." />
+      <div id="resultadosInternet" class="resultado"></div>
+      <button id="copiarInternet">📋 Copiar todos los clientes</button>
     </section>
 
-    <section id="gpon" class="seccion">
-      <h3>GPON Borrados</h3>
-      <input id="inputPrecintoGPON" placeholder="Precinto GPON">
-      <button onclick="buscarGPON()">Buscar</button>
-      <div id="resultadoGPON"></div>
+    <!-- Sección GPON -->
+    <section id="gpon" class="tab-content">
+      <h2>Clientes GPON Borrados</h2>
+      <input type="text" id="busquedaGpon" placeholder="Buscar por cliente..." />
+      <div id="resultadosGpon" class="resultado"></div>
     </section>
   </main>
+
+  <footer>
+    <p>Desarrollado por Lucas ⚙️</p>
+  </footer>
 
   <script src="main.js"></script>
 </body>
