@@ -38,12 +38,12 @@
   }
 
   .container {
-    flex: 1;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 30px;
-    padding: 40px;
+    padding: 20px;
+    height: calc(100vh - 80px); /* toda la pantalla menos header */
   }
 
   .card {
@@ -63,8 +63,9 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-    height: 80%;   /* altura reducida */
-    margin: auto;  /* centrado vertical */
+
+    height: 100%;   /* ahora ocupa toda la celda del grid */
+    margin: 0;      /* sin margen extra */
   }
 
   .card:hover {
@@ -82,15 +83,15 @@
   /* MOBILE OPTIMIZATION */
   @media (max-width: 768px) {
     .container {
-      grid-template-columns: 1fr;             /* una columna */
-      grid-template-rows: repeat(4, 1fr);     /* 4 filas iguales */
+      grid-template-columns: 1fr;            /* una columna */
+      grid-template-rows: repeat(4, 1fr);    /* cuatro filas iguales */
       padding: 20px;
       gap: 20px;
+      height: calc(100vh - 60px);           /* ajustar según header móvil */
     }
     .card {
-      font-size: 2.2rem;                      /* letras grandes */
-      height: 70%;                             /* altura adaptada */
-      margin: auto;
+      font-size: 2.2rem;                     /* letras grandes */
+      height: 100%;                           /* ocupa toda la fila */
     }
     header {
       font-size: 2.4rem;
