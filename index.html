@@ -63,9 +63,8 @@
     cursor: pointer;
     position: relative;
     overflow: hidden;
-
-    height: 80%;   /* NUEVO: reduce altura del rectángulo */
-    margin: auto;  /* centra verticalmente */
+    height: 80%;   /* altura reducida */
+    margin: auto;  /* centrado vertical */
   }
 
   .card:hover {
@@ -80,18 +79,22 @@
     box-shadow: 0 0 15px rgba(0,174,255,0.4);
   }
 
+  /* MOBILE OPTIMIZATION */
   @media (max-width: 768px) {
     .container {
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: 1fr;             /* una columna */
+      grid-template-rows: repeat(4, 1fr);     /* 4 filas iguales */
       padding: 20px;
       gap: 20px;
     }
     .card {
-      font-size: 2rem;
+      font-size: 2.2rem;                      /* letras grandes */
+      height: 70%;                             /* altura adaptada */
+      margin: auto;
     }
     header {
       font-size: 2.4rem;
+      padding: 1rem 0;
     }
   }
 </style>
