@@ -11,7 +11,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout con token para poder hacer push
+      # Checkout con token para permitir push
       - name: Descargar el repositorio
         uses: actions/checkout@v4
         with:
@@ -31,13 +31,13 @@ jobs:
       - name: Ejecutar script de conversión
         run: python convertir_excel_a_json.py
 
-      # Commit y push de los JSON generados
+      # Commit y push de los JSON generados usando token
       - name: Commit y push de JSON
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/*.json
           git commit -m "Actualización automática de archivos JSON" || echo "No hay cambios para commitear"
-          git push origin HEAD
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/lucasi420/Web-PrecintosSuper.git HEAD:main
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
