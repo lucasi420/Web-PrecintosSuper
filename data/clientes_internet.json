@@ -1,0 +1,12 @@
+[
+  {
+    "nombre":"Ana López",
+    "numero_cliente":2001,
+    "precinto":"I-001",
+    "estado":"Conectado",
+    "domicilio":"Belgrano 230",
+    "nap":"NAP-01",
+    "nodo":"Nodo-01",
+    "puerto":12
+  }
+]
