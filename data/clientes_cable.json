@@ -1,9 +1,261 @@
 [
   {
-    "nombre":"Juan Pérez",
-    "numero_cliente":1001,
-    "precinto":"C-001",
-    "estado":"Conectado",
-    "domicilio":"San Martín 452"
+    "nombre":"nombre",
+    "numero_cliente":"numero_cliente",
+    "precinto":"precinto",
+    "estado":"estado",
+    "domicilio":"domicilio"
+  },
+  {
+    "nombre":"CASINO OFICIALES BASE NAVAL",
+    "numero_cliente":334106,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 51"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA - CASINO SUBOFICIALES",
+    "numero_cliente":334352,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 9"
+  },
+  {
+    "nombre":"OMAR FERNANDEZ",
+    "numero_cliente":334598,
+    "precinto":"U043191",
+    "estado":"CONECTADO",
+    "domicilio":"JUAN RUIZ GALAN 689"
+  },
+  {
+    "nombre":"IBUS ESTADO MAYOR GENERAL DE LA ARMADA -  BASE NAVAL USHUAIA (IBUS)",
+    "numero_cliente":335104,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 1"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA -",
+    "numero_cliente":335353,
+    "precinto":"U003739",
+    "estado":"CONECTADO",
+    "domicilio":"B* LA MISION BAJA 104"
+  },
+  {
+    "nombre":"FABIAN FIOCCHI (CJE)",
+    "numero_cliente":335572,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"DEL BOSQUE 517"
+  },
+  {
+    "nombre":"GAMMA PRODUCCIONES (CJE)",
+    "numero_cliente":335694,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"PUERTO ESPAÑOL 625"
+  },
+  {
+    "nombre":"LUIS HERMENEGILDO MORENO",
+    "numero_cliente":336048,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"LEUM 2040"
+  },
+  {
+    "nombre":"MARIO LORETO (CJE)",
+    "numero_cliente":336116,
+    "precinto":"U050379",
+    "estado":"CONECTADO",
+    "domicilio":"PASAJE LAS HERAS 2"
+  },
+  {
+    "nombre":"JOSE RAUL RODRIGUEZ",
+    "numero_cliente":336469,
+    "precinto":"U002433",
+    "estado":"CONECTADO",
+    "domicilio":"GERMAN O WILDER 1892"
+  },
+  {
+    "nombre":"GUILLERMO ADOLFO GODOY",
+    "numero_cliente":336994,
+    "precinto":"U046109",
+    "estado":"CONECTADO",
+    "domicilio":"CHUBUT 1832"
+  },
+  {
+    "nombre":"MANUEL HERNAN CARDENAS",
+    "numero_cliente":337095,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"INTENDENTE MARCOS VERA 827"
+  },
+  {
+    "nombre":"SUCURSAL USHUAIA SUPERCANAL",
+    "numero_cliente":337561,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"KAYEN 145"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA - CLORINDA BASE NAVAL",
+    "numero_cliente":337614,
+    "precinto":"U043790",
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 7"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA -BARRANQUERA",
+    "numero_cliente":337615,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 7"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA CONCEPCIÓN DEL URUGUAY",
+    "numero_cliente":337616,
+    "precinto":"U049525",
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 1"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA- REMOLCADOR TOBA",
+    "numero_cliente":337618,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 100"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA - CASA DE HUESPEDES",
+    "numero_cliente":338152,
+    "precinto":"U031652",
+    "estado":"CONECTADO",
+    "domicilio":"B* LA MISION BAJA 103"
+  },
+  {
+    "nombre":"PABLO FACUNDO SARTORI",
+    "numero_cliente":339264,
+    "precinto":"U030176",
+    "estado":"CONECTADO",
+    "domicilio":"TUCUMAN 4985"
+  },
+  {
+    "nombre":"SONIA PATRICIA VALLEJO",
+    "numero_cliente":339516,
+    "precinto":"U000857",
+    "estado":"CONECTADO",
+    "domicilio":"RIO EWAN 2985"
+  },
+  {
+    "nombre":"JUAN DOMINGO MORENO",
+    "numero_cliente":340317,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"AVDA LEANDRO N ALEM 2133"
+  },
+  {
+    "nombre":"ESTADO MAYOR GENERAL DE LA ARMADA-SECRETARIA ALMIRANTE BASE NAVAL",
+    "numero_cliente":342225,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 54"
+  },
+  {
+    "nombre":"DE BOMBEROS P N A CUARTEL",
+    "numero_cliente":342356,
+    "precinto":"U010136",
+    "estado":"CONECTADO",
+    "domicilio":"AVDA MAIPU 500"
+  },
+  {
+    "nombre":"CASINO DE OFICIALES POLICIA",
+    "numero_cliente":342358,
+    "precinto":"U051086",
+    "estado":"CONECTADO",
+    "domicilio":"GOBERNADOR DELOQUI 492"
+  },
+  {
+    "nombre":"LUCIA GUTIERREZ",
+    "numero_cliente":342750,
+    "precinto":"U041852",
+    "estado":"CONECTADO",
+    "domicilio":"JOSE O RETAMAR 1376"
+  },
+  {
+    "nombre":"ANGEL SANTANA",
+    "numero_cliente":435271,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"GENDARME ARGENTINO 1075"
+  },
+  {
+    "nombre":"LANCHA RÁPIDA INDÓMITA BASE NAVAL USH",
+    "numero_cliente":778106,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 100"
+  },
+  {
+    "nombre":"CASA HUESPED ARMADA ARGENTINA",
+    "numero_cliente":1868179,
+    "precinto":"U010596",
+    "estado":"CONECTADO",
+    "domicilio":"B* LA MISION BAJA 105"
+  },
+  {
+    "nombre":"JEFE ESTADO MAYOR - LUIS SGRILLETTI ARMADA ARGENTINA",
+    "numero_cliente":1983002,
+    "precinto":"U002040",
+    "estado":"CONECTADO",
+    "domicilio":"B* LA MISION BAJA 101"
+  },
+  {
+    "nombre":"MUNICIPALIDAD DE USHUAIA",
+    "numero_cliente":5140655,
+    "precinto":"UU049947",
+    "estado":"CONECTADO",
+    "domicilio":"SAN MARTIN 660"
+  },
+  {
+    "nombre":"SUPERCANAL S.A PLANTA TRANSMISORA",
+    "numero_cliente":5214916,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"TTE C CABUT 1"
+  },
+  {
+    "nombre":"AVISO A.R.A. ISLAS MALVINAS",
+    "numero_cliente":5264019,
+    "precinto":"U042139",
+    "estado":"CONECTADO",
+    "domicilio":"YAGANES 100"
+  },
+  {
+    "nombre":"JAVIER ANDRES MORENO",
+    "numero_cliente":5275947,
+    "precinto":"U042517",
+    "estado":"CONECTADO",
+    "domicilio":"TUCUMAN 4975"
+  },
+  {
+    "nombre":"CRISTIAN MARCELO FERNANDEZ",
+    "numero_cliente":5326744,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"NEUQUEN 351"
+  },
+  {
+    "nombre":"MAURO FEIRRER",
+    "numero_cliente":5371619,
+    "precinto":null,
+    "estado":"CONECTADO",
+    "domicilio":"BAHIA RELEGADA 4088"
+  },
+  {
+    "nombre":"LILIANE MARLENE VASQUEZ FIGUEROA",
+    "numero_cliente":5383533,
+    "precinto":"U045184",
+    "estado":"CONECTADO",
+    "domicilio":"GOBERNADOR MONETTA 641"
   }
 ]
