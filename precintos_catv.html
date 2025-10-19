@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PRECINTOS CATV - SUPER-USHUAIA</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f5f6fa;
+    color: #333;
+  }
+
+  header {
+    background-color: #0057b8;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  input[type="text"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+
+  button {
+    background-color: #0057b8;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+
+  button:hover {
+    background-color: #003f7d;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+  }
+
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+
+  th {
+    background-color: #0057b8;
+    color: white;
+  }
+
+  tr:hover {
+    background-color: #e1eaff;
+  }
+</style>
+</head>
+<body>
+
+<header>PRECINTOS CATV</header>
+
+<div class="container">
+  <input type="text" id="searchInput" placeholder="Ingrese el precinto a buscar...">
+  <button onclick="copiarResultados()">Copiar resultados al portapapeles</button>
+
+  <table id="resultsTable">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Número Cliente</th>
+        <th>Precinto</th>
+        <th>Estado</th>
+        <th>Domicilio</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+</div>
+
+<script>
+let clientes = [];
+
+// Cargar JSON al iniciar la página
+fetch('data/clientes_cable.json')
+  .then(response => response.json())
+  .then(data => {
+    clientes = data;
+    mostrarResultados(clientes);
+  })
+  .catch(err => console.error('Error cargando JSON:', err));
+
+// Función para mostrar resultados en la tabla
+function mostrarResultados(array) {
+  const tbody = document.querySelector('#resultsTable tbody');
+  tbody.innerHTML = '';
+  array.forEach(cliente => {
+    const tr = document.createElement('tr');
+    tr.innerHTML = `
+      <td>${cliente.nombre}</td>
+      <td>${cliente.numero_cliente}</td>
+      <td>${cliente.precinto}</td>
+      <td>${cliente.estado}</td>
+      <td>${cliente.domicilio}</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+// Filtrar resultados según input
+document.getElementById('searchInput').addEventListener('input', function() {
+  const term = this.value.trim().toLowerCase();
+  const filtrados = clientes.filter(c => c.precinto.toLowerCase().includes(term));
+  mostrarResultados(filtrados);
+});
+
+// Copiar resultados al portapapeles (solo precintos)
+function copiarResultados() {
+  const filtrados = Array.from(document.querySelectorAll('#resultsTable tbody tr'));
+  if(filtrados.length === 0) return;
+
+  let texto = filtrados.map(tr => tr.children[2].textContent).join('\n');
+  navigator.clipboard.writeText(texto).then(() => {
+    alert('Precintos copiados al portapapeles!');
+  });
+}
+</script>
+
+</body>
+</html>
