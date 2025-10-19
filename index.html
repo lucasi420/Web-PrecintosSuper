@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SUPER-USHUAIA</title>
+  <title>PRECINTOS CATV</title>
   <style>
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: #f5f6fa;
+      color: #333;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
+
     header {
       background-color: #0057b8;
       color: white;
@@ -19,43 +24,158 @@
       font-weight: bold;
       letter-spacing: 2px;
     }
-    .container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 40px;
-      padding: 80px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    .card {
+
+    .buscador {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      max-width: 600px;
+      margin: 20px auto;
       background: white;
-      border-radius: 15px;
-      padding: 40px 20px;
-      text-align: center;
-      font-size: 1.3rem;
-      font-weight: 600;
-      color: #0057b8;
-      cursor: pointer;
+      border-radius: 12px;
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      transition: all 0.2s ease-in-out;
     }
-    .card:hover {
+
+    .fila-busqueda {
+      display: flex;
+      gap: 10px;
+    }
+
+    select, input {
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      flex: 1;
+    }
+
+    input {
+      flex: 2;
+    }
+
+    button {
+      padding: 12px 20px;
       background-color: #0057b8;
       color: white;
-      transform: scale(1.03);
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #0041a3;
+    }
+
+    #resultados {
+      padding: 20px;
+      display: grid;
+      gap: 15px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .card-resultado {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      font-size: 1rem;
+    }
+
+    .card-resultado p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+      .buscador {
+        padding: 15px;
+      }
+      .fila-busqueda {
+        flex-direction: column;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header>SUPER-USHUAIA</header>
+  <header>PRECINTOS CATV</header>
 
-  <div class="container">
-    <div class="card" onclick="location.href='precintos_catv.html'">PRECINTOS CATV</div>
-    <div class="card" onclick="location.href='precintos_gpon.html'">PRECINTOS GPON</div>
-    <div class="card" onclick="location.href='clientes_naps.html'">CLIENTES POR NAPs</div>
-    <div class="card" onclick="location.href='clientes_gpon_borrados.html'">CLIENTES GPON BORRADOS</div>
+  <div class="buscador">
+    <div class="fila-busqueda">
+      <select id="searchField">
+        <option value="precinto">Precinto</option>
+        <option value="nombre">Nombre</option>
+        <option value="domicilio">Dirección</option>
+      </select>
+
+      <input type="text" id="searchInput" placeholder="Buscar...">
+      <button onclick="filtrarDatos()">Buscar</button>
+    </div>
+
+    <select id="filterEstado">
+      <option value="">Todos los estados</option>
+      <option value="Conectado">Conectado</option>
+      <option value="Desconectado">Desconectado</option>
+    </select>
   </div>
+
+  <div id="resultados">
+    <p style="text-align:center; color:gray;">Ingrese un término de búsqueda para comenzar.</p>
+  </div>
+
+  <script>
+    let data = [];
+
+    async function cargarDatos() {
+      try {
+        const respuesta = await fetch("data/precintos_catv.json");
+        data = await respuesta.json();
+      } catch (error) {
+        console.error("Error cargando datos:", error);
+      }
+    }
+
+    function filtrarDatos() {
+      const searchField = document.getElementById("searchField").value;
+      const searchValue = document.getElementById("searchInput").value.toLowerCase().trim();
+      const filterEstado = document.getElementById("filterEstado").value;
+      const resultadosDiv = document.getElementById("resultados");
+
+      resultadosDiv.innerHTML = "";
+
+      if (searchValue === "") {
+        resultadosDiv.innerHTML = "<p style='text-align:center; color:gray;'>Ingrese un término de búsqueda para comenzar.</p>";
+        return;
+      }
+
+      const filteredData = data.filter(item => {
+        const matchesSearch = item[searchField]?.toLowerCase().includes(searchValue);
+        const matchesEstado = filterEstado ? item.estado === filterEstado : true;
+        return matchesSearch && matchesEstado;
+      });
+
+      if (filteredData.length === 0) {
+        resultadosDiv.innerHTML = "<p style='text-align:center; color:gray;'>No se encontraron resultados.</p>";
+        return;
+      }
+
+      filteredData.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card-resultado";
+        card.innerHTML = `
+          <p><strong>Nombre:</strong> ${item.nombre}</p>
+          <p><strong>Dirección:</strong> ${item.domicilio}</p>
+          <p><strong>Precinto:</strong> ${item.precinto}</p>
+          <p><strong>Estado:</strong> ${item.estado}</p>
+        `;
+        resultadosDiv.appendChild(card);
+      });
+    }
+
+    cargarDatos();
+  </script>
 
 </body>
 </html>
