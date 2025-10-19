@@ -3,147 +3,226 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>PRECINTOS CATV - SUPER-USHUAIA</title>
+<title>SUPER-USHUAIA - Precintos CATV</title>
 <style>
+  * { box-sizing: border-box; }
+
   body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background-color: #f5f6fa;
+    font-family: "Poppins", sans-serif;
+    background: #f2f5fa;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
   }
 
   header {
-    background-color: #0057b8;
+    background: linear-gradient(90deg, #0057b8, #007bff);
     color: white;
     text-align: center;
-    padding: 1.5rem 0;
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
-    letter-spacing: 2px;
+    padding: 1.2rem 0;
+    letter-spacing: 1px;
   }
 
-  .container {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 0 20px;
+  main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
 
-  input[type="text"] {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 1rem;
-    border-radius: 8px;
-    border: 1px solid #ccc;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+  /* 🔍 Cuadro de búsqueda */
+  .search-box {
+    background: #fff;
+    margin: 1rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    position: relative;
   }
 
-  button {
-    background-color: #0057b8;
-    color: white;
-    border: none;
-    padding: 12px 20px;
-    font-size: 1rem;
-    border-radius: 8px;
+  .search-box i {
+    font-size: 1.4rem;
+    color: #007bff;
+    padding: 0.8rem;
     cursor: pointer;
-    margin-bottom: 20px;
   }
 
-  button:hover {
-    background-color: #003f7d;
+  .search-box input {
+    border: none;
+    outline: none;
+    flex: 1;
+    font-size: 1.1rem;
+    padding: 0.8rem;
+    border-radius: 12px;
   }
 
-  table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
+  /* ⚙️ Menú flotante */
+  .dropdown {
+    position: absolute;
+    top: 3.3rem;
+    left: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
   }
 
-  th, td {
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
+  .dropdown button {
+    background: none;
+    border: none;
+    padding: 0.8rem 1rem;
     text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
   }
 
-  th {
-    background-color: #0057b8;
-    color: white;
+  .dropdown button:hover {
+    background: #f2f6ff;
   }
 
-  tr:hover {
-    background-color: #e1eaff;
+  /* 📋 Filtro de estado */
+  .filter-box {
+    background: white;
+    margin: 0 1rem;
+    border-radius: 12px;
+    padding: 0.7rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  }
+
+  .filter-box select {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.6rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+  }
+
+  /* 📦 Resultados */
+  .result-container {
+    flex: 1;
+    overflow-y: auto;
+    padding: 1rem;
+    display: grid;
+    gap: 1rem;
+  }
+
+  .card {
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+
+  .card strong {
+    color: #0057b8;
+  }
+
+  @media (max-width: 600px) {
+    .search-box input {
+      font-size: 1rem;
+    }
   }
 </style>
 </head>
 <body>
 
-<header>PRECINTOS CATV</header>
+<header>SUPER-USHUAIA</header>
 
-<div class="container">
-  <input type="text" id="searchInput" placeholder="Ingrese el precinto a buscar...">
-  <button onclick="copiarResultados()">Copiar resultados al portapapeles</button>
+<main>
+  <!-- 🔍 Cuadro de búsqueda -->
+  <div class="search-box">
+    <i id="filterIcon">🔍</i>
+    <input type="text" id="searchInput" placeholder="Buscar por precinto...">
+    <div id="dropdown" class="dropdown">
+      <button onclick="setSearchType('precinto')">🔹 Buscar por Precinto</button>
+      <button onclick="setSearchType('nombre')">👤 Buscar por Nombre</button>
+      <button onclick="setSearchType('direccion')">📍 Buscar por Dirección</button>
+    </div>
+  </div>
 
-  <table id="resultsTable">
-    <thead>
-      <tr>
-        <th>Nombre</th>
-        <th>Número Cliente</th>
-        <th>Precinto</th>
-        <th>Estado</th>
-        <th>Domicilio</th>
-      </tr>
-    </thead>
-    <tbody></tbody>
-  </table>
-</div>
+  <!-- 📋 Filtro por estado -->
+  <div class="filter-box">
+    <select id="estadoFilter">
+      <option value="">Filtrar por estado...</option>
+      <option value="Conectado">Conectado</option>
+      <option value="Desconectado">Desconectado</option>
+    </select>
+  </div>
+
+  <!-- 📦 Resultados -->
+  <div id="results" class="result-container"></div>
+</main>
 
 <script>
-let clientes = [];
+  let clientes = [];
+  let searchType = "precinto"; // tipo de búsqueda actual
 
-// Cargar JSON al iniciar la página
-fetch('data/clientes_cable.json')
-  .then(response => response.json())
-  .then(data => {
-    clientes = data;
-    mostrarResultados(clientes);
-  })
-  .catch(err => console.error('Error cargando JSON:', err));
+  // Cargar JSON
+  fetch("data/clientes_cable.json")
+    .then(res => res.json())
+    .then(data => clientes = data);
 
-// Función para mostrar resultados en la tabla
-function mostrarResultados(array) {
-  const tbody = document.querySelector('#resultsTable tbody');
-  tbody.innerHTML = '';
-  array.forEach(cliente => {
-    const tr = document.createElement('tr');
-    tr.innerHTML = `
-      <td>${cliente.nombre}</td>
-      <td>${cliente.numero_cliente}</td>
-      <td>${cliente.precinto}</td>
-      <td>${cliente.estado}</td>
-      <td>${cliente.domicilio}</td>
-    `;
-    tbody.appendChild(tr);
+  // Mostrar/ocultar menú al tocar el ícono
+  const filterIcon = document.getElementById("filterIcon");
+  const dropdown = document.getElementById("dropdown");
+  filterIcon.addEventListener("click", () => {
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
   });
-}
 
-// Filtrar resultados según input
-document.getElementById('searchInput').addEventListener('input', function() {
-  const term = this.value.trim().toLowerCase();
-  const filtrados = clientes.filter(c => c.precinto.toLowerCase().includes(term));
-  mostrarResultados(filtrados);
-});
+  // Cambiar tipo de búsqueda
+  function setSearchType(type) {
+    searchType = type;
+    dropdown.style.display = "none";
+    const input = document.getElementById("searchInput");
+    if (type === "nombre") input.placeholder = "Buscar por nombre...";
+    else if (type === "direccion") input.placeholder = "Buscar por dirección...";
+    else input.placeholder = "Buscar por precinto...";
+    buscar();
+  }
 
-// Copiar resultados al portapapeles (solo precintos)
-function copiarResultados() {
-  const filtrados = Array.from(document.querySelectorAll('#resultsTable tbody tr'));
-  if(filtrados.length === 0) return;
+  // Buscar en tiempo real
+  document.getElementById("searchInput").addEventListener("input", buscar);
+  document.getElementById("estadoFilter").addEventListener("change", buscar);
 
-  let texto = filtrados.map(tr => tr.children[2].textContent).join('\n');
-  navigator.clipboard.writeText(texto).then(() => {
-    alert('Precintos copiados al portapapeles!');
-  });
-}
+  function buscar() {
+    const query = document.getElementById("searchInput").value.toLowerCase().trim();
+    const estado = document.getElementById("estadoFilter").value.toLowerCase();
+    const resultsDiv = document.getElementById("results");
+    resultsDiv.innerHTML = "";
+
+    const resultados = clientes.filter(c => {
+      const campo = (c[searchType] || "").toLowerCase();
+      const estadoCliente = (c.estado || "").toLowerCase();
+      const coincideTexto = campo.includes(query);
+      const coincideEstado = estado === "" || estadoCliente.includes(estado);
+      return coincideTexto && coincideEstado;
+    });
+
+    if (resultados.length === 0) {
+      resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
+      return;
+    }
+
+    resultados.forEach(c => {
+      const card = document.createElement("div");
+      card.className = "card";
+      card.innerHTML = `
+        <div><strong>Precinto:</strong> ${c.precinto}</div>
+        <div><strong>Nombre:</strong> ${c.nombre}</div>
+        <div><strong>Dirección:</strong> ${c.domicilio || c.direccion}</div>
+        <div><strong>Estado:</strong> ${c.estado}</div>
+      `;
+      resultsDiv.appendChild(card);
+    });
+  }
 </script>
-
 </body>
 </html>
