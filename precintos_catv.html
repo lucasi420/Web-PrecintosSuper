@@ -3,40 +3,28 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUPER-USHUAIA | Precintos CATV</title>
+<title>SUPER-USHUAIA - Precintos CATV</title>
 <style>
-  :root {
-    --azul: #0072ff;
-    --azul-oscuro: #001933;
-    --fondo: #0b1320;
-    --texto: #ffffff;
-    --acento: #00c8ff;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
+  * { box-sizing: border-box; }
 
   body {
     margin: 0;
-    font-family: "Orbitron", "Segoe UI", sans-serif;
-    background: var(--fondo);
-    color: var(--texto);
+    font-family: "Poppins", sans-serif;
+    background: #f2f5fa;
+    color: #333;
     display: flex;
     flex-direction: column;
     height: 100vh;
   }
 
   header {
-    background: linear-gradient(90deg, var(--azul-oscuro), var(--azul));
+    background: linear-gradient(90deg, #0057b8, #007bff);
+    color: white;
     text-align: center;
     font-size: 1.8rem;
-    font-weight: 800;
-    padding: 1rem 0;
-    letter-spacing: 3px;
-    text-shadow: 0 0 12px var(--acento);
-    box-shadow: 0 3px 15px rgba(0,0,0,0.6);
-    user-select: none;
+    font-weight: bold;
+    padding: 1.2rem 0;
+    letter-spacing: 1px;
   }
 
   main {
@@ -46,45 +34,41 @@
     overflow: hidden;
   }
 
-  /* 🔍 Caja de búsqueda */
+  /* 🔍 Cuadro de búsqueda */
   .search-box {
+    background: #fff;
+    margin: 1rem;
+    border-radius: 12px;
     display: flex;
     align-items: center;
-    background: #0f1b33;
-    border: 1px solid rgba(0,200,255,0.3);
-    border-radius: 12px;
-    margin: 1rem;
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
     position: relative;
   }
 
   .search-box i {
     font-size: 1.4rem;
-    color: var(--acento);
+    color: #007bff;
     padding: 0.8rem;
     cursor: pointer;
-    user-select: none;
   }
 
   .search-box input {
-    flex: 1;
-    background: transparent;
     border: none;
-    color: var(--texto);
+    outline: none;
+    flex: 1;
     font-size: 1.1rem;
     padding: 0.8rem;
-    outline: none;
+    border-radius: 12px;
   }
 
-  /* ⚙️ Menú desplegable */
+  /* ⚙️ Menú flotante */
   .dropdown {
     position: absolute;
     top: 3.3rem;
     left: 0.5rem;
-    background: #0f1b33;
+    background: white;
     border-radius: 10px;
-    border: 1px solid rgba(0,200,255,0.2);
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     overflow: hidden;
     display: none;
     flex-direction: column;
@@ -94,35 +78,30 @@
   .dropdown button {
     background: none;
     border: none;
-    padding: 0.8rem 1.2rem;
-    color: var(--texto);
+    padding: 0.8rem 1rem;
     text-align: left;
     font-size: 1rem;
     cursor: pointer;
   }
 
   .dropdown button:hover {
-    background: rgba(0,200,255,0.15);
+    background: #f2f6ff;
   }
 
-  /* 📋 Filtro por estado */
+  /* 📋 Filtro de estado */
   .filter-box {
-    margin: 0 1rem 1rem 1rem;
-    background: #0f1b33;
-    border: 1px solid rgba(0,200,255,0.3);
+    background: white;
+    margin: 0 1rem;
     border-radius: 12px;
     padding: 0.7rem;
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
   }
 
   .filter-box select {
     width: 100%;
-    background: #0f1b33;
-    color: var(--acento);
     font-size: 1rem;
-    border: none;
-    outline: none;
     padding: 0.6rem;
+    border: 1px solid #ccc;
     border-radius: 10px;
   }
 
@@ -136,26 +115,17 @@
   }
 
   .card {
-    background: #101a33;
+    background: white;
     border-radius: 12px;
     padding: 1rem;
-    border: 1px solid rgba(0,200,255,0.2);
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
   }
 
   .card strong {
-    color: var(--acento);
-  }
-
-  .card div {
-    margin-bottom: 0.4rem;
+    color: #0057b8;
   }
 
   @media (max-width: 600px) {
-    header {
-      font-size: 1.5rem;
-      padding: 0.8rem;
-    }
     .search-box input {
       font-size: 1rem;
     }
@@ -193,14 +163,14 @@
 
 <script>
   let clientes = [];
-  let searchType = "precinto";
+  let searchType = "precinto"; // tipo de búsqueda actual
 
   // Cargar JSON
   fetch("data/clientes_cable.json")
     .then(res => res.json())
     .then(data => clientes = data);
 
-  // Mostrar/ocultar menú
+  // Mostrar/ocultar menú al tocar el ícono
   const filterIcon = document.getElementById("filterIcon");
   const dropdown = document.getElementById("dropdown");
   filterIcon.addEventListener("click", () => {
@@ -218,7 +188,7 @@
     buscar();
   }
 
-  // Buscar y filtrar
+  // Buscar en tiempo real
   document.getElementById("searchInput").addEventListener("input", buscar);
   document.getElementById("estadoFilter").addEventListener("change", buscar);
 
@@ -237,7 +207,7 @@
     });
 
     if (resultados.length === 0) {
-      resultsDiv.innerHTML = "<p style='text-align:center;color:#00c8ff;'>Sin resultados.</p>";
+      resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
       return;
     }
 
@@ -254,6 +224,5 @@
     });
   }
 </script>
-
 </body>
 </html>
