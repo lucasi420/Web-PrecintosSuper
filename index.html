@@ -1,117 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUPER-USHUAIA | GLASS UI</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap" rel="stylesheet">
-<style>
-  :root {
-    --fondo-principal: #1a2a47; /* Azul oscuro elegante */
-    --gradiente-acento: linear-gradient(135deg, #00c6ff, #0072ff); /* Azul/Cian vibrante */
-    --texto-claro: #f0f4f8;
-    --texto-oscuro: #000000;
-    --header-height: 4.2rem;
-  }
-
-  * { box-sizing: border-box; margin: 0; padding: 0; }
-
-  body {
-    background: var(--fondo-principal);
-    font-family: 'Inter', sans-serif;
-    color: var(--texto-claro);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden; /* Elimina el scroll en móvil */
-    /* Añade un gradiente sutil al fondo para que el glassmorfismo luzca */
-    background: radial-gradient(circle at 10% 10%, #2c426e, #1a2a47);
-  }
-
-  header {
-    background: var(--gradiente-acento);
-    height: var(--header-height);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(2rem, 5vw, 2.6rem);
-    font-weight: 900;
-    letter-spacing: 2px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    flex-shrink: 0;
-  }
-
-  /* Desktop: grid 2x2 */
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 30px;
-    padding: 30px;
-    flex: 1;
-    max-width: 1300px;
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  .card {
-    border-radius: 16px;
-    /* --- EL TOQUE GLASSMORFISMO --- */
-    background: rgba(255, 255, 255, 0.15); /* Fondo blanco con mucha transparencia */
-    backdrop-filter: blur(10px); /* El efecto de vidrio esmerilado */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Borde sutil */
-    /* ------------------------------ */
-
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: clamp(1.8rem, 3vw, 2.2rem);
-    font-weight: 700;
-    color: var(--texto-claro);
-    text-transform: uppercase;
-    text-align: center;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    text-shadow: 0 0 5px rgba(0,0,0,0.5);
-  }
-
-  .card:hover {
-    background: rgba(255, 255, 255, 0.25); /* Se aclara al pasar el ratón */
-    transform: scale(1.05);
-    box-shadow: 0 0 25px rgba(0, 200, 255, 0.6);
-  }
-
-  .card:active {
-    transform: scale(0.98);
-  }
-
-  /* MOBILE: Layout sin scroll garantizado */
-  @media (max-width: 768px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPER-USHUAIA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+    }
+    header {
+      background-color: #0057b8;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
     .container {
-      display: flex;
-      flex-direction: column;
-      padding: 15px;
-      gap: 15px;
-      flex: 1;
-      /* Ocupa el espacio restante: 100% de la ventana menos la altura del header */
-      height: calc(100vh - var(--header-height));
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
     }
-
     .card {
-      /* Distribuye el espacio uniformemente */
-      flex-grow: 1; 
-      min-height: 0;
-      font-size: 1.4rem;
-      border-radius: 12px;
-      /* Reducimos el blur en móvil para mejorar rendimiento */
-      backdrop-filter: blur(6px); 
-      -webkit-backdrop-filter: blur(6px);
+      background: white;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0057b8;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.2s ease-in-out;
     }
-  }
-</style>
+    .card:hover {
+      background-color: #0057b8;
+      color: white;
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
 
