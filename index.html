@@ -1,259 +1,61 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SUPER-USHUAIA | Precintos CATV</title>
-<style>
-  :root {
-    --azul: #0072ff;
-    --azul-oscuro: #001933;
-    --fondo: #0b1320;
-    --texto: #ffffff;
-    --acento: #00c8ff;
-  }
-
-  * {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-    font-family: "Orbitron", "Segoe UI", sans-serif;
-    background: var(--fondo);
-    color: var(--texto);
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-  }
-
-  header {
-    background: linear-gradient(90deg, var(--azul-oscuro), var(--azul));
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 800;
-    padding: 1rem 0;
-    letter-spacing: 3px;
-    text-shadow: 0 0 12px var(--acento);
-    box-shadow: 0 3px 15px rgba(0,0,0,0.6);
-    user-select: none;
-  }
-
-  main {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
-  }
-
-  /* 🔍 Caja de búsqueda */
-  .search-box {
-    display: flex;
-    align-items: center;
-    background: #0f1b33;
-    border: 1px solid rgba(0,200,255,0.3);
-    border-radius: 12px;
-    margin: 1rem;
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
-    position: relative;
-  }
-
-  .search-box i {
-    font-size: 1.4rem;
-    color: var(--acento);
-    padding: 0.8rem;
-    cursor: pointer;
-    user-select: none;
-  }
-
-  .search-box input {
-    flex: 1;
-    background: transparent;
-    border: none;
-    color: var(--texto);
-    font-size: 1.1rem;
-    padding: 0.8rem;
-    outline: none;
-  }
-
-  /* ⚙️ Menú desplegable */
-  .dropdown {
-    position: absolute;
-    top: 3.3rem;
-    left: 0.5rem;
-    background: #0f1b33;
-    border-radius: 10px;
-    border: 1px solid rgba(0,200,255,0.2);
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
-    overflow: hidden;
-    display: none;
-    flex-direction: column;
-    z-index: 10;
-  }
-
-  .dropdown button {
-    background: none;
-    border: none;
-    padding: 0.8rem 1.2rem;
-    color: var(--texto);
-    text-align: left;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .dropdown button:hover {
-    background: rgba(0,200,255,0.15);
-  }
-
-  /* 📋 Filtro por estado */
-  .filter-box {
-    margin: 0 1rem 1rem 1rem;
-    background: #0f1b33;
-    border: 1px solid rgba(0,200,255,0.3);
-    border-radius: 12px;
-    padding: 0.7rem;
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
-  }
-
-  .filter-box select {
-    width: 100%;
-    background: #0f1b33;
-    color: var(--acento);
-    font-size: 1rem;
-    border: none;
-    outline: none;
-    padding: 0.6rem;
-    border-radius: 10px;
-  }
-
-  /* 📦 Resultados */
-  .result-container {
-    flex: 1;
-    overflow-y: auto;
-    padding: 1rem;
-    display: grid;
-    gap: 1rem;
-  }
-
-  .card {
-    background: #101a33;
-    border-radius: 12px;
-    padding: 1rem;
-    border: 1px solid rgba(0,200,255,0.2);
-    box-shadow: 0 0 15px rgba(0,200,255,0.1);
-  }
-
-  .card strong {
-    color: var(--acento);
-  }
-
-  .card div {
-    margin-bottom: 0.4rem;
-  }
-
-  @media (max-width: 600px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SUPER-USHUAIA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f5f6fa;
+    }
     header {
-      font-size: 1.5rem;
-      padding: 0.8rem;
+      background-color: #0057b8;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+      font-size: 2rem;
+      font-weight: bold;
+      letter-spacing: 2px;
     }
-    .search-box input {
-      font-size: 1rem;
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 40px;
+      padding: 80px;
+      max-width: 1000px;
+      margin: auto;
     }
-  }
-</style>
+    .card {
+      background: white;
+      border-radius: 15px;
+      padding: 40px 20px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #0057b8;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: all 0.2s ease-in-out;
+    }
+    .card:hover {
+      background-color: #0057b8;
+      color: white;
+      transform: scale(1.03);
+    }
+  </style>
 </head>
 <body>
 
-<header>SUPER-USHUAIA</header>
+  <header>SUPER-USHUAIA</header>
 
-<main>
-  <!-- 🔍 Cuadro de búsqueda -->
-  <div class="search-box">
-    <i id="filterIcon">🔍</i>
-    <input type="text" id="searchInput" placeholder="Buscar por precinto...">
-    <div id="dropdown" class="dropdown">
-      <button onclick="setSearchType('precinto')">🔹 Buscar por Precinto</button>
-      <button onclick="setSearchType('nombre')">👤 Buscar por Nombre</button>
-      <button onclick="setSearchType('direccion')">📍 Buscar por Dirección</button>
-    </div>
+  <div class="container">
+    <div class="card" onclick="location.href='precintos_catv.html'">PRECINTOS CATV</div>
+    <div class="card" onclick="location.href='precintos_gpon.html'">PRECINTOS GPON</div>
+    <div class="card" onclick="location.href='clientes_naps.html'">CLIENTES POR NAPs</div>
+    <div class="card" onclick="location.href='clientes_gpon_borrados.html'">CLIENTES GPON BORRADOS</div>
   </div>
-
-  <!-- 📋 Filtro por estado -->
-  <div class="filter-box">
-    <select id="estadoFilter">
-      <option value="">Filtrar por estado...</option>
-      <option value="Conectado">Conectado</option>
-      <option value="Desconectado">Desconectado</option>
-    </select>
-  </div>
-
-  <!-- 📦 Resultados -->
-  <div id="results" class="result-container"></div>
-</main>
-
-<script>
-  let clientes = [];
-  let searchType = "precinto";
-
-  // Cargar JSON
-  fetch("data/clientes_cable.json")
-    .then(res => res.json())
-    .then(data => clientes = data);
-
-  // Mostrar/ocultar menú
-  const filterIcon = document.getElementById("filterIcon");
-  const dropdown = document.getElementById("dropdown");
-  filterIcon.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-  });
-
-  // Cambiar tipo de búsqueda
-  function setSearchType(type) {
-    searchType = type;
-    dropdown.style.display = "none";
-    const input = document.getElementById("searchInput");
-    if (type === "nombre") input.placeholder = "Buscar por nombre...";
-    else if (type === "direccion") input.placeholder = "Buscar por dirección...";
-    else input.placeholder = "Buscar por precinto...";
-    buscar();
-  }
-
-  // Buscar y filtrar
-  document.getElementById("searchInput").addEventListener("input", buscar);
-  document.getElementById("estadoFilter").addEventListener("change", buscar);
-
-  function buscar() {
-    const query = document.getElementById("searchInput").value.toLowerCase().trim();
-    const estado = document.getElementById("estadoFilter").value.toLowerCase();
-    const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = "";
-
-    const resultados = clientes.filter(c => {
-      const campo = (c[searchType] || "").toLowerCase();
-      const estadoCliente = (c.estado || "").toLowerCase();
-      const coincideTexto = campo.includes(query);
-      const coincideEstado = estado === "" || estadoCliente.includes(estado);
-      return coincideTexto && coincideEstado;
-    });
-
-    if (resultados.length === 0) {
-      resultsDiv.innerHTML = "<p style='text-align:center;color:#00c8ff;'>Sin resultados.</p>";
-      return;
-    }
-
-    resultados.forEach(c => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <div><strong>Precinto:</strong> ${c.precinto}</div>
-        <div><strong>Nombre:</strong> ${c.nombre}</div>
-        <div><strong>Dirección:</strong> ${c.domicilio || c.direccion}</div>
-        <div><strong>Estado:</strong> ${c.estado}</div>
-      `;
-      resultsDiv.appendChild(card);
-    });
-  }
-</script>
 
 </body>
 </html>
