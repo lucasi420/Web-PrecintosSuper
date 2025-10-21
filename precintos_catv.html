@@ -42,6 +42,7 @@
     display: flex;
     align-items: center;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    position: relative;
   }
 
   .search-box input {
@@ -51,6 +52,33 @@
     font-size: 1.1rem;
     padding: 0.8rem;
     border-radius: 12px;
+  }
+
+  /* ⚙️ Menú flotante */
+  .dropdown {
+    position: absolute;
+    top: 3.3rem;
+    left: 0.5rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    overflow: hidden;
+    display: none;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  .dropdown button {
+    background: none;
+    border: none;
+    padding: 0.8rem 1rem;
+    text-align: left;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  .dropdown button:hover {
+    background: #f2f6ff;
   }
 
   /* 📋 Filtro de estado */
@@ -102,9 +130,14 @@
 <header>SUPER-USHUAIA</header>
 
 <main>
-  <!-- 🔍 Cuadro de búsqueda unificado -->
+  <!-- 🔍 Cuadro de búsqueda -->
   <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Buscar por nombre, dirección, precinto o número de cliente...">
+    <input type="text" id="searchInput" placeholder="Buscar por precinto...">
+    <div id="dropdown" class="dropdown">
+      <button onclick="setSearchType('precinto')">🔹 Buscar por Precinto</button>
+      <button onclick="setSearchType('nombre')">👤 Buscar por Nombre</button>
+      <button onclick="setSearchType('domicilio')">📍 Buscar por Dirección</button>
+    </div>
   </div>
 
   <!-- 📋 Filtro por estado -->
@@ -121,85 +154,84 @@
 </main>
 
 <script>
-  let clientes = [];
-  let searchType = "precinto"; // tipo de búsqueda actual
-  let fechaActualizacion = "";
+let clientes = [];
+let searchType = "precinto"; // tipo de búsqueda actual
+let fechaActualizacion = "";
 
-  // Cargar JSON
-  fetch("data/clientes_cable.json")
-    .then(res => res.json())
-    .then(data => {
-      clientes = data.clientes;           // array real de clientes
-      fechaActualizacion = data.actualizado; // fecha de actualización
-      buscar(); // ejecutar búsqueda inicial
-    })
-    .catch(err => console.error("Error al cargar JSON:", err));
+// Mostrar/ocultar menú al tocar el input (para seleccionar tipo de búsqueda)
+const searchInput = document.getElementById("searchInput");
+const dropdown = document.getElementById("dropdown");
+searchInput.addEventListener("focus", () => { dropdown.style.display = "flex"; });
+searchInput.addEventListener("blur", () => { setTimeout(() => dropdown.style.display = "none", 200); });
 
-  // Mostrar/ocultar menú al tocar el ícono
-  const filterIcon = document.getElementById("filterIcon");
-  const dropdown = document.getElementById("dropdown");
-  filterIcon.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+// Cambiar tipo de búsqueda
+function setSearchType(type) {
+  searchType = type;
+  const input = document.getElementById("searchInput");
+  if (type === "nombre") input.placeholder = "Buscar por nombre...";
+  else if (type === "domicilio") input.placeholder = "Buscar por dirección...";
+  else input.placeholder = "Buscar por precinto...";
+  buscar();
+}
+
+// Cargar JSON
+fetch("data/clientes_cable.json")
+  .then(res => res.json())
+  .then(data => {
+    clientes = data.clientes;
+    fechaActualizacion = data.actualizado;
+    buscar(); // inicializa búsqueda
+  })
+  .catch(err => console.error("Error al cargar JSON:", err));
+
+// Buscar en tiempo real
+searchInput.addEventListener("input", buscar);
+document.getElementById("estadoFilter").addEventListener("change", buscar);
+
+function buscar() {
+  const query = searchInput.value.toLowerCase().trim();
+  const estado = document.getElementById("estadoFilter").value.toLowerCase();
+  const resultsDiv = document.getElementById("results");
+  resultsDiv.innerHTML = "";
+
+  if (!clientes.length) {
+    resultsDiv.innerHTML = "<p>Cargando datos...</p>";
+    return;
+  }
+
+  const resultados = clientes.filter(c => {
+    const campo = String(c[searchType] || "").trim().toLowerCase();
+    const estadoCliente = String(c.estado || "").toLowerCase();
+    const coincideTexto = campo.includes(query);
+    const coincideEstado = estado === "" || estadoCliente.includes(estado);
+    return coincideTexto && coincideEstado;
   });
 
-  // Cambiar tipo de búsqueda
-  function setSearchType(type) {
-    searchType = type;
-    dropdown.style.display = "none";
-    const input = document.getElementById("searchInput");
-    if (type === "nombre") input.placeholder = "Buscar por nombre...";
-    else if (type === "domicilio") input.placeholder = "Buscar por dirección...";
-    else input.placeholder = "Buscar por precinto...";
-    buscar();
+  if (resultados.length === 0) {
+    resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
+    return;
   }
 
-  // Buscar en tiempo real
-  document.getElementById("searchInput").addEventListener("input", buscar);
-  document.getElementById("estadoFilter").addEventListener("change", buscar);
+  resultados.forEach(c => {
+    const card = document.createElement("div");
+    card.className = "card";
+    card.innerHTML = `
+      <div><strong>Precinto:</strong> ${c.precinto || "-"}</div>
+      <div><strong>Nombre:</strong> ${c.nombre || "-"}</div>
+      <div><strong>Dirección:</strong> ${c.domicilio || "-"}</div>
+      <div><strong>Estado:</strong> ${c.estado || "-"}</div>
+    `;
+    resultsDiv.appendChild(card);
+  });
 
-  function buscar() {
-    const query = document.getElementById("searchInput").value.toLowerCase().trim();
-    const estado = document.getElementById("estadoFilter").value.toLowerCase();
-    const resultsDiv = document.getElementById("results");
-    resultsDiv.innerHTML = "";
-
-    if (!clientes.length) {
-      resultsDiv.innerHTML = "<p>Cargando datos...</p>";
-      return;
-    }
-
-    const resultados = clientes.filter(c => {
-      const campo = String(c[searchType] || "").trim().toLowerCase();
-      const estadoCliente = String(c.estado || "").toLowerCase();
-      const coincideTexto = campo.includes(query);
-      const coincideEstado = estado === "" || estadoCliente.includes(estado);
-      return coincideTexto && coincideEstado;
-    });
-
-    if (resultados.length === 0) {
-      resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
-    } else {
-      resultados.forEach(c => {
-        const card = document.createElement("div");
-        card.className = "card";
-        card.innerHTML = `
-          <div><strong>Precinto:</strong> ${c.precinto || "-"}</div>
-          <div><strong>Nombre:</strong> ${c.nombre || "-"}</div>
-          <div><strong>Dirección:</strong> ${c.domicilio || "-"}</div>
-          <div><strong>Estado:</strong> ${c.estado || "-"}</div>
-        `;
-        resultsDiv.appendChild(card);
-      });
-    }
-
-    // Mostrar fecha de actualización al pie
-    const footer = document.createElement("div");
-    footer.style.marginTop = "1rem";
-    footer.style.fontSize = "0.9rem";
-    footer.style.color = "#555";
-    footer.textContent = "Última actualización: " + fechaActualizacion;
-    resultsDiv.appendChild(footer);
-  }
+  // Mostrar fecha/hora de actualización al final
+  const footer = document.createElement("div");
+  footer.style.marginTop = "1rem";
+  footer.style.fontSize = "0.9rem";
+  footer.style.color = "#555";
+  footer.textContent = "Última actualización: " + fechaActualizacion;
+  resultsDiv.appendChild(footer);
+}
 </script>
 
 </body>
