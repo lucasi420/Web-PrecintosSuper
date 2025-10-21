@@ -42,14 +42,6 @@
     display: flex;
     align-items: center;
     box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-    position: relative;
-  }
-
-  .search-box i {
-    font-size: 1.4rem;
-    color: #007bff;
-    padding: 0.8rem;
-    cursor: pointer;
   }
 
   .search-box input {
@@ -59,33 +51,6 @@
     font-size: 1.1rem;
     padding: 0.8rem;
     border-radius: 12px;
-  }
-
-  /* ⚙️ Menú flotante */
-  .dropdown {
-    position: absolute;
-    top: 3.3rem;
-    left: 0.5rem;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    overflow: hidden;
-    display: none;
-    flex-direction: column;
-    z-index: 10;
-  }
-
-  .dropdown button {
-    background: none;
-    border: none;
-    padding: 0.8rem 1rem;
-    text-align: left;
-    font-size: 1rem;
-    cursor: pointer;
-  }
-
-  .dropdown button:hover {
-    background: #f2f6ff;
   }
 
   /* 📋 Filtro de estado */
@@ -137,16 +102,9 @@
 <header>SUPER-USHUAIA</header>
 
 <main>
-  <!-- 🔍 Cuadro de búsqueda -->
+  <!-- 🔍 Cuadro de búsqueda unificado -->
   <div class="search-box">
-    <i id="filterIcon">🔍</i>
-    <input type="text" id="searchInput" placeholder="Buscar por nombre, dirección, precinto o número...">
-    <div id="dropdown" class="dropdown">
-  <button onclick="setSearchType('nombre')">Nombre</button>
-  <button onclick="setSearchType('domicilio')">Dirección</button>
-  <button onclick="setSearchType('precinto')">Precinto</button>
-  <button onclick="setSearchType('numero_cliente')">Número de cliente</button>
-</div>
+    <input type="text" id="searchInput" placeholder="Buscar por nombre, dirección, precinto o número de cliente...">
   </div>
 
   <!-- 📋 Filtro por estado -->
@@ -174,20 +132,6 @@
     })
     .catch(err => console.error("Error al cargar JSON:", err));
 
-  // Mostrar/ocultar menú al tocar el ícono (solo efecto visual)
-  const filterIcon = document.getElementById("filterIcon");
-  const dropdown = document.getElementById("dropdown");
-  filterIcon.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-  });
-
-  // Opcional: cerrar menú al tocar afuera
-  document.addEventListener("click", (e) => {
-    if (!filterIcon.contains(e.target) && !dropdown.contains(e.target)) {
-      dropdown.style.display = "none";
-    }
-  });
-
   // Buscar en tiempo real
   document.getElementById("searchInput").addEventListener("input", buscar);
   document.getElementById("estadoFilter").addEventListener("change", buscar);
@@ -210,7 +154,6 @@
       const numero = String(c.numero_cliente || "").toLowerCase();
       const estadoCliente = String(c.estado || "").toLowerCase();
 
-      // 🔎 Coincide si el texto aparece en cualquiera de los campos
       const coincideTexto =
         nombre.includes(query) ||
         domicilio.includes(query) ||
@@ -240,5 +183,6 @@
     });
   }
 </script>
+
 </body>
 </html>
