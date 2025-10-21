@@ -82,62 +82,73 @@
   <footer id="fecha"></footer>
 
   <script>
-    async function cargarDatos() {
-      try {
-        const response = await fetch("data/clientes_internet.json");
-        const data = await response.json();
-        const clientes = data.clientes || [];
-        const actualizado = data.actualizado || "";
+async function cargarDatos() {
+  const lista = document.getElementById("lista");
+  const fechaEl = document.getElementById("fecha");
+  const buscador = document.getElementById("buscador");
 
-        document.getElementById("fecha").textContent =
-          actualizado ? `Última actualización: ${actualizado}` : "";
+  try {
+    const response = await fetch("data/clientes_internet.json");
 
-        const buscador = document.getElementById("buscador");
-        const lista = document.getElementById("lista");
-
-        function mostrarResultados(filtro = "") {
-          lista.innerHTML = "";
-          const texto = filtro.toLowerCase();
-
-          const resultados = clientes.filter(c =>
-            (c.nombre && c.nombre.toLowerCase().includes(texto)) ||
-            (c.domicilio && c.domicilio.toLowerCase().includes(texto)) ||
-            (c.precinto && c.precinto.toLowerCase().includes(texto)) ||
-            (String(c.numero_cliente).includes(texto))
-          );
-
-          if (resultados.length === 0) {
-            lista.innerHTML = "<p>No se encontraron resultados.</p>";
-            return;
-          }
-
-          resultados.forEach(c => {
-            const div = document.createElement("div");
-            div.className = "card";
-            div.innerHTML = `
-              <div><strong>${c.nombre || "Sin nombre"}</strong></div>
-              <div>Cliente Nº: ${c.numero_cliente || "-"}</div>
-              <div>Precinto: ${c.precinto || "-"}</div>
-              <div>Domicilio: ${c.domicilio || "-"}</div>
-              <div>NAP: ${c.nap || "-"}</div>
-              <div>Nodo: ${c.nodo || "-"}</div>
-              <div>Puerto: ${c.puerto || "-"}</div>
-              <div class="estado">Estado: ${c.estado || "-"}</div>
-            `;
-            lista.appendChild(div);
-          });
-        }
-
-        buscador.addEventListener("input", e => mostrarResultados(e.target.value));
-        mostrarResultados(); // inicial
-      } catch (err) {
-        document.getElementById("lista").innerHTML =
-          "<p style='color:red;'>Error al cargar los datos.</p>";
-        console.error(err);
-      }
+    if (!response.ok) {
+      throw new Error(`Archivo no encontrado o ruta incorrecta (HTTP ${response.status})`);
     }
 
-    cargarDatos();
-  </script>
+    let data;
+    try {
+      data = await response.json();
+    } catch (jsonErr) {
+      throw new Error("El JSON tiene formato inválido");
+    }
+
+    const clientes = data.clientes || [];
+    const actualizado = data.actualizado || "";
+
+    fechaEl.textContent = actualizado ? `Última actualización: ${actualizado}` : "";
+
+    function mostrarResultados(filtro = "") {
+      lista.innerHTML = "";
+      const texto = filtro.toLowerCase();
+
+      const resultados = clientes.filter(c =>
+        (c.nombre && c.nombre.toLowerCase().includes(texto)) ||
+        (c.domicilio && c.domicilio.toLowerCase().includes(texto)) ||
+        (c.precinto && c.precinto.toLowerCase().includes(texto)) ||
+        (String(c.numero_cliente).includes(texto))
+      );
+
+      if (resultados.length === 0) {
+        lista.innerHTML = "<p>No se encontraron resultados.</p>";
+        return;
+      }
+
+      resultados.forEach(c => {
+        const div = document.createElement("div");
+        div.className = "card";
+        div.innerHTML = `
+          <div><strong>${c.nombre || "Sin nombre"}</strong></div>
+          <div>Cliente Nº: ${c.numero_cliente || "-"}</div>
+          <div>Precinto: ${c.precinto || "-"}</div>
+          <div>Domicilio: ${c.domicilio || "-"}</div>
+          <div>NAP: ${c.nap || "-"}</div>
+          <div>Nodo: ${c.nodo || "-"}</div>
+          <div>Puerto: ${c.puerto || "-"}</div>
+          <div class="estado">Estado: ${c.estado || "-"}</div>
+        `;
+        lista.appendChild(div);
+      });
+    }
+
+    buscador.addEventListener("input", e => mostrarResultados(e.target.value));
+    mostrarResultados(); // mostrar todo al inicio
+
+  } catch (err) {
+    lista.innerHTML = `<p style="color:red;">Error al cargar datos: ${err.message}</p>`;
+    console.error(err);
+  }
+}
+
+cargarDatos();
+</script>
 </body>
 </html>
