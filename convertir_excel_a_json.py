@@ -1,7 +1,8 @@
 import os
 import pandas as pd
-import json   # <-- módulo correcto
+import json
 from datetime import datetime
+from zoneinfo import ZoneInfo  # Python 3.9+
 
 archivos = [
     "clientes_cable.xlsx",
@@ -17,18 +18,23 @@ for archivo in archivos:
     if os.path.exists(path_excel):
         df = pd.read_excel(path_excel)
 
-        # Eliminar columnas que empiecen con 'Unnamed'
+        # Eliminar columnas 'Unnamed'
         df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 
-        # Crear objeto con fecha de actualización
+        # Convertir NaN a None
+        df = df.where(pd.notnull(df), None)
+
+        # Fecha/hora en Argentina
+        ahora_arg = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires"))
+        fecha_actualizacion = ahora_arg.strftime("%Y-%m-%d %H:%M:%S")
+
+        # Crear objeto JSON
         output = {
-            "actualizado": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "actualizado": fecha_actualizacion,
             "clientes": df.to_dict(orient="records")
         }
 
         nombre_json = archivo.replace(".xlsx", ".json")
-
-        # Guardar usando json.dump
         with open(f"data/{nombre_json}", "w", encoding="utf-8") as f:
             json.dump(output, f, ensure_ascii=False, indent=2)
 
