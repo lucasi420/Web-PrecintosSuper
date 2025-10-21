@@ -140,7 +140,7 @@
   <!-- 🔍 Cuadro de búsqueda -->
   <div class="search-box">
     <i id="filterIcon">🔍</i>
-    <input type="text" id="searchInput" placeholder="Buscar por precinto...">
+    <input type="text" id="searchInput" placeholder="Buscar por nombre, dirección, precinto o número...">
     <div id="dropdown" class="dropdown">
   <button onclick="setSearchType('nombre')">Nombre</button>
   <button onclick="setSearchType('domicilio')">Dirección</button>
@@ -164,35 +164,15 @@
 
 <script>
   let clientes = [];
-  let searchType = "precinto"; // tipo de búsqueda actual
 
   // Cargar JSON
   fetch("data/clientes_cable.json")
     .then(res => res.json())
     .then(data => {
       clientes = data;
-      buscar(); // ejecutar una primera búsqueda (vacía)
+      buscar(); // primera búsqueda vacía
     })
     .catch(err => console.error("Error al cargar JSON:", err));
-
-  // Mostrar/ocultar menú al tocar el ícono
-  const filterIcon = document.getElementById("filterIcon");
-  const dropdown = document.getElementById("dropdown");
-  filterIcon.addEventListener("click", () => {
-    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
-  });
-
-  // Cambiar tipo de búsqueda
-  function setSearchType(type) {
-    searchType = type;
-    dropdown.style.display = "none";
-    const input = document.getElementById("searchInput");
-    if (type === "nombre") input.placeholder = "Buscar por nombre...";
-    else if (type === "domicilio") input.placeholder = "Buscar por dirección...";
-    else if (type === "numero_cliente") input.placeholder = "Buscar por número de cliente...";
-    else input.placeholder = "Buscar por precinto...";
-    buscar();
-  }
 
   // Buscar en tiempo real
   document.getElementById("searchInput").addEventListener("input", buscar);
@@ -210,22 +190,20 @@
     }
 
     const resultados = clientes.filter(c => {
-      // campo elegido (nombre / domicilio / precinto / numero_cliente)
-      const campo = c[searchType]
-        ? c[searchType].toString().trim().toLowerCase()
-        : "";
-
-      // también convertir el número_cliente a string para búsqueda por número
-      const numero = c.numero_cliente
-        ? c.numero_cliente.toString().trim().toLowerCase()
-        : "";
-
+      const nombre = String(c.nombre || "").toLowerCase();
+      const domicilio = String(c.domicilio || "").toLowerCase();
+      const precinto = String(c.precinto || "").toLowerCase();
+      const numero = String(c.numero_cliente || "").toLowerCase();
       const estadoCliente = String(c.estado || "").toLowerCase();
 
+      // 🔎 Coincide si el texto aparece en *cualquiera* de los campos
       const coincideTexto =
-        campo.includes(query) || numero.includes(query); // <--- búsqueda adicional por número
-      const coincideEstado = estado === "" || estadoCliente.includes(estado);
+        nombre.includes(query) ||
+        domicilio.includes(query) ||
+        precinto.includes(query) ||
+        numero.includes(query);
 
+      const coincideEstado = estado === "" || estadoCliente.includes(estado);
       return coincideTexto && coincideEstado;
     });
 
@@ -247,6 +225,6 @@
       resultsDiv.appendChild(card);
     });
   }
-</script>>
+</script>
 </body>
 </html>
