@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+import json   # <-- módulo correcto
 from datetime import datetime
 
 archivos = [
@@ -16,6 +17,9 @@ for archivo in archivos:
     if os.path.exists(path_excel):
         df = pd.read_excel(path_excel)
 
+        # Eliminar columnas que empiecen con 'Unnamed'
+        df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
+
         # Crear objeto con fecha de actualización
         output = {
             "actualizado": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
@@ -23,7 +27,11 @@ for archivo in archivos:
         }
 
         nombre_json = archivo.replace(".xlsx", ".json")
-        pd.json.dump(output, open(f"data/{nombre_json}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
+
+        # Guardar usando json.dump
+        with open(f"data/{nombre_json}", "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+
         print(f"✅ Convertido: {archivo} → {nombre_json}")
     else:
         print(f"⚠️ No se encontró: {archivo}")
