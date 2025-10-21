@@ -188,6 +188,7 @@
     const input = document.getElementById("searchInput");
     if (type === "nombre") input.placeholder = "Buscar por nombre...";
     else if (type === "domicilio") input.placeholder = "Buscar por dirección...";
+    else if (type === "numero_cliente") input.placeholder = "Buscar por número de cliente...";
     else input.placeholder = "Buscar por precinto...";
     buscar();
   }
@@ -208,10 +209,22 @@
     }
 
     const resultados = clientes.filter(c => {
-      const campo = String(c[searchType] || "").trim().toLowerCase();
+      // campo elegido (nombre / domicilio / precinto / numero_cliente)
+      const campo = c[searchType]
+        ? c[searchType].toString().trim().toLowerCase()
+        : "";
+
+      // también convertir el número_cliente a string para búsqueda por número
+      const numero = c.numero_cliente
+        ? c.numero_cliente.toString().trim().toLowerCase()
+        : "";
+
       const estadoCliente = String(c.estado || "").toLowerCase();
-      const coincideTexto = campo.includes(query);
+
+      const coincideTexto =
+        campo.includes(query) || numero.includes(query); // <--- búsqueda adicional por número
       const coincideEstado = estado === "" || estadoCliente.includes(estado);
+
       return coincideTexto && coincideEstado;
     });
 
@@ -227,11 +240,12 @@
         <div><strong>Precinto:</strong> ${c.precinto || "-"}</div>
         <div><strong>Nombre:</strong> ${c.nombre || "-"}</div>
         <div><strong>Dirección:</strong> ${c.domicilio || "-"}</div>
+        <div><strong>N° Cliente:</strong> ${c.numero_cliente || "-"}</div>
         <div><strong>Estado:</strong> ${c.estado || "-"}</div>
       `;
       resultsDiv.appendChild(card);
     });
   }
-</script>
+</script>>
 </body>
 </html>
