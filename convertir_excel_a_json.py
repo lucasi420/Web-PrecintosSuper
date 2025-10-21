@@ -1,5 +1,6 @@
 import os
 import pandas as pd
+from datetime import datetime
 
 archivos = [
     "clientes_cable.xlsx",
@@ -14,8 +15,15 @@ for archivo in archivos:
     path_excel = f"data/{archivo}"
     if os.path.exists(path_excel):
         df = pd.read_excel(path_excel)
+
+        # Crear objeto con fecha de actualización
+        output = {
+            "actualizado": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "clientes": df.to_dict(orient="records")
+        }
+
         nombre_json = archivo.replace(".xlsx", ".json")
-        df.to_json(f"data/{nombre_json}", orient="records", force_ascii=False, indent=2)
+        pd.json.dump(output, open(f"data/{nombre_json}", "w", encoding="utf-8"), ensure_ascii=False, indent=2)
         print(f"✅ Convertido: {archivo} → {nombre_json}")
     else:
         print(f"⚠️ No se encontró: {archivo}")
