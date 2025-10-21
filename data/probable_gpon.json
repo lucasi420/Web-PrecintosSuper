@@ -1,0 +1,12 @@
+{
+  "actualizado": "2025-10-21 13:27:55",
+  "clientes": [
+    {
+      "numero_cliente": 3001,
+      "nap": "NAP-05",
+      "nodo": "Nodo-04",
+      "puerto": 17,
+      "estado_probable": "Conectado"
+    }
+  ]
+}

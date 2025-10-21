@@ -1,0 +1,15 @@
+{
+  "actualizado": "2025-10-21 13:27:55",
+  "clientes": [
+    {
+      "nombre": "Ana López",
+      "numero_cliente": 2001,
+      "precinto": "I-001",
+      "estado": "Conectado",
+      "domicilio": "Belgrano 230",
+      "nap": "NAP-01",
+      "nodo": "Nodo-01",
+      "puerto": 12
+    }
+  ]
+}
