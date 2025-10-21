@@ -122,15 +122,36 @@
 
 <script>
   let clientes = [];
+  let searchType = "precinto"; // tipo de búsqueda actual
+  let fechaActualizacion = "";
 
   // Cargar JSON
   fetch("data/clientes_cable.json")
     .then(res => res.json())
     .then(data => {
-      clientes = data;
-      buscar(); // primera búsqueda vacía
+      clientes = data.clientes;           // array real de clientes
+      fechaActualizacion = data.actualizado; // fecha de actualización
+      buscar(); // ejecutar búsqueda inicial
     })
     .catch(err => console.error("Error al cargar JSON:", err));
+
+  // Mostrar/ocultar menú al tocar el ícono
+  const filterIcon = document.getElementById("filterIcon");
+  const dropdown = document.getElementById("dropdown");
+  filterIcon.addEventListener("click", () => {
+    dropdown.style.display = dropdown.style.display === "flex" ? "none" : "flex";
+  });
+
+  // Cambiar tipo de búsqueda
+  function setSearchType(type) {
+    searchType = type;
+    dropdown.style.display = "none";
+    const input = document.getElementById("searchInput");
+    if (type === "nombre") input.placeholder = "Buscar por nombre...";
+    else if (type === "domicilio") input.placeholder = "Buscar por dirección...";
+    else input.placeholder = "Buscar por precinto...";
+    buscar();
+  }
 
   // Buscar en tiempo real
   document.getElementById("searchInput").addEventListener("input", buscar);
@@ -148,39 +169,36 @@
     }
 
     const resultados = clientes.filter(c => {
-      const nombre = String(c.nombre || "").toLowerCase();
-      const domicilio = String(c.domicilio || "").toLowerCase();
-      const precinto = String(c.precinto || "").toLowerCase();
-      const numero = String(c.numero_cliente || "").toLowerCase();
+      const campo = String(c[searchType] || "").trim().toLowerCase();
       const estadoCliente = String(c.estado || "").toLowerCase();
-
-      const coincideTexto =
-        nombre.includes(query) ||
-        domicilio.includes(query) ||
-        precinto.includes(query) ||
-        numero.includes(query);
-
+      const coincideTexto = campo.includes(query);
       const coincideEstado = estado === "" || estadoCliente.includes(estado);
       return coincideTexto && coincideEstado;
     });
 
     if (resultados.length === 0) {
       resultsDiv.innerHTML = "<p>No se encontraron resultados.</p>";
-      return;
+    } else {
+      resultados.forEach(c => {
+        const card = document.createElement("div");
+        card.className = "card";
+        card.innerHTML = `
+          <div><strong>Precinto:</strong> ${c.precinto || "-"}</div>
+          <div><strong>Nombre:</strong> ${c.nombre || "-"}</div>
+          <div><strong>Dirección:</strong> ${c.domicilio || "-"}</div>
+          <div><strong>Estado:</strong> ${c.estado || "-"}</div>
+        `;
+        resultsDiv.appendChild(card);
+      });
     }
 
-    resultados.forEach(c => {
-      const card = document.createElement("div");
-      card.className = "card";
-      card.innerHTML = `
-        <div><strong>Precinto:</strong> ${c.precinto || "-"}</div>
-        <div><strong>Nombre:</strong> ${c.nombre || "-"}</div>
-        <div><strong>Dirección:</strong> ${c.domicilio || "-"}</div>
-        <div><strong>N° Cliente:</strong> ${c.numero_cliente || "-"}</div>
-        <div><strong>Estado:</strong> ${c.estado || "-"}</div>
-      `;
-      resultsDiv.appendChild(card);
-    });
+    // Mostrar fecha de actualización al pie
+    const footer = document.createElement("div");
+    footer.style.marginTop = "1rem";
+    footer.style.fontSize = "0.9rem";
+    footer.style.color = "#555";
+    footer.textContent = "Última actualización: " + fechaActualizacion;
+    resultsDiv.appendChild(footer);
   }
 </script>
 
