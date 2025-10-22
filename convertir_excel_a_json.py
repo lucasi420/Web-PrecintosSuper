@@ -9,7 +9,8 @@ archivos = [
     "clientes_cable.xlsx",
     "clientes_internet.xlsx",
     "clientes_gpon_borrados.xlsx",
-    "probable_gpon.xlsx"
+    "probable_gpon.xlsx",
+    "Nombres GPON.xlsx"
 ]
 
 os.makedirs("data", exist_ok=True)
