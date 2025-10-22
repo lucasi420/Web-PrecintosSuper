@@ -88,24 +88,43 @@ async function cargarDatos() {
   const buscador = document.getElementById("buscador");
 
   try {
-    const response = await fetch("data/clientes_internet.json");
+    // 1️⃣ Cargar ambos archivos JSON en paralelo
+    const [respClientes, respNombres] = await Promise.all([
+      fetch("data/clientes_internet.json"),
+      fetch("data/Nombres GPON.json")
+    ]);
 
-    if (!response.ok) {
-      throw new Error(`Archivo no encontrado o ruta incorrecta (HTTP ${response.status})`);
-    }
+    if (!respClientes.ok) throw new Error(`Error cargando clientes (${respClientes.status})`);
+    if (!respNombres.ok) throw new Error(`Error cargando nombres (${respNombres.status})`);
 
-    let data;
-    try {
-      data = await response.json();
-    } catch (jsonErr) {
-      throw new Error("El JSON tiene formato inválido");
-    }
+    // 2️⃣ Parsear ambos
+    const dataClientes = await respClientes.json();
+    const dataNombres = await respNombres.json();
 
-    const clientes = data.clientes || [];
-    const actualizado = data.actualizado || "";
+    const clientes = dataClientes.clientes || [];
+    const nombres = dataNombres.clientes || [];
+    const actualizado = dataClientes.actualizado || "";
 
+    // 3️⃣ Crear mapa de número → nombre (con tus claves reales)
+    const mapaNombres = {};
+    nombres.forEach(n => {
+      const nro = n["Nro de cliente"];
+      const nombre = n["Nombre"];
+      if (nro && nombre) mapaNombres[nro] = nombre;
+    });
+
+    // 4️⃣ Completar los nombres vacíos en clientes_internet.json
+    clientes.forEach(c => {
+      const nro = c.numero_cliente;
+      if (!c.nombre || c.nombre.trim() === "") {
+        c.nombre = mapaNombres[nro] || "Sin nombre";
+      }
+    });
+
+    // 5️⃣ Mostrar la fecha de actualización del archivo principal
     fechaEl.textContent = actualizado ? `Última actualización: ${actualizado}` : "";
 
+    // 6️⃣ Mostrar resultados
     function mostrarResultados(filtro = "") {
       lista.innerHTML = "";
       const texto = filtro.toLowerCase();
@@ -140,7 +159,7 @@ async function cargarDatos() {
     }
 
     buscador.addEventListener("input", e => mostrarResultados(e.target.value));
-    mostrarResultados(); // mostrar todo al inicio
+    mostrarResultados();
 
   } catch (err) {
     lista.innerHTML = `<p style="color:red;">Error al cargar datos: ${err.message}</p>`;
