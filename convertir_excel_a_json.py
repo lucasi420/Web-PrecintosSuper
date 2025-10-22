@@ -1,8 +1,9 @@
 import os
 import pandas as pd
 import json
+import numpy as np
 from datetime import datetime
-from zoneinfo import ZoneInfo  # Python 3.9+
+from zoneinfo import ZoneInfo
 
 archivos = [
     "clientes_cable.xlsx",
@@ -21,17 +22,20 @@ for archivo in archivos:
         # Eliminar columnas 'Unnamed'
         df = df.loc[:, ~df.columns.str.contains('^Unnamed')]
 
-        # Convertir NaN a None
-        df = df.where(pd.notnull(df), None)
+        # Reemplazar NaN de pandas/numpy por None
+        df = df.replace({np.nan: None})
 
         # Fecha/hora en Argentina
         ahora_arg = datetime.now(ZoneInfo("America/Argentina/Buenos_Aires"))
         fecha_actualizacion = ahora_arg.strftime("%Y-%m-%d %H:%M:%S")
 
+        # Convertir a dict asegurando que no queden NaN
+        clientes = df.to_dict(orient="records")
+
         # Crear objeto JSON
         output = {
             "actualizado": fecha_actualizacion,
-            "clientes": df.to_dict(orient="records")
+            "clientes": clientes
         }
 
         nombre_json = archivo.replace(".xlsx", ".json")
