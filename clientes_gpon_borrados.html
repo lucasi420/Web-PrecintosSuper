@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clientes GPON Borrados</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .expandible {
+      transition: all 0.3s ease;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <div class="max-w-6xl mx-auto py-6 px-4">
+    <h1 class="text-2xl font-bold text-center mb-6 text-blue-700">CLIENTES GPON BORRADOS</h1>
+
+    <div class="grid grid-cols-2 gap-4 mb-6">
+      <select id="filtroNodo" class="p-2 border rounded">
+        <option value="">Filtrar por Nodo</option>
+      </select>
+      <select id="filtroNAP" class="p-2 border rounded">
+        <option value="">Filtrar por NAP</option>
+      </select>
+    </div>
+
+    <table class="min-w-full bg-white rounded shadow overflow-hidden">
+      <thead class="bg-blue-700 text-white">
+        <tr>
+          <th class="py-2 px-3 text-left"># Cliente</th>
+          <th class="py-2 px-3 text-left">Nombre</th>
+          <th class="py-2 px-3 text-left">Domicilio</th>
+          <th class="py-2 px-3 text-left">NAP</th>
+          <th class="py-2 px-3 text-left">Nodo</th>
+          <th class="py-2 px-3 text-center">+</th>
+        </tr>
+      </thead>
+      <tbody id="tablaClientes"></tbody>
+    </table>
+
+    <p id="actualizado" class="text-center text-sm text-gray-500 mt-6"></p>
+
+    <div class="text-center mt-6">
+      <a href="index.html" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">⬅ Volver al inicio</a>
+    </div>
+  </div>
+
+  <script>
+    let clientesProbables = [];
+    let clientesBorrados = [];
+
+    async function cargarDatos() {
+      try {
+        const [probableRes, borradosRes] = await Promise.all([
+          fetch("data/probable_gpon.json"),
+          fetch("data/clientes_gpon_borrados.json")
+        ]);
+
+        const probableData = await probableRes.json();
+        const borradosData = await borradosRes.json();
+
+        clientesProbables = probableData.clientes || [];
+        clientesBorrados = borradosData.clientes || [];
+
+        document.getElementById("actualizado").textContent =
+          "Última actualización: " + (probableData.actualizado || "-");
+
+        poblarFiltros();
+        mostrarClientes();
+      } catch (err) {
+        console.error("Error cargando datos:", err);
+      }
+    }
+
+    function poblarFiltros() {
+      const filtroNodo = document.getElementById("filtroNodo");
+      const filtroNAP = document.getElementById("filtroNAP");
+
+      const nodos = [...new Set(clientesProbables.map(c => c.nodo).filter(Boolean))].sort();
+      const naps = [...new Set(clientesProbables.map(c => c.nap).filter(Boolean))].sort();
+
+      nodos.forEach(n => {
+        const opt = document.createElement("option");
+        opt.value = n;
+        opt.textContent = n;
+        filtroNodo.appendChild(opt);
+      });
+
+      naps.forEach(n => {
+        const opt = document.createElement("option");
+        opt.value = n;
+        opt.textContent = n;
+        filtroNAP.appendChild(opt);
+      });
+
+      filtroNodo.addEventListener("change", mostrarClientes);
+      filtroNAP.addEventListener("change", mostrarClientes);
+    }
+
+    function mostrarClientes() {
+      const nodoSel = document.getElementById("filtroNodo").value;
+      const napSel = document.getElementById("filtroNAP").value;
+      const tbody = document.getElementById("tablaClientes");
+      tbody.innerHTML = "";
+
+      const filtrados = clientesProbables.filter(c =>
+        (!nodoSel || c.nodo === nodoSel) &&
+        (!napSel || c.nap === napSel)
+      );
+
+      if (filtrados.length === 0) {
+        tbody.innerHTML = `<tr><td colspan="6" class="text-center text-gray-500 p-4">No hay clientes con ese filtro</td></tr>`;
+        return;
+      }
+
+      filtrados.forEach(c => {
+        const fila = document.createElement("tr");
+        fila.className = "border-b hover:bg-gray-50";
+
+        fila.innerHTML = `
+          <td class="py-2 px-3">${c.numero_cliente || "-"}</td>
+          <td class="py-2 px-3">${c.nombre || "-"}</td>
+          <td class="py-2 px-3">${c.domicilio || "-"}</td>
+          <td class="py-2 px-3">${c.nap || "-"}</td>
+          <td class="py-2 px-3">${c.nodo || "-"}</td>
+          <td class="py-2 px-3 text-center">
+            <button class="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700" onclick="expandirCliente(${c.numero_cliente}, this)">+</button>
+          </td>
+        `;
+
+        tbody.appendChild(fila);
+      });
+    }
+
+    function expandirCliente(numeroCliente, boton) {
+      const fila = boton.closest("tr");
+
+      // Si ya está expandido, eliminarlo
+      const siguiente = fila.nextElementSibling;
+      if (siguiente && siguiente.classList.contains("expandible")) {
+        siguiente.remove();
+        boton.textContent = "+";
+        return;
+      }
+
+      // Buscar cliente en borrados
+      const encontrado = clientesBorrados.find(c => Number(c.numero_cliente) === Number(numeroCliente));
+
+      const nuevaFila = document.createElement("tr");
+      nuevaFila.className = "expandible bg-gray-100";
+
+      if (encontrado) {
+        nuevaFila.innerHTML = `
+          <td colspan="6" class="p-4 text-sm">
+            <div><strong>Estado:</strong> ${encontrado.estado || "-"}</div>
+            <div><strong>Precinto:</strong> ${encontrado.precinto || "-"}</div>
+            <div><strong>Puerto:</strong> ${encontrado.puerto || "-"}</div>
+            <div><strong>Domicilio:</strong> ${encontrado.domicilio || "-"}</div>
+          </td>
+        `;
+      } else {
+        nuevaFila.innerHTML = `<td colspan="6" class="p-4 text-center text-gray-500">Cliente no encontrado en lista de borrados.</td>`;
+      }
+
+      fila.insertAdjacentElement("afterend", nuevaFila);
+      boton.textContent = "−";
+    }
+
+    cargarDatos();
+  </script>
+
+</body>
+</html>
