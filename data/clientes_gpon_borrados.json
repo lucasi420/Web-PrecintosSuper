@@ -1,15 +1,12 @@
 {
-  "actualizado": "2025-10-21 21:13:04",
+  "actualizado": "2025-10-21 23:46:22",
   "clientes": [
     {
       "nombre": "Carlos Gómez",
       "numero_cliente": 3001,
       "precinto": "G-001",
       "estado": "Borrado",
-      "domicilio": "Mitre 123",
-      "nap": "NAP-03",
-      "nodo": "Nodo-02",
-      "puerto": 8
+      "domicilio": "Mitre 123"
     }
   ]
 }
