@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Clientes GPON Borrados</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clientes GPON Borrados - SUPER USHUAIA</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <style>
-    .expandible {
-      transition: all 0.3s ease;
-    }
+    .expandible { transition: all .2s ease; }
+    .btn-plus { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; }
   </style>
 </head>
-<body class="bg-gray-100 text-gray-800">
+<body class="bg-gray-100 text-gray-900">
 
   <div class="max-w-6xl mx-auto py-6 px-4">
     <h1 class="text-2xl font-bold text-center mb-6 text-blue-700">CLIENTES GPON BORRADOS</h1>
 
-    <div class="grid grid-cols-2 gap-4 mb-6">
+    <div class="grid md:grid-cols-3 gap-4 mb-6">
       <select id="filtroNodo" class="p-2 border rounded">
         <option value="">Filtrar por Nodo</option>
       </select>
+
       <select id="filtroNAP" class="p-2 border rounded">
         <option value="">Filtrar por NAP</option>
       </select>
+
+      <div class="flex items-center">
+        <input id="buscador" type="text" placeholder="Buscar por cliente o precinto..." class="w-full p-2 border rounded" />
+      </div>
     </div>
 
-    <table class="min-w-full bg-white rounded shadow overflow-hidden">
-      <thead class="bg-blue-700 text-white">
-        <tr>
-          <th class="py-2 px-3 text-left"># Cliente</th>
-          <th class="py-2 px-3 text-left">Nombre</th>
-          <th class="py-2 px-3 text-left">Domicilio</th>
-          <th class="py-2 px-3 text-left">NAP</th>
-          <th class="py-2 px-3 text-left">Nodo</th>
-          <th class="py-2 px-3 text-center">+</th>
-        </tr>
-      </thead>
-      <tbody id="tablaClientes"></tbody>
-    </table>
+    <div class="overflow-x-auto bg-white rounded shadow">
+      <table class="min-w-full">
+        <thead class="bg-blue-700 text-white">
+          <tr>
+            <th class="py-2 px-3 text-left"># Cliente</th>
+            <th class="py-2 px-3 text-left">NAP</th>
+            <th class="py-2 px-3 text-left">Nodo</th>
+            <th class="py-2 px-3 text-left">Puerto</th>
+            <th class="py-2 px-3 text-center">+</th>
+          </tr>
+        </thead>
+        <tbody id="tablaClientes"></tbody>
+      </table>
+    </div>
 
-    <p id="actualizado" class="text-center text-sm text-gray-500 mt-6"></p>
+    <p id="actualizado" class="text-center text-sm text-gray-500 mt-4"></p>
 
     <div class="text-center mt-6">
       <a href="index.html" class="bg-blue-700 text-white px-4 py-2 rounded hover:bg-blue-800">⬅ Volver al inicio</a>
@@ -57,19 +62,24 @@
           fetch("data/clientes_gpon_borrados.json")
         ]);
 
-        const probableData = await probableRes.json();
-        const borradosData = await borradosRes.json();
+        if (!probableRes.ok) throw new Error("No se encontró data/probable_gpon.json (HTTP " + probableRes.status + ")");
+        if (!borradosRes.ok) console.warn("Advertencia: clientes_gpon_borrados.json no encontrado (HTTP " + borradosRes.status + ")");
 
-        clientesProbables = probableData.clientes || [];
-        clientesBorrados = borradosData.clientes || [];
+        const probableData = await probableRes.json();
+        const borradosData = borradosRes.ok ? await borradosRes.json() : { clientes: [] };
+
+        clientesProbables = Array.isArray(probableData.clientes) ? probableData.clientes : [];
+        clientesBorrados = Array.isArray(borradosData.clientes) ? borradosData.clientes : [];
 
         document.getElementById("actualizado").textContent =
           "Última actualización: " + (probableData.actualizado || "-");
 
         poblarFiltros();
         mostrarClientes();
+        document.getElementById("buscador").addEventListener("input", () => mostrarClientes());
       } catch (err) {
         console.error("Error cargando datos:", err);
+        document.getElementById("tablaClientes").innerHTML = `<tr><td colspan="5" class="p-4 text-center text-red-600">Error al cargar los datos: ${err.message}</td></tr>`;
       }
     }
 
@@ -77,8 +87,12 @@
       const filtroNodo = document.getElementById("filtroNodo");
       const filtroNAP = document.getElementById("filtroNAP");
 
-      const nodos = [...new Set(clientesProbables.map(c => c.nodo).filter(Boolean))].sort();
-      const naps = [...new Set(clientesProbables.map(c => c.nap).filter(Boolean))].sort();
+      const nodos = [...new Set(clientesProbables.map(c => (c.nodo || "").toString().trim()).filter(Boolean))].sort();
+      const naps = [...new Set(clientesProbables.map(c => (c.nap || "").toString().trim()).filter(Boolean))].sort();
+
+      // limpiar selects (excepto primera opción)
+      filtroNodo.querySelectorAll("option:not(:first-child)").forEach(n => n.remove());
+      filtroNAP.querySelectorAll("option:not(:first-child)").forEach(n => n.remove());
 
       nodos.forEach(n => {
         const opt = document.createElement("option");
@@ -98,75 +112,125 @@
       filtroNAP.addEventListener("change", mostrarClientes);
     }
 
+    function safeString(v) {
+      if (v === null || v === undefined) return "";
+      if (Number.isNaN(v)) return "";
+      return String(v);
+    }
+
     function mostrarClientes() {
       const nodoSel = document.getElementById("filtroNodo").value;
       const napSel = document.getElementById("filtroNAP").value;
+      const texto = (document.getElementById("buscador").value || "").toLowerCase().trim();
       const tbody = document.getElementById("tablaClientes");
       tbody.innerHTML = "";
 
       const filtrados = clientesProbables.filter(c =>
-        (!nodoSel || c.nodo === nodoSel) &&
-        (!napSel || c.nap === napSel)
-      );
+        (!nodoSel || (safeString(c.nodo) === nodoSel)) &&
+        (!napSel || (safeString(c.nap) === napSel)) &&
+        (
+          texto === "" ||
+          safeString(c.numero_cliente).toLowerCase().includes(texto) ||
+          safeString(c.precinto).toLowerCase().includes(texto)
+        )
+      ).sort((a, b) => {
+        // Orden por puerto si existen, si no por numero_cliente
+        const pa = Number(a.puerto) || 0;
+        const pb = Number(b.puerto) || 0;
+        if (pa !== pb) return pa - pb;
+        return (safeString(a.numero_cliente)).localeCompare(safeString(b.numero_cliente), undefined, {numeric: true});
+      });
 
       if (filtrados.length === 0) {
-        tbody.innerHTML = `<tr><td colspan="6" class="text-center text-gray-500 p-4">No hay clientes con ese filtro</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="5" class="p-4 text-center text-gray-600">No se encontraron clientes con esos filtros.</td></tr>`;
         return;
       }
 
       filtrados.forEach(c => {
-        const fila = document.createElement("tr");
-        fila.className = "border-b hover:bg-gray-50";
+        const tr = document.createElement("tr");
+        tr.className = "border-b hover:bg-gray-50";
 
-        fila.innerHTML = `
-          <td class="py-2 px-3">${c.numero_cliente || "-"}</td>
-          <td class="py-2 px-3">${c.nombre || "-"}</td>
-          <td class="py-2 px-3">${c.domicilio || "-"}</td>
-          <td class="py-2 px-3">${c.nap || "-"}</td>
-          <td class="py-2 px-3">${c.nodo || "-"}</td>
-          <td class="py-2 px-3 text-center">
-            <button class="bg-green-600 text-white px-2 py-1 rounded hover:bg-green-700" onclick="expandirCliente(${c.numero_cliente}, this)">+</button>
-          </td>
+        const nro = safeString(c.numero_cliente) || "-";
+        const nap = safeString(c.nap) || "-";
+        const nodo = safeString(c.nodo) || "-";
+        const puerto = (c.puerto !== null && c.puerto !== undefined && !Number.isNaN(Number(c.puerto))) ? c.puerto : "-";
+
+        tr.innerHTML = `
+          <td class="py-2 px-3">${nro}</td>
+          <td class="py-2 px-3">${nap}</td>
+          <td class="py-2 px-3">${nodo}</td>
+          <td class="py-2 px-3">${puerto}</td>
+          <td class="py-2 px-3 text-center"></td>
         `;
 
-        tbody.appendChild(fila);
+        // crear botón y listener (para evitar problemas con onclick inline)
+        const btn = document.createElement("button");
+        btn.className = "btn-plus bg-green-600 text-white rounded px-2 py-1 hover:bg-green-700";
+        btn.title = "Expandir info";
+        btn.innerText = "+";
+
+        // si no hay número de cliente, deshabilitar
+        if (!nro || nro === "-") {
+          btn.disabled = true;
+          btn.classList.add("opacity-50", "cursor-not-allowed");
+        } else {
+          btn.addEventListener("click", (ev) => {
+            ev.stopPropagation();
+            toggleExpandir(nro, btn);
+          });
+        }
+
+        tr.querySelector("td:last-child").appendChild(btn);
+        tbody.appendChild(tr);
       });
     }
 
-    function expandirCliente(numeroCliente, boton) {
+    function toggleExpandir(numeroCliente, boton) {
       const fila = boton.closest("tr");
-
-      // Si ya está expandido, eliminarlo
       const siguiente = fila.nextElementSibling;
+      // si ya expandido, cerrar
       if (siguiente && siguiente.classList.contains("expandible")) {
         siguiente.remove();
-        boton.textContent = "+";
+        boton.innerText = "+";
         return;
       }
 
-      // Buscar cliente en borrados
-      const encontrado = clientesBorrados.find(c => Number(c.numero_cliente) === Number(numeroCliente));
+      // buscar en lista de borrados (coincidir por string)
+      const encontrado = clientesBorrados.find(c => safeString(c.numero_cliente) === safeString(numeroCliente));
 
       const nuevaFila = document.createElement("tr");
       nuevaFila.className = "expandible bg-gray-100";
 
       if (encontrado) {
+        // mostrar nombre y domicilio en la expansión; quitar puerto como pediste
+        const nombre = safeString(encontrado.nombre) || "-";
+        const domicilio = safeString(encontrado.domicilio) || "-";
+        const estado = safeString(encontrado.estado) || "-";
+        const precinto = safeString(encontrado.precinto) || "-";
+        const obs = safeString(encontrado.obs) || ""; // si tenés observaciones u otro campo
+
         nuevaFila.innerHTML = `
-          <td colspan="6" class="p-4 text-sm">
-            <div><strong>Estado:</strong> ${encontrado.estado || "-"}</div>
-            <div><strong>Precinto:</strong> ${encontrado.precinto || "-"}</div>
-            <div><strong>Puerto:</strong> ${encontrado.puerto || "-"}</div>
-            <div><strong>Domicilio:</strong> ${encontrado.domicilio || "-"}</div>
+          <td colspan="5" class="p-4 text-sm">
+            <div class="grid md:grid-cols-2 gap-2">
+              <div><strong>Nombre:</strong> ${nombre}</div>
+              <div><strong>Precinto:</strong> ${precinto}</div>
+              <div class="md:col-span-2"><strong>Domicilio:</strong> ${domicilio}</div>
+              <div><strong>Estado:</strong> ${estado}</div>
+              <div><strong>Observaciones:</strong> ${obs}</div>
+            </div>
           </td>
         `;
       } else {
-        nuevaFila.innerHTML = `<td colspan="6" class="p-4 text-center text-gray-500">Cliente no encontrado en lista de borrados.</td>`;
+        nuevaFila.innerHTML = `
+          <td colspan="5" class="p-4 text-center text-gray-600">Cliente ${numeroCliente} no encontrado en lista de borrados.</td>
+        `;
       }
 
       fila.insertAdjacentElement("afterend", nuevaFila);
-      boton.textContent = "−";
+      boton.innerText = "−";
     }
 
+    // arrancar
     cargarDatos();
   </script>
 
