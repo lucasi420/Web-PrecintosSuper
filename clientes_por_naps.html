@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
 </head>
 <body class="bg-gray-100 text-gray-900">
-  <div class="max-w-5xl mx-auto py-6">
+  <div class="max-w-6xl mx-auto py-6">
     <h1 class="text-2xl font-bold text-center mb-6 text-blue-700">CLIENTES POR NAPs</h1>
 
     <div class="flex flex-col md:flex-row justify-center gap-4 mb-6">
@@ -22,13 +22,15 @@
 
     <div id="resultado" class="bg-white rounded-lg shadow p-4 hidden">
       <h2 class="text-lg font-semibold mb-3 text-gray-800">Clientes encontrados:</h2>
-      <table class="min-w-full border">
+      <table class="min-w-full border text-sm">
         <thead class="bg-blue-600 text-white">
           <tr>
             <th class="px-4 py-2 border"># Cliente</th>
             <th class="px-4 py-2 border">Nombre</th>
             <th class="px-4 py-2 border">Dirección</th>
             <th class="px-4 py-2 border">Puerto</th>
+            <th class="px-4 py-2 border">Precinto</th>
+            <th class="px-4 py-2 border">Estado</th>
           </tr>
         </thead>
         <tbody id="tablaClientes"></tbody>
@@ -41,16 +43,31 @@
   <script>
     async function cargarDatos() {
       try {
-        const resp = await fetch("data/clientes_internet.json");
-        const data = await resp.json();
-        const clientes = data.clientes;
-        const actualizado = data.actualizado;
+        // Cargar ambos JSON
+        const [respInternet, respCable] = await Promise.all([
+          fetch("data/clientes_internet.json"),
+          fetch("data/clientes_cable.json")
+        ]);
 
-        document.getElementById("actualizado").textContent = "Última actualización: " + actualizado;
+        const dataInternet = await respInternet.json();
+        const dataCable = await respCable.json();
 
-        // Obtener nodos y naps únicos
-        const nodos = [...new Set(clientes.map(c => c.nodo).filter(Boolean))].sort();
-        const naps = [...new Set(clientes.map(c => c.nap).filter(Boolean))].sort();
+        const clientesInternet = dataInternet.clientes;
+        const clientesCable = dataCable.clientes;
+        const actualizado = dataInternet.actualizado;
+
+        document.getElementById("actualizado").textContent =
+          "Última actualización: " + actualizado;
+
+        // Crear un mapa de cliente -> nombre desde clientes_cable.json
+        const mapaNombres = {};
+        clientesCable.forEach(c => {
+          mapaNombres[c.numero_cliente] = c.nombre;
+        });
+
+        // Obtener nodos y NAPs únicos del JSON principal
+        const nodos = [...new Set(clientesInternet.map(c => c.nodo).filter(Boolean))].sort();
+        const naps = [...new Set(clientesInternet.map(c => c.nap).filter(Boolean))].sort();
 
         const nodoSelect = document.getElementById("nodoSelect");
         const napSelect = document.getElementById("napSelect");
@@ -80,24 +97,40 @@
             return;
           }
 
-          const filtrados = clientes
+          // Filtrar los clientes según nodo y nap
+          const filtrados = clientesInternet
             .filter(c => c.nodo === nodo && c.nap === nap)
             .sort((a, b) => a.puerto - b.puerto);
 
           if (filtrados.length === 0) {
             resultadoDiv.classList.remove("hidden");
-            tbody.innerHTML = `<tr><td colspan="4" class="text-center p-3 text-gray-600">No se encontraron clientes para esta combinación.</td></tr>`;
+            tbody.innerHTML = `
+              <tr>
+                <td colspan="6" class="text-center p-3 text-gray-600">
+                  No se encontraron clientes para esta combinación.
+                </td>
+              </tr>`;
             return;
           }
 
-          tbody.innerHTML = filtrados.map(c => `
-            <tr class="hover:bg-gray-50">
-              <td class="border px-4 py-2">${c.numero_cliente}</td>
-              <td class="border px-4 py-2">${c.nombre}</td>
-              <td class="border px-4 py-2">${c.domicilio}</td>
-              <td class="border px-4 py-2 text-center">${c.puerto}</td>
-            </tr>
-          `).join("");
+          // Construir filas combinando con nombres del segundo JSON
+          tbody.innerHTML = filtrados.map(c => {
+            const nombre = mapaNombres[c.numero_cliente] || "(sin nombre)";
+            const estadoClass =
+              c.estado?.includes("BAJA") || c.estado?.includes("MOROSO")
+                ? "text-red-600 font-semibold"
+                : "text-green-700 font-semibold";
+
+            return `
+              <tr class="hover:bg-gray-50">
+                <td class="border px-4 py-2">${c.numero_cliente}</td>
+                <td class="border px-4 py-2">${nombre}</td>
+                <td class="border px-4 py-2">${c.domicilio}</td>
+                <td class="border px-4 py-2 text-center">${c.puerto}</td>
+                <td class="border px-4 py-2 text-center">${c.precinto || ""}</td>
+                <td class="border px-4 py-2 text-center ${estadoClass}">${c.estado || ""}</td>
+              </tr>`;
+          }).join("");
 
           resultadoDiv.classList.remove("hidden");
         }
