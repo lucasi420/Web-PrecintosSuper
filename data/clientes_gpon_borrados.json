@@ -1,19 +1,12 @@
 {
-  "actualizado": "2025-10-24 19:38:18",
+  "actualizado": "2025-11-07 17:52:04",
   "clientes": [
     {
-      "nombre": "PALMA",
-      "numero_cliente": 334032,
+      "nombre": "SOSA",
+      "numero_cliente": 334245,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "B* MONTE GALLINERO 5 5   T16B "
-    },
-    {
-      "nombre": "BARRETO",
-      "numero_cliente": 334383,
-      "precinto": null,
-      "estado": "CONECTADO",
-      "domicilio": "B* MONTE GALLINERO 2 2   T1B 000"
+      "domicilio": "PASAJE LAS GOLONDRINAS 728  216   "
     },
     {
       "nombre": "VELASQUEZ OYARZO",
@@ -23,6 +16,13 @@
       "domicilio": "PATAGONIA 239     007"
     },
     {
+      "nombre": "WOLOCHIN",
+      "numero_cliente": 336021,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "25 DE MAYO 484     007"
+    },
+    {
       "nombre": "ARRIETA",
       "numero_cliente": 337040,
       "precinto": null,
@@ -30,11 +30,32 @@
       "domicilio": "KAMSHEN 770     "
     },
     {
+      "nombre": "PETRIETTE",
+      "numero_cliente": 338338,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "PUERTO ESPAÑOL 636     "
+    },
+    {
       "nombre": "CESAR",
       "numero_cliente": 341306,
       "precinto": null,
       "estado": "CONECTADO",
       "domicilio": "VICENTE PADIN OTERO 257     "
+    },
+    {
+      "nombre": "HOTEL TIERRA DEL FUEGO",
+      "numero_cliente": 342349,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "GOBERNADOR DELOQUI 198     "
+    },
+    {
+      "nombre": "ARREDONDO",
+      "numero_cliente": 343400,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "BAHIA GRANDE 3207 B    "
     },
     {
       "nombre": "GUARINI",
@@ -51,11 +72,11 @@
       "domicilio": "DEL RECODO 2082     "
     },
     {
-      "nombre": "VITIAN",
-      "numero_cliente": 1864464,
+      "nombre": "PUGNETTI",
+      "numero_cliente": 5272080,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "HIPOLITO BOUCHARD 447 3    "
+      "domicilio": "MANUEL BELGRANO 469 B    "
     },
     {
       "nombre": "HEINS",
@@ -63,13 +84,6 @@
       "precinto": null,
       "estado": "CONECTADO",
       "domicilio": "BAHIA DEL LABERINTO 3250     "
-    },
-    {
-      "nombre": "GONZALEZ",
-      "numero_cliente": 5365563,
-      "precinto": null,
-      "estado": "CONECTADO",
-      "domicilio": "GOBERNADOR PAZ 827   PA  "
     },
     {
       "nombre": "MOLINELLI",
@@ -86,6 +100,13 @@
       "domicilio": "JUAN RUIZ GALAN 689     "
     },
     {
+      "nombre": "ALBERTO",
+      "numero_cliente": 5460049,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "B* 640 VIVIENDAS 10 C    "
+    },
+    {
       "nombre": "SANCHEZ",
       "numero_cliente": 5473896,
       "precinto": null,
@@ -100,11 +121,25 @@
       "domicilio": "LE MARTIAL 646     "
     },
     {
+      "nombre": "HIDALGO",
+      "numero_cliente": 5484790,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "1 DE MAYO 245     "
+    },
+    {
       "nombre": "NAHUELQUIN CARCAMO",
       "numero_cliente": 5493960,
       "precinto": null,
       "estado": "CONECTADO",
       "domicilio": "RIO GRANDE 160 FONDO    "
+    },
+    {
+      "nombre": "MIRANDA",
+      "numero_cliente": 5506082,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "B* 640 VIVIENDAS 0 9   T1C "
     },
     {
       "nombre": "OYARZUN",
@@ -114,11 +149,25 @@
       "domicilio": "MAGALLANES 333     "
     },
     {
+      "nombre": "WALTER",
+      "numero_cliente": 5516386,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "INTENDENTE MANUEL OLMO 1011  3   "
+    },
+    {
       "nombre": "FAZZI",
       "numero_cliente": 5525475,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "MONSE?OR FAGNANO 592     "
+      "domicilio": "MONSEÑOR FAGNANO 592     "
+    },
+    {
+      "nombre": "RUT",
+      "numero_cliente": 5532907,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "JULIO TROXLER 249 4    "
     },
     {
       "nombre": "CORTAZAR",
@@ -128,11 +177,11 @@
       "domicilio": "PRIMER ARGENTINO 107 E  2  "
     },
     {
-      "nombre": "DAMARIS SRL",
-      "numero_cliente": 5538755,
+      "nombre": "URQUIZA",
+      "numero_cliente": 5537263,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "GOBERNADOR CAMPOS 1240     "
+      "domicilio": "MARCOS ZAR 88     "
     },
     {
       "nombre": "CAICHEO",
@@ -142,20 +191,6 @@
       "domicilio": "ANTARTIDA ARGENTINA 870     "
     },
     {
-      "nombre": "LAGUARDIA",
-      "numero_cliente": 5559801,
-      "precinto": null,
-      "estado": "CONECTADO",
-      "domicilio": "B* INTEVU XVIII 23  23B   "
-    },
-    {
-      "nombre": "ANDRADE DAVET",
-      "numero_cliente": 5561667,
-      "precinto": null,
-      "estado": "CONECTADO",
-      "domicilio": "PUERTO ARGENTINO 1478     "
-    },
-    {
       "nombre": "LUNA",
       "numero_cliente": 5565508,
       "precinto": null,
@@ -163,11 +198,25 @@
       "domicilio": "CEFERINO NAMUNCURA 210 A  PB  "
     },
     {
-      "nombre": "FIGUEREDO",
-      "numero_cliente": 5580530,
+      "nombre": "GONZALEZ",
+      "numero_cliente": 5565648,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "JUAN MANUEL DE ROSAS 182 12  3  "
+      "domicilio": "PTE J A ROCA 467     "
+    },
+    {
+      "nombre": "BEJARANO",
+      "numero_cliente": 5567760,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "B* 245 VIVIENDAS 0 2  2 17 "
+    },
+    {
+      "nombre": "CAZON",
+      "numero_cliente": 5575767,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "B* 640 VIVIENDAS 4317 B  2  "
     },
     {
       "nombre": "PANTANETTI GUTIERREZ",
@@ -177,18 +226,25 @@
       "domicilio": "JOSE O RETAMAR 1376 1    "
     },
     {
-      "nombre": "MUNICIPALIDAD DE USHUAIA",
-      "numero_cliente": 5589642,
+      "nombre": "MANSILLA",
+      "numero_cliente": 5602474,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "CHUBUT 1857     "
+      "domicilio": "BAHIA TORITO 2975     "
     },
     {
-      "nombre": "DE LA FUENTE",
-      "numero_cliente": 5600005,
+      "nombre": "BAZAN",
+      "numero_cliente": 5608239,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "PUERTO ARGENTINO 1243     "
+      "domicilio": "BAHIA DEL LABERINTO 3092     "
+    },
+    {
+      "nombre": "HERNANDEZ",
+      "numero_cliente": 5617742,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "PUERTO ARGENTINO 1266     "
     },
     {
       "nombre": "MORENO",
@@ -198,11 +254,39 @@
       "domicilio": "BAHIA GRANDE 3241 B    "
     },
     {
-      "nombre": "LOPEZ LAHOZ",
-      "numero_cliente": 5702411,
+      "nombre": "GRANEROS",
+      "numero_cliente": 5651096,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "PUERTO ESPA?OL 1383     "
+      "domicilio": "MONSEÑOR FAGNANO 462 PB    "
+    },
+    {
+      "nombre": "BELLINVIA",
+      "numero_cliente": 5669046,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "PASTOR JUAN LAWRENCE 864 1    "
+    },
+    {
+      "nombre": "AILLAPAN",
+      "numero_cliente": 5678488,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "BAHIA DE LOS ABRIGOS 2750 A  PB  "
+    },
+    {
+      "nombre": "RETAMAL BUSTOS",
+      "numero_cliente": 5717086,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "GOBERNADOR VALDEZ 696     "
+    },
+    {
+      "nombre": "GUERRA",
+      "numero_cliente": 5725750,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "BAHIA GRANDE 2881     "
     },
     {
       "nombre": "LOPEZ",
@@ -217,6 +301,13 @@
       "precinto": null,
       "estado": "CONECTADO",
       "domicilio": "9 DE JULIO 128   4  "
+    },
+    {
+      "nombre": "BLANCO",
+      "numero_cliente": 5768868,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "CEFERINO NAMUNCURA 77     "
     },
     {
       "nombre": "LAZARTE",
@@ -254,18 +345,32 @@
       "domicilio": "B* 245 VIVIENDAS 245 11    "
     },
     {
-      "nombre": "VELAZQUEZ",
-      "numero_cliente": 5842069,
+      "nombre": "ARIZNABARRETA",
+      "numero_cliente": 5845236,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "TERESA DE CALCUTA 1360     "
+      "domicilio": "FUEGIA BASKET 364     "
     },
     {
-      "nombre": "DOMINGUEZ",
-      "numero_cliente": 5846592,
+      "nombre": "BALMACEDA",
+      "numero_cliente": 5854429,
       "precinto": null,
       "estado": "CONECTADO",
-      "domicilio": "ARTURO ANGEL 755 1    "
+      "domicilio": "RIO IGUAZU 693     "
+    },
+    {
+      "nombre": "GALVAN",
+      "numero_cliente": 5854993,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "INTENDENTE MANUEL OLMO 1098     "
+    },
+    {
+      "nombre": "ANTILEF MANQUEPAN",
+      "numero_cliente": 5864014,
+      "precinto": null,
+      "estado": "CONECTADO",
+      "domicilio": "MAGALLANES 836  836   "
     }
   ]
 }

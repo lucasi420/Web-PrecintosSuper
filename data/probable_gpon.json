@@ -1,109 +1,32 @@
 {
-  "actualizado": "2025-10-24 19:38:18",
+  "actualizado": "2025-11-07 17:52:04",
   "clientes": [
     {
-      "numero_cliente": 5546808,
-      "nap": "NAP04",
-      "nodo": "NODO001",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5742949,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5731992,
-      "nap": "E05",
-      "nodo": "NODO001",
-      "puerto": 5,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5674164,
-      "nap": "NAP04",
-      "nodo": "NODO001",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5579024,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5545551,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5485334,
-      "nap": "NAP04",
-      "nodo": "NODO001",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 338267,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5578295,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5545551,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 6,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5618342,
-      "nap": "E02",
-      "nodo": "NODO001",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5585895,
-      "nap": "E05",
-      "nodo": "NODO001",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5371147,
+      "numero_cliente": 5573979,
       "nap": "NAP04",
       "nodo": "NODO001",
       "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5464016,
-      "nap": "E05",
-      "nodo": "NODO001",
-      "puerto": 5,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5338856,
-      "nap": "NAP04",
+      "numero_cliente": 5528255,
+      "nap": "NAP01",
       "nodo": "NODO001",
       "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5546808,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 8,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5533980,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -114,18 +37,18 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
+      "numero_cliente": 5371147,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5731886,
       "nap": "NAP01",
       "nodo": "NODO001",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5794492,
-      "nap": "NAP04",
-      "nodo": "NODO001",
-      "puerto": 4,
-      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 1964797,
@@ -140,6 +63,55 @@
       "nodo": "NODO001",
       "puerto": 1,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5686079,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5742949,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5578295,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5579024,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5516534,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 13,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5546808,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5794492,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 4,
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5657978,
@@ -163,18 +135,95 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5686079,
+      "numero_cliente": 5682134,
       "nap": "NAP01",
       "nodo": "NODO001",
-      "puerto": 15,
+      "puerto": 10,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5644925,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5573979,
+      "numero_cliente": 5338856,
       "nap": "NAP04",
       "nodo": "NODO001",
-      "puerto": 16,
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5464016,
+      "nap": "E05",
+      "nodo": "NODO001",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5585895,
+      "nap": "E05",
+      "nodo": "NODO001",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5618342,
+      "nap": "E02",
+      "nodo": "NODO001",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5545551,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 6,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5188557,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 13,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 338267,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5485334,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5545551,
+      "nap": "NAP01",
+      "nodo": "NODO001",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5674164,
+      "nap": "NAP04",
+      "nodo": "NODO001",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5731992,
+      "nap": "E05",
+      "nodo": "NODO001",
+      "puerto": 5,
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5865739,
@@ -184,38 +233,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5546808,
-      "nap": "NAP04",
-      "nodo": "NODO001",
-      "puerto": 8,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5533980,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5682134,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 10,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5528255,
-      "nap": "NAP01",
-      "nodo": "NODO001",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5545204,
+      "numero_cliente": 5563944,
       "nap": "NAP07",
       "nodo": "NODO002",
-      "puerto": 7,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -226,36 +247,57 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5704950,
+      "numero_cliente": 5496093,
       "nap": "NAP03",
       "nodo": "NODO002",
-      "puerto": 2,
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5366249,
-      "nap": "NAP04",
+      "numero_cliente": 5481258,
+      "nap": "NAP02",
       "nodo": "NODO002",
-      "puerto": 2,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5737222,
-      "nap": "NAP03",
-      "nodo": "NODO002",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5790402,
+      "numero_cliente": 5545204,
       "nap": "NAP07",
       "nodo": "NODO002",
-      "puerto": 6,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5801608,
       "nap": "NAP03",
+      "nodo": "NODO002",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5567901,
+      "nap": "NAP03",
+      "nodo": "NODO002",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5733627,
+      "nap": "NAP03",
+      "nodo": "NODO002",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5372060,
+      "nap": "NAP02",
+      "nodo": "NODO002",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5652011,
+      "nap": "NAP07",
       "nodo": "NODO002",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
@@ -268,45 +310,38 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5652011,
-      "nap": "NAP07",
-      "nodo": "NODO002",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5372060,
-      "nap": "NAP02",
-      "nodo": "NODO002",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5733627,
-      "nap": "NAP03",
-      "nodo": "NODO002",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5567901,
-      "nap": "NAP03",
-      "nodo": "NODO002",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5481258,
+      "numero_cliente": 5524826,
       "nap": "NAP02",
       "nodo": "NODO002",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5496093,
+      "numero_cliente": 5790402,
+      "nap": "NAP07",
+      "nodo": "NODO002",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5737222,
       "nap": "NAP03",
       "nodo": "NODO002",
-      "puerto": 1,
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5366249,
+      "nap": "NAP04",
+      "nodo": "NODO002",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5704950,
+      "nap": "NAP03",
+      "nodo": "NODO002",
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -317,20 +352,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5563944,
-      "nap": "NAP07",
-      "nodo": "NODO002",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5524826,
-      "nap": "NAP02",
-      "nodo": "NODO002",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5600108,
       "nap": "NAP01",
       "nodo": "NODO003",
@@ -338,24 +359,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5511822,
-      "nap": "NAP05",
+      "numero_cliente": 5831394,
+      "nap": "NAP01",
       "nodo": "NODO003",
-      "puerto": 6,
-      "estado_probable": "BAJA PENDIENTE"
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5675701,
       "nap": "NAP05",
       "nodo": "NODO003",
       "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5557099,
-      "nap": "NAP03",
-      "nodo": "NODO003",
-      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -371,13 +385,6 @@
       "nodo": "NODO003",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5522873,
-      "nap": "NAP03",
-      "nodo": "NODO003",
-      "puerto": 12,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5776540,
@@ -399,13 +406,6 @@
       "nodo": "NODO003",
       "puerto": 3,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5623922,
-      "nap": "NAP01",
-      "nodo": "NODO003",
-      "puerto": 3,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5610862,
@@ -450,25 +450,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5831394,
-      "nap": "NAP01",
+      "numero_cliente": 5511822,
+      "nap": "NAP05",
       "nodo": "NODO003",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
+      "puerto": 6,
+      "estado_probable": "BAJA PENDIENTE"
     },
     {
-      "numero_cliente": 5495742,
-      "nap": "NAP01",
-      "nodo": "NODO003",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5604089,
+      "numero_cliente": 5497067,
       "nap": "NAP03",
-      "nodo": "NODO003",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
+      "nodo": "NODO004",
+      "puerto": 14,
+      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5619243,
@@ -485,20 +478,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5497970,
-      "nap": "NAP02",
-      "nodo": "NODO004",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5497067,
-      "nap": "NAP03",
-      "nodo": "NODO004",
-      "puerto": 14,
-      "estado_probable": "BAJA PENDIENTE"
-    },
-    {
       "numero_cliente": 5437416,
       "nap": "NAP04",
       "nodo": "NODO004",
@@ -513,10 +492,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5576492,
-      "nap": "NAP04",
+      "numero_cliente": 334386,
+      "nap": "NAP03",
       "nodo": "NODO004",
-      "puerto": 10,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -555,10 +534,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 334386,
-      "nap": "NAP03",
+      "numero_cliente": 5576492,
+      "nap": "NAP04",
       "nodo": "NODO004",
-      "puerto": 16,
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -576,17 +555,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5816097,
-      "nap": "NAP03",
+      "numero_cliente": 5516057,
+      "nap": "NAP02",
       "nodo": "NODO005",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5516943,
-      "nap": "NAP03",
-      "nodo": "NODO005",
-      "puerto": 9,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -597,24 +569,59 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336580,
+      "numero_cliente": 5390076,
       "nap": "NAP02",
-      "nodo": "NODO006",
-      "puerto": 8,
+      "nodo": "NODO005",
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5610849,
+      "numero_cliente": 5516943,
+      "nap": "NAP03",
+      "nodo": "NODO005",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5816097,
+      "nap": "NAP03",
+      "nodo": "NODO005",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5553021,
       "nap": "NAP02",
-      "nodo": "NODO006",
-      "puerto": 8,
-      "estado_probable": "BAJA MOROSO"
+      "nodo": "NODO005",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5799081,
+      "nap": "NAP03",
+      "nodo": "NODO005",
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5516057,
+      "nap": "NAP02",
+      "nodo": "NODO005",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5559688,
       "nap": "NAP01",
       "nodo": "NODO006",
       "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336580,
+      "nap": "NAP02",
+      "nodo": "NODO006",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -632,10 +639,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5561803,
-      "nap": "NAP04",
+      "numero_cliente": 5610849,
+      "nap": "NAP02",
+      "nodo": "NODO006",
+      "puerto": 8,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5857448,
+      "nap": "NAP05",
       "nodo": "NODO007",
-      "puerto": 16,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -643,6 +657,13 @@
       "nap": "NAP05",
       "nodo": "NODO007",
       "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 366529,
+      "nap": "NAP04",
+      "nodo": "NODO007",
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -695,6 +716,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5484284,
+      "nap": "NAP04",
+      "nodo": "NODO007",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5447505,
       "nap": "NAP05",
       "nodo": "NODO007",
@@ -702,18 +730,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5537996,
+      "numero_cliente": 5484284,
       "nap": "NAP04",
       "nodo": "NODO007",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5857448,
-      "nap": "NAP05",
-      "nodo": "NODO007",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5811875,
@@ -758,10 +779,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 366529,
+      "numero_cliente": 5561803,
       "nap": "NAP04",
       "nodo": "NODO007",
-      "puerto": 7,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -772,10 +793,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5382828,
+      "numero_cliente": 5778432,
       "nap": "NAP04",
       "nodo": "NODO008",
-      "puerto": 2,
+      "puerto": 9,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -805,6 +826,20 @@
       "nodo": "NODO008",
       "puerto": 16,
       "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 333804,
+      "nap": "NAP05",
+      "nodo": "NODO008",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5382828,
+      "nap": "NAP04",
+      "nodo": "NODO008",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5405073,
@@ -853,6 +888,20 @@
       "nap": "NAP05",
       "nodo": "NODO008",
       "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5594876,
+      "nap": "NAP04",
+      "nodo": "NODO008",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5571058,
+      "nap": "NAP04",
+      "nodo": "NODO008",
+      "puerto": 9,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -926,31 +975,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 333804,
-      "nap": "NAP05",
-      "nodo": "NODO008",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5624864,
       "nap": "NAP05",
       "nodo": "NODO008",
       "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5610813,
-      "nap": "NAP01",
-      "nodo": "NODO009",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 767352,
-      "nap": "NAP02",
-      "nodo": "NODO009",
-      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -965,13 +993,6 @@
       "nap": "NAP02",
       "nodo": "NODO009",
       "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5589164,
-      "nap": "NAP01",
-      "nodo": "NODO009",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1003,10 +1024,10 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5550320,
+      "numero_cliente": 767352,
       "nap": "NAP02",
       "nodo": "NODO009",
-      "puerto": 12,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1052,10 +1073,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5416513,
-      "nap": "NAP01",
+      "numero_cliente": 5550320,
+      "nap": "NAP02",
       "nodo": "NODO009",
-      "puerto": 4,
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1073,13 +1094,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5621348,
-      "nap": "NAP04",
-      "nodo": "NODO010",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 1863590,
       "nap": "NAP03",
       "nodo": "NODO010",
@@ -1092,34 +1106,6 @@
       "nodo": "NODO010",
       "puerto": 3,
       "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5138109,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5348112,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5676818,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5425891,
-      "nap": "NAP04",
-      "nodo": "NODO010",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5537425,
@@ -1171,13 +1157,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5385681,
-      "nap": "NAP04",
-      "nodo": "NODO010",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5710121,
       "nap": "NAP03",
       "nodo": "NODO010",
@@ -1206,13 +1185,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5699064,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5454490,
       "nap": "NAP03",
       "nodo": "NODO010",
@@ -1220,17 +1192,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5715867,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5137351,
       "nap": "NAP04",
       "nodo": "NODO010",
       "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 334416,
+      "nap": "NAP01",
+      "nodo": "NODO010",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 337351,
+      "nap": "NAP01",
+      "nodo": "NODO010",
+      "puerto": 11,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1273,13 +1252,6 @@
       "nap": "NAP03",
       "nodo": "NODO010",
       "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5565510,
-      "nap": "NAP01",
-      "nodo": "NODO010",
-      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1360,13 +1332,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5521901,
-      "nap": "NAP04",
-      "nodo": "NODO012",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5544375,
       "nap": "NAP02",
       "nodo": "NODO012",
@@ -1388,24 +1353,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5471115,
-      "nap": "NAP01",
-      "nodo": "NODO012",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5434410,
       "nap": "NAP01",
       "nodo": "NODO012",
       "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5418187,
-      "nap": "NAP04",
-      "nodo": "NODO012",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1414,13 +1365,6 @@
       "nodo": "NODO012",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5702576,
-      "nap": "NAP02",
-      "nodo": "NODO012",
-      "puerto": 13,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 336021,
@@ -1434,13 +1378,6 @@
       "nap": "NAP04",
       "nodo": "NODO012",
       "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5501759,
-      "nap": "NAP04",
-      "nodo": "NODO012",
-      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1462,6 +1399,13 @@
       "nap": "NAP02",
       "nodo": "NODO012",
       "puerto": 13,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5647180,
+      "nap": "NAP03",
+      "nodo": "NODO012",
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1500,15 +1444,15 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5611432,
+      "numero_cliente": 5532539,
       "nap": "NAP01",
       "nodo": "NODO012",
-      "puerto": 10,
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5532539,
-      "nap": "NAP01",
+      "numero_cliente": 5439032,
+      "nap": "NAP03",
       "nodo": "NODO012",
       "puerto": 5,
       "estado_probable": "DESCONECTADO"
@@ -1542,6 +1486,20 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5702576,
+      "nap": "NAP02",
+      "nodo": "NODO012",
+      "puerto": 13,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5717844,
+      "nap": "NAP03",
+      "nodo": "NODO012",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5565993,
       "nap": "NAP01",
       "nodo": "NODO012",
@@ -1553,6 +1511,13 @@
       "nap": "NAP01",
       "nodo": "NODO012",
       "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5635993,
+      "nap": "NAP02",
+      "nodo": "NODO012",
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1577,13 +1542,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5501759,
-      "nap": "NAP04",
-      "nodo": "NODO012",
-      "puerto": 8,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 335204,
       "nap": "NAP03",
       "nodo": "NODO012",
@@ -1598,6 +1556,20 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5864014,
+      "nap": "NAP02",
+      "nodo": "NODO012",
+      "puerto": 12,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5717844,
+      "nap": "NAP03",
+      "nodo": "NODO012",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5541504,
       "nap": "NAP04",
       "nodo": "NODO012",
@@ -1605,10 +1577,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5472985,
+      "numero_cliente": 5521901,
       "nap": "NAP04",
       "nodo": "NODO012",
-      "puerto": 8,
+      "puerto": 11,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1675,11 +1647,25 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5602709,
+      "nap": "NAP05",
+      "nodo": "NODO013",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5676919,
       "nap": "NAP01",
       "nodo": "NODO013",
       "puerto": 16,
       "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5686678,
+      "nap": "NAP02",
+      "nodo": "NODO013",
+      "puerto": 13,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5549188,
@@ -1691,6 +1677,20 @@
     {
       "numero_cliente": 5693984,
       "nap": "NAP03",
+      "nodo": "NODO013",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5535760,
+      "nap": "NAP02",
+      "nodo": "NODO013",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5132705,
+      "nap": "NAP02",
       "nodo": "NODO013",
       "puerto": 14,
       "estado_probable": "DESCONECTADO"
@@ -1766,13 +1766,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5686678,
-      "nap": "NAP02",
-      "nodo": "NODO013",
-      "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 338534,
       "nap": "NAP02",
       "nodo": "NODO013",
@@ -1799,6 +1792,13 @@
       "nodo": "NODO013",
       "puerto": 16,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 377980,
+      "nap": "NAP05",
+      "nodo": "NODO013",
+      "puerto": 8,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5451813,
@@ -1857,6 +1857,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 337707,
+      "nap": "NAP04",
+      "nodo": "NODO014",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5543285,
       "nap": "NAP01",
       "nodo": "NODO014",
@@ -1871,13 +1878,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5650338,
-      "nap": "NAP06",
-      "nodo": "NODO014",
-      "puerto": 5,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
       "numero_cliente": 5296496,
       "nap": "NAP04",
       "nodo": "NODO014",
@@ -1889,13 +1889,6 @@
       "nap": "NAP02",
       "nodo": "NODO014",
       "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5650338,
-      "nap": "NAP06",
-      "nodo": "NODO014",
-      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -1948,13 +1941,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 337707,
-      "nap": "NAP04",
-      "nodo": "NODO014",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5781289,
       "nap": "NAP01",
       "nodo": "NODO014",
@@ -1997,13 +1983,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5674960,
-      "nap": "NAP06",
-      "nodo": "NODO014",
-      "puerto": 5,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5608841,
       "nap": "E05",
       "nodo": "NODO014",
@@ -2036,7 +2015,7 @@
       "nap": "NAP01",
       "nodo": "NODO014",
       "puerto": 16,
-      "estado_probable": "CONECTADO"
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5565648,
@@ -2053,8 +2032,50 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5555927,
+      "nap": "NAP02",
+      "nodo": "NODO015",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1979805,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5627041,
+      "nap": "NAP01",
+      "nodo": "NODO015",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5371147,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5455398,
+      "nap": "NAP02",
+      "nodo": "NODO015",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5718465,
       "nap": "NAP03",
+      "nodo": "NODO015",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5250023,
+      "nap": "E05",
       "nodo": "NODO015",
       "puerto": 2,
       "estado_probable": "DESCONECTADO"
@@ -2071,6 +2092,34 @@
       "nap": "NAP03",
       "nodo": "NODO015",
       "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5437058,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5125889,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5535354,
+      "nap": "NAP02",
+      "nodo": "NODO015",
+      "puerto": 8,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5473896,
+      "nap": "NAP03",
+      "nodo": "NODO015",
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2179,8 +2228,29 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5273255,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5774185,
       "nap": "NAP02",
+      "nodo": "NODO015",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5511494,
+      "nap": "E05",
+      "nodo": "NODO015",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5529018,
+      "nap": "NAP03",
       "nodo": "NODO015",
       "puerto": 10,
       "estado_probable": "DESCONECTADO"
@@ -2270,31 +2340,10 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5437058,
-      "nap": "E05",
+      "numero_cliente": 5455003,
+      "nap": "E06",
       "nodo": "NODO015",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5125889,
-      "nap": "E05",
-      "nodo": "NODO015",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5535354,
-      "nap": "NAP02",
-      "nodo": "NODO015",
-      "puerto": 8,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5473896,
-      "nap": "NAP03",
-      "nodo": "NODO015",
-      "puerto": 6,
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2389,29 +2438,8 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5529018,
-      "nap": "NAP03",
-      "nodo": "NODO015",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5411485,
-      "nap": "NAP02",
-      "nodo": "NODO015",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 333956,
       "nap": "NAP04",
-      "nodo": "NODO015",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5536715,
-      "nap": "NAP02",
       "nodo": "NODO015",
       "puerto": 3,
       "estado_probable": "DESCONECTADO"
@@ -2487,52 +2515,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5555927,
-      "nap": "NAP02",
-      "nodo": "NODO015",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1979805,
-      "nap": "E05",
-      "nodo": "NODO015",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5627041,
-      "nap": "NAP01",
-      "nodo": "NODO015",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5371147,
-      "nap": "E05",
-      "nodo": "NODO015",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5455398,
-      "nap": "NAP02",
-      "nodo": "NODO015",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5665976,
       "nap": "NAP02",
       "nodo": "NODO016",
       "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5605661,
-      "nap": "NAP01",
-      "nodo": "NODO016",
-      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2613,6 +2599,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 339834,
+      "nap": "NAP01",
+      "nodo": "NODO016",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5569557,
       "nap": "NAP04",
       "nodo": "NODO016",
@@ -2669,17 +2662,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5579693,
-      "nap": "NAP01",
-      "nodo": "NODO016",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5704488,
       "nap": "NAP02",
       "nodo": "NODO018",
       "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5499181,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2690,73 +2683,31 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5749064,
+      "nap": "E04",
+      "nodo": "NODO018",
+      "puerto": 14,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5528257,
+      "nap": "E04",
+      "nodo": "NODO018",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5529054,
       "nap": "NAP01",
       "nodo": "NODO018",
       "puerto": 10,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5429842,
-      "nap": "E04",
-      "nodo": "NODO018",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5514498,
-      "nap": "E04",
-      "nodo": "NODO018",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5608474,
+      "numero_cliente": 5655466,
       "nap": "NAP01",
       "nodo": "NODO018",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5615887,
-      "nap": "NAP05",
-      "nodo": "NODO018",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5522951,
-      "nap": "E04",
-      "nodo": "NODO018",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5575495,
-      "nap": "NAP01",
-      "nodo": "NODO018",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5502432,
-      "nap": "NAP01",
-      "nodo": "NODO018",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5543059,
-      "nap": "NAP01",
-      "nodo": "NODO018",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 335704,
-      "nap": "NAP02",
-      "nodo": "NODO018",
-      "puerto": 11,
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2767,24 +2718,73 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5529054,
-      "nap": "NAP01",
-      "nodo": "NODO018",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5528257,
-      "nap": "E04",
+      "numero_cliente": 335704,
+      "nap": "NAP02",
       "nodo": "NODO018",
       "puerto": 11,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5749064,
+      "numero_cliente": 5543059,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5502432,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5575495,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5522951,
       "nap": "E04",
       "nodo": "NODO018",
-      "puerto": 14,
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5608474,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5433724,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5514498,
+      "nap": "E04",
+      "nodo": "NODO018",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5429842,
+      "nap": "E04",
+      "nodo": "NODO018",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5529054,
+      "nap": "NAP01",
+      "nodo": "NODO018",
+      "puerto": 10,
       "estado_probable": "CONECTADO"
     },
     {
@@ -2795,6 +2795,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5716445,
+      "nap": "NAP06",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5548069,
       "nap": "NAP01",
       "nodo": "NODO019",
@@ -2802,157 +2809,10 @@
       "estado_probable": "BAJA PENDIENTE"
     },
     {
-      "numero_cliente": 342183,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5611299,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5380593,
-      "nap": "NAP06",
-      "nodo": "NODO019",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5485781,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5576360,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5617478,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5519670,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5734231,
-      "nap": "NAP06",
-      "nodo": "NODO019",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5519670,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5771746,
-      "nap": "NAP01",
-      "nodo": "NODO019",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5473544,
-      "nap": "NAP01",
-      "nodo": "NODO019",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5484628,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5717534,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5530760,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5559472,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336466,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5599356,
-      "nap": "NAP01",
-      "nodo": "NODO019",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336006,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 7,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5602714,
-      "nap": "NAP03",
-      "nodo": "NODO019",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5836585,
-      "nap": "NAP02",
-      "nodo": "NODO019",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5544614,
+      "numero_cliente": 5726986,
       "nap": "NAP01",
       "nodo": "NODO019",
       "puerto": 10,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5602173,
-      "nap": "NAP01",
-      "nodo": "NODO019",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2970,10 +2830,129 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5771746,
+      "nap": "NAP01",
+      "nodo": "NODO019",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5484628,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5717534,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 334204,
       "nap": "NAP01",
       "nodo": "NODO019",
       "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5656467,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 8,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5353176,
+      "nap": "NAP06",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5530760,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336466,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5519670,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5404785,
+      "nap": "NAP06",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5538607,
+      "nap": "NAP06",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5519670,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5544614,
+      "nap": "NAP01",
+      "nodo": "NODO019",
+      "puerto": 10,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5617478,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5576360,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5485781,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 342183,
+      "nap": "NAP02",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5611299,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -2984,17 +2963,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5726986,
-      "nap": "NAP01",
+      "numero_cliente": 5836585,
+      "nap": "NAP02",
       "nodo": "NODO019",
-      "puerto": 10,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5656467,
+      "numero_cliente": 5602714,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336006,
       "nap": "NAP02",
       "nodo": "NODO019",
-      "puerto": 8,
+      "puerto": 7,
       "estado_probable": "CONECTADO"
     },
     {
@@ -3005,10 +2991,38 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5441905,
-      "nap": "NAP04",
+      "numero_cliente": 5599356,
+      "nap": "NAP01",
+      "nodo": "NODO019",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5559472,
+      "nap": "NAP03",
+      "nodo": "NODO019",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5453722,
+      "nap": "NAP06",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 334172,
+      "nap": "NAP05",
+      "nodo": "NODO019",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5355473,
+      "nap": "NAP02",
       "nodo": "NODO020",
-      "puerto": 10,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3016,13 +3030,6 @@
       "nap": "NAP01",
       "nodo": "NODO020",
       "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5546376,
-      "nap": "NAP01",
-      "nodo": "NODO020",
-      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3110,6 +3117,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5441905,
+      "nap": "NAP04",
+      "nodo": "NODO020",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5558073,
       "nap": "NAP01",
       "nodo": "NODO020",
@@ -3138,52 +3152,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5355473,
-      "nap": "NAP02",
+      "numero_cliente": 5546376,
+      "nap": "NAP01",
       "nodo": "NODO020",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5368918,
-      "nap": "NAP01",
-      "nodo": "NODO021",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5555954,
-      "nap": "NAP02",
-      "nodo": "NODO021",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5480538,
-      "nap": "NAP01",
-      "nodo": "NODO021",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5483884,
-      "nap": "NAP01",
-      "nodo": "NODO021",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5368918,
-      "nap": "NAP01",
-      "nodo": "NODO021",
       "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5733402,
-      "nap": "NAP02",
-      "nodo": "NODO021",
-      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3196,20 +3168,6 @@
     {
       "numero_cliente": 338735,
       "nap": "NAP02",
-      "nodo": "NODO021",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5353201,
-      "nap": "NAP03",
-      "nodo": "NODO021",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 342625,
-      "nap": "NAP03",
       "nodo": "NODO021",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
@@ -3233,6 +3191,48 @@
       "nap": "NAP04",
       "nodo": "NODO021",
       "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5368918,
+      "nap": "NAP01",
+      "nodo": "NODO021",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5755872,
+      "nap": "NAP01",
+      "nodo": "NODO021",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5480538,
+      "nap": "NAP01",
+      "nodo": "NODO021",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5545979,
+      "nap": "NAP04",
+      "nodo": "NODO021",
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5483884,
+      "nap": "NAP01",
+      "nodo": "NODO021",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5368918,
+      "nap": "NAP01",
+      "nodo": "NODO021",
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3285,71 +3285,29 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5386859,
+      "numero_cliente": 5555954,
       "nap": "NAP02",
       "nodo": "NODO021",
-      "puerto": 2,
+      "puerto": 15,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5755872,
-      "nap": "NAP01",
+      "numero_cliente": 5545979,
+      "nap": "NAP04",
       "nodo": "NODO021",
-      "puerto": 3,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5745406,
-      "nap": "NAP01",
-      "nodo": "NODO022",
-      "puerto": 4,
-      "estado_probable": "BAJA PENDIENTE"
-    },
-    {
-      "numero_cliente": 334272,
-      "nap": "NAP04",
-      "nodo": "NODO022",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5536203,
-      "nap": "NAP04",
-      "nodo": "NODO022",
+      "numero_cliente": 5353201,
+      "nap": "NAP03",
+      "nodo": "NODO021",
       "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5786176,
-      "nap": "NAP01",
-      "nodo": "NODO022",
-      "puerto": 3,
-      "estado_probable": "CONECTADO"
+      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 340223,
       "nap": "NAP01",
-      "nodo": "NODO022",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5532292,
-      "nap": "NAP02",
-      "nodo": "NODO022",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 343479,
-      "nap": "NAP01",
-      "nodo": "NODO022",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334272,
-      "nap": "NAP04",
       "nodo": "NODO022",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
@@ -3418,6 +3376,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5321739,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5715382,
       "nap": "NAP04",
       "nodo": "NODO022",
@@ -3430,6 +3395,48 @@
       "nodo": "NODO022",
       "puerto": 10,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 335186,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5745406,
+      "nap": "NAP01",
+      "nodo": "NODO022",
+      "puerto": 4,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 336283,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5536203,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5786176,
+      "nap": "NAP01",
+      "nodo": "NODO022",
+      "puerto": 3,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 335186,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5618930,
@@ -3460,31 +3467,31 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336283,
+      "numero_cliente": 334272,
       "nap": "NAP04",
       "nodo": "NODO022",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5573065,
-      "nap": "NAP05",
-      "nodo": "NODO023",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5444510,
-      "nap": "NAP03",
-      "nodo": "NODO023",
+      "numero_cliente": 343479,
+      "nap": "NAP01",
+      "nodo": "NODO022",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5718272,
-      "nap": "NAP08",
-      "nodo": "NODO023",
-      "puerto": 7,
+      "numero_cliente": 334272,
+      "nap": "NAP04",
+      "nodo": "NODO022",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5532292,
+      "nap": "NAP02",
+      "nodo": "NODO022",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3495,17 +3502,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5598129,
-      "nap": "E07",
+      "numero_cliente": 5745781,
+      "nap": "NAP08",
       "nodo": "NODO023",
       "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5145404,
-      "nap": "NAP03",
-      "nodo": "NODO023",
-      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3539,6 +3539,27 @@
     {
       "numero_cliente": 5486684,
       "nap": "NAP06",
+      "nodo": "NODO023",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5573065,
+      "nap": "NAP05",
+      "nodo": "NODO023",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5533613,
+      "nap": "E07",
+      "nodo": "NODO023",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5718272,
+      "nap": "NAP08",
       "nodo": "NODO023",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
@@ -3600,45 +3621,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5533613,
-      "nap": "E07",
+      "numero_cliente": 5444510,
+      "nap": "NAP03",
       "nodo": "NODO023",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5664434,
-      "nap": "NAP07",
-      "nodo": "NODO024",
+      "numero_cliente": 5598129,
+      "nap": "E07",
+      "nodo": "NODO023",
       "puerto": 6,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5457973,
-      "nap": "NAP06",
-      "nodo": "NODO024",
-      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5535714,
+      "numero_cliente": 5145404,
       "nap": "NAP03",
-      "nodo": "NODO024",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5411959,
-      "nap": "NAP04",
-      "nodo": "NODO024",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336530,
-      "nap": "NAP01",
-      "nodo": "NODO024",
-      "puerto": 7,
+      "nodo": "NODO023",
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3649,11 +3649,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 337531,
-      "nap": "NAP03",
+      "numero_cliente": 5627041,
+      "nap": "NAP01",
       "nodo": "NODO024",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 7,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5500267,
@@ -3691,41 +3691,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5540741,
-      "nap": "NAP01",
-      "nodo": "NODO024",
-      "puerto": 7,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5698451,
-      "nap": "NAP04",
-      "nodo": "NODO024",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 373600,
-      "nap": "NAP03",
-      "nodo": "NODO024",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5546322,
-      "nap": "NAP02",
-      "nodo": "NODO024",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5627041,
-      "nap": "NAP01",
-      "nodo": "NODO024",
-      "puerto": 7,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5454255,
       "nap": "NAP02",
       "nodo": "NODO024",
@@ -3751,6 +3716,48 @@
       "nap": "NAP04",
       "nodo": "NODO024",
       "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5664434,
+      "nap": "NAP07",
+      "nodo": "NODO024",
+      "puerto": 6,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5515162,
+      "nap": "NAP04",
+      "nodo": "NODO024",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5535714,
+      "nap": "NAP03",
+      "nodo": "NODO024",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5782658,
+      "nap": "NAP03",
+      "nodo": "NODO024",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5411959,
+      "nap": "NAP04",
+      "nodo": "NODO024",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336530,
+      "nap": "NAP01",
+      "nodo": "NODO024",
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3782,6 +3789,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5515250,
+      "nap": "NAP03",
+      "nodo": "NODO024",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5661560,
       "nap": "NAP01",
       "nodo": "NODO024",
@@ -3801,6 +3815,13 @@
       "nodo": "NODO024",
       "puerto": 7,
       "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5451105,
+      "nap": "NAP07",
+      "nodo": "NODO024",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5683371,
@@ -3831,37 +3852,44 @@
       "estado_probable": "BAJA PENDIENTE"
     },
     {
-      "numero_cliente": 5515162,
+      "numero_cliente": 5540741,
+      "nap": "NAP01",
+      "nodo": "NODO024",
+      "puerto": 7,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5698451,
       "nap": "NAP04",
       "nodo": "NODO024",
-      "puerto": 6,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 341108,
-      "nap": "NAP02",
-      "nodo": "NODO025",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
+      "numero_cliente": 5782658,
+      "nap": "NAP03",
+      "nodo": "NODO024",
+      "puerto": 8,
+      "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5509393,
-      "nap": "NAP02",
-      "nodo": "NODO025",
+      "numero_cliente": 373600,
+      "nap": "NAP03",
+      "nodo": "NODO024",
       "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5457651,
-      "nap": "NAP04",
-      "nodo": "NODO025",
-      "puerto": 6,
+      "numero_cliente": 5546322,
+      "nap": "NAP02",
+      "nodo": "NODO024",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5511497,
-      "nap": "NAP04",
-      "nodo": "NODO025",
+      "numero_cliente": 337531,
+      "nap": "NAP03",
+      "nodo": "NODO024",
       "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
@@ -3873,17 +3901,10 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5514767,
-      "nap": "NAP03",
+      "numero_cliente": 5525475,
+      "nap": "NAP02",
       "nodo": "NODO025",
-      "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5561164,
-      "nap": "NAP03",
-      "nodo": "NODO025",
-      "puerto": 1,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3898,6 +3919,13 @@
       "nap": "NAP02",
       "nodo": "NODO025",
       "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5490024,
+      "nap": "NAP01",
+      "nodo": "NODO025",
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -3971,17 +3999,38 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5661567,
-      "nap": "NAP03",
-      "nodo": "NODO025",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5547311,
       "nap": "NAP04",
       "nodo": "NODO025",
       "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 341108,
+      "nap": "NAP02",
+      "nodo": "NODO025",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5509393,
+      "nap": "NAP02",
+      "nodo": "NODO025",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5457651,
+      "nap": "NAP04",
+      "nodo": "NODO025",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5511497,
+      "nap": "NAP04",
+      "nodo": "NODO025",
+      "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -4003,13 +4052,6 @@
       "nap": "NAP02",
       "nodo": "NODO025",
       "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1989486,
-      "nap": "NAP03",
-      "nodo": "NODO025",
-      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -4062,18 +4104,88 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5525475,
-      "nap": "NAP02",
+      "numero_cliente": 5514767,
+      "nap": "NAP03",
       "nodo": "NODO025",
-      "puerto": 16,
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5493468,
+      "numero_cliente": 5617007,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5444510,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5587930,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 334226,
+      "nap": "NAP03",
+      "nodo": "NODO026",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5560513,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 338550,
       "nap": "NAP02",
       "nodo": "NODO026",
-      "puerto": 10,
-      "estado_probable": "BAJA PENDIENTE"
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 341608,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5484284,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5354702,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 339923,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5559801,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5485824,
@@ -4083,87 +4195,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336860,
-      "nap": "NAP03",
+      "numero_cliente": 336687,
+      "nap": "NAP04",
       "nodo": "NODO026",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5484284,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 4,
+      "puerto": 8,
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 336687,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336197,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5575238,
-      "nap": "NAP02",
+      "numero_cliente": 5717086,
+      "nap": "NAP03",
       "nodo": "NODO026",
       "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 338535,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5585536,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5536728,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5420513,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5485628,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1618257,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336687,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 8,
       "estado_probable": "CONECTADO"
     },
     {
@@ -4258,81 +4300,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5617007,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5444510,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5587930,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334226,
+      "numero_cliente": 5499079,
       "nap": "NAP03",
-      "nodo": "NODO026",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5560513,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 338550,
-      "nap": "NAP02",
-      "nodo": "NODO026",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 341608,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5484284,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5354702,
-      "nap": "NAP04",
-      "nodo": "NODO026",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339923,
-      "nap": "NAP01",
-      "nodo": "NODO026",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5559801,
-      "nap": "NAP04",
       "nodo": "NODO026",
       "puerto": 9,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5493468,
+      "nap": "NAP02",
+      "nodo": "NODO026",
+      "puerto": 10,
+      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5379908,
@@ -4340,6 +4319,153 @@
       "nodo": "NODO026",
       "puerto": 13,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336860,
+      "nap": "NAP03",
+      "nodo": "NODO026",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5484284,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 336687,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336197,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5575238,
+      "nap": "NAP02",
+      "nodo": "NODO026",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 338535,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5717086,
+      "nap": "NAP03",
+      "nodo": "NODO026",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5536728,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5420513,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5485628,
+      "nap": "NAP01",
+      "nodo": "NODO026",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1618257,
+      "nap": "NAP04",
+      "nodo": "NODO026",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 335146,
+      "nap": "NAP02",
+      "nodo": "NODO027",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5721317,
+      "nap": "NAP03",
+      "nodo": "NODO027",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5547820,
+      "nap": "NAP03",
+      "nodo": "NODO027",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 343513,
+      "nap": "NAP01",
+      "nodo": "NODO027",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5702096,
+      "nap": "NAP01",
+      "nodo": "NODO027",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 767399,
+      "nap": "NAP03",
+      "nodo": "NODO027",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5612710,
+      "nap": "NAP01",
+      "nodo": "NODO027",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5702096,
+      "nap": "NAP01",
+      "nodo": "NODO027",
+      "puerto": 12,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5636429,
+      "nap": "NAP04",
+      "nodo": "NODO027",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5636429,
+      "nap": "NAP04",
+      "nodo": "NODO027",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 334258,
@@ -4482,297 +4608,10 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5721317,
-      "nap": "NAP03",
-      "nodo": "NODO027",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 335146,
-      "nap": "NAP02",
-      "nodo": "NODO027",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 340580,
       "nap": "NAP01",
       "nodo": "NODO027",
       "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5547820,
-      "nap": "NAP03",
-      "nodo": "NODO027",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 343513,
-      "nap": "NAP01",
-      "nodo": "NODO027",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5702096,
-      "nap": "NAP01",
-      "nodo": "NODO027",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 767399,
-      "nap": "NAP03",
-      "nodo": "NODO027",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5612710,
-      "nap": "NAP01",
-      "nodo": "NODO027",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5702096,
-      "nap": "NAP01",
-      "nodo": "NODO027",
-      "puerto": 12,
-      "estado_probable": "BAJA PENDIENTE"
-    },
-    {
-      "numero_cliente": 5636429,
-      "nap": "NAP04",
-      "nodo": "NODO027",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5636429,
-      "nap": "NAP04",
-      "nodo": "NODO027",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5561856,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5693588,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5501419,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5596872,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5693588,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 342250,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 335914,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5551797,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5547085,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5582110,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336539,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 335888,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5772943,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5745705,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5729970,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5807010,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5568580,
-      "nap": "NAP01",
-      "nodo": "NODO028",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5722768,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5451008,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5481564,
-      "nap": "NAP02",
-      "nodo": "NODO028",
-      "puerto": 5,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5796685,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5375296,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5601706,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5788746,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5796685,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 7,
-      "estado_probable": "BAJA PENDIENTE"
-    },
-    {
-      "numero_cliente": 5634922,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5688356,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5663207,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5604138,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5684768,
-      "nap": "NAP03",
-      "nodo": "NODO028",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5656920,
-      "nap": "NAP04",
-      "nodo": "NODO028",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -4783,11 +4622,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5593508,
-      "nap": "NAP03",
+      "numero_cliente": 5656920,
+      "nap": "NAP04",
       "nodo": "NODO028",
-      "puerto": 15,
-      "estado_probable": "CONECTADO"
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5128918,
@@ -4846,10 +4685,262 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5693588,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5561856,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5571818,
       "nap": "NAP03",
       "nodo": "NODO028",
       "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5501419,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5596872,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5693588,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 342250,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 335914,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5551797,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5593673,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5547085,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5582110,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5772943,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5745705,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5729970,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5568580,
+      "nap": "NAP01",
+      "nodo": "NODO028",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5722768,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 2,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 772779,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5451008,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5481564,
+      "nap": "NAP02",
+      "nodo": "NODO028",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5796685,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5375296,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5601706,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 13,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5788746,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5688356,
+      "nap": "NAP04",
+      "nodo": "NODO028",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5663207,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5604138,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5684768,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5593508,
+      "nap": "NAP03",
+      "nodo": "NODO028",
+      "puerto": 15,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 336564,
+      "nap": "NAP06",
+      "nodo": "NODO029",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5394282,
+      "nap": "NAP06",
+      "nodo": "NODO029",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5513401,
+      "nap": "NAP02",
+      "nodo": "NODO029",
+      "puerto": 6,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5354993,
+      "nap": "NAP01",
+      "nodo": "NODO029",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 334385,
+      "nap": "NAP07",
+      "nodo": "NODO029",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5547060,
+      "nap": "NAP01",
+      "nodo": "NODO029",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5212413,
+      "nap": "NAP01",
+      "nodo": "NODO029",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5602716,
+      "nap": "NAP06",
+      "nodo": "NODO029",
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -4879,6 +4970,13 @@
       "nodo": "NODO029",
       "puerto": 10,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5806872,
+      "nap": "NAP05",
+      "nodo": "NODO029",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5547060,
@@ -4979,80 +5077,17 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 336564,
-      "nap": "NAP06",
-      "nodo": "NODO029",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5394282,
-      "nap": "NAP06",
-      "nodo": "NODO029",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5513401,
-      "nap": "NAP02",
-      "nodo": "NODO029",
-      "puerto": 6,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5354993,
-      "nap": "NAP01",
-      "nodo": "NODO029",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334385,
-      "nap": "NAP07",
-      "nodo": "NODO029",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5547060,
-      "nap": "NAP01",
-      "nodo": "NODO029",
-      "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5212413,
-      "nap": "NAP01",
-      "nodo": "NODO029",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5602716,
-      "nap": "NAP06",
-      "nodo": "NODO029",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5200805,
+      "numero_cliente": 340552,
       "nap": "NAP03",
       "nodo": "NODO030",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5681858,
       "nap": "NAP05",
       "nodo": "NODO030",
       "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 340583,
-      "nap": "NAP02",
-      "nodo": "NODO030",
-      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5119,25 +5154,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336165,
-      "nap": "NAP03",
-      "nodo": "NODO030",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 342657,
       "nap": "NAP07",
       "nodo": "NODO030",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5190947,
-      "nap": "NAP04",
-      "nodo": "NODO030",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5404317,
@@ -5194,13 +5215,6 @@
       "nodo": "NODO030",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5557944,
-      "nap": "NAP03",
-      "nodo": "NODO030",
-      "puerto": 6,
-      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5680942,
@@ -5315,13 +5329,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5452928,
-      "nap": "NAP01",
-      "nodo": "NODO030",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 334061,
       "nap": "NAP04",
       "nodo": "NODO030",
@@ -5368,13 +5375,6 @@
       "nap": "NAP07",
       "nodo": "NODO030",
       "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5518806,
-      "nap": "NAP01",
-      "nodo": "NODO030",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5427,10 +5427,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 340552,
-      "nap": "NAP03",
+      "numero_cliente": 340583,
+      "nap": "NAP02",
       "nodo": "NODO030",
-      "puerto": 2,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5445,13 +5445,6 @@
       "nap": "NAP04",
       "nodo": "NODO031",
       "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5549296,
-      "nap": "NAP02",
-      "nodo": "NODO031",
-      "puerto": 15,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5511,11 +5504,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 775702,
-      "nap": "NAP03",
+      "numero_cliente": 5736306,
+      "nap": "NAP02",
       "nodo": "NODO031",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5514510,
@@ -5588,11 +5581,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5736306,
+      "numero_cliente": 5549296,
       "nap": "NAP02",
       "nodo": "NODO031",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5395543,
@@ -5602,11 +5595,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5666574,
-      "nap": "NAP01",
+      "numero_cliente": 5741796,
+      "nap": "NAP06",
       "nodo": "NODO032",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 334502,
@@ -5614,13 +5607,6 @@
       "nodo": "NODO032",
       "puerto": 2,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5830756,
-      "nap": "NAP03",
-      "nodo": "NODO032",
-      "puerto": 8,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5495101,
@@ -5656,6 +5642,13 @@
       "nodo": "NODO032",
       "puerto": 3,
       "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 337951,
+      "nap": "NAP05",
+      "nodo": "NODO032",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5607724,
@@ -5714,6 +5707,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5666574,
+      "nap": "NAP01",
+      "nodo": "NODO032",
+      "puerto": 2,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
       "numero_cliente": 5830756,
       "nap": "NAP03",
       "nodo": "NODO032",
@@ -5726,6 +5726,13 @@
       "nodo": "NODO032",
       "puerto": 1,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5830756,
+      "nap": "NAP03",
+      "nodo": "NODO032",
+      "puerto": 8,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5788652,
@@ -5798,6 +5805,13 @@
       "estado_probable": "CONECTADO"
     },
     {
+      "numero_cliente": 5497406,
+      "nap": "NAP05",
+      "nodo": "NODO032",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5566079,
       "nap": "NAP04",
       "nodo": "NODO032",
@@ -5819,13 +5833,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5741796,
-      "nap": "NAP06",
-      "nodo": "NODO032",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5480533,
       "nap": "NAP06",
       "nodo": "NODO032",
@@ -5840,10 +5847,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5650287,
-      "nap": "NAP05",
+      "numero_cliente": 5746448,
+      "nap": "NAP03",
       "nodo": "NODO033",
-      "puerto": 7,
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5344274,
+      "nap": "NAP02",
+      "nodo": "NODO033",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5868,6 +5882,20 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 335778,
+      "nap": "NAP02",
+      "nodo": "NODO033",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5723822,
+      "nap": "NAP02",
+      "nodo": "NODO033",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 338185,
       "nap": "NAP01",
       "nodo": "NODO033",
@@ -5875,10 +5903,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5746448,
+      "numero_cliente": 5635916,
       "nap": "NAP03",
       "nodo": "NODO033",
-      "puerto": 14,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5924,10 +5952,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5635916,
-      "nap": "NAP03",
+      "numero_cliente": 5762517,
+      "nap": "NAP02",
       "nodo": "NODO033",
       "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5650287,
+      "nap": "NAP05",
+      "nodo": "NODO033",
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -5980,13 +6015,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5357221,
-      "nap": "NAP05",
-      "nodo": "NODO034",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5446633,
       "nap": "NAP02",
       "nodo": "NODO034",
@@ -6029,13 +6057,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5466865,
-      "nap": "NAP02",
-      "nodo": "NODO035",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5584910,
       "nap": "NAP01",
       "nodo": "NODO035",
@@ -6064,10 +6085,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 333902,
+      "nap": "NAP02",
+      "nodo": "NODO035",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5637359,
       "nap": "NAP01",
       "nodo": "NODO035",
       "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5455303,
+      "nap": "NAP02",
+      "nodo": "NODO035",
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6106,6 +6141,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 333902,
+      "nap": "NAP02",
+      "nodo": "NODO035",
+      "puerto": 10,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5451070,
       "nap": "NAP01",
       "nodo": "NODO035",
@@ -6134,18 +6176,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5586609,
-      "nap": "NAP04",
-      "nodo": "NODO035_B",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5489615,
       "nap": "NAP03",
       "nodo": "NODO035_B",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5585705,
+      "nap": "NAP05",
+      "nodo": "NODO035_B",
+      "puerto": 7,
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5378457,
@@ -6155,11 +6197,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5757018,
-      "nap": "NAP06",
+      "numero_cliente": 5586609,
+      "nap": "NAP04",
       "nodo": "NODO035_B",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5674960,
@@ -6183,17 +6225,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5585705,
-      "nap": "NAP05",
+      "numero_cliente": 5757018,
+      "nap": "NAP06",
       "nodo": "NODO035_B",
-      "puerto": 7,
-      "estado_probable": "BAJA MOROSO"
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5498313,
-      "nap": "NAP02",
+      "numero_cliente": 5401956,
+      "nap": "NAP04",
       "nodo": "NODO036",
-      "puerto": 14,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6201,13 +6243,6 @@
       "nap": "NAP04",
       "nodo": "NODO036",
       "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 335158,
-      "nap": "NAP04",
-      "nodo": "NODO036",
-      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6271,6 +6306,13 @@
       "nap": "NAP04",
       "nodo": "NODO036",
       "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5498313,
+      "nap": "NAP02",
+      "nodo": "NODO036",
+      "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6421,10 +6463,10 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5401956,
+      "numero_cliente": 335158,
       "nap": "NAP04",
       "nodo": "NODO036",
-      "puerto": 6,
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6505,6 +6547,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5806871,
+      "nap": "NAP04",
+      "nodo": "NODO038",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 343965,
       "nap": "NAP02",
       "nodo": "NODO038",
@@ -6533,13 +6582,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5482840,
-      "nap": "NAP03",
-      "nodo": "NODO038",
-      "puerto": 16,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5527633,
       "nap": "NAP01",
       "nodo": "NODO038",
@@ -6559,6 +6601,13 @@
       "nodo": "NODO038",
       "puerto": 13,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5678794,
+      "nap": "NAP01",
+      "nodo": "NODO038",
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5490173,
@@ -6589,6 +6638,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5543059,
+      "nap": "NAP03",
+      "nodo": "NODO038",
+      "puerto": 3,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5796599,
       "nap": "NAP01",
       "nodo": "NODO038",
@@ -6600,6 +6656,13 @@
       "nap": "NAP03",
       "nodo": "NODO038",
       "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5487477,
+      "nap": "NAP01",
+      "nodo": "NODO038",
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6687,6 +6750,13 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
+      "numero_cliente": 5481184,
+      "nap": "NAP04",
+      "nodo": "NODO038",
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5438785,
       "nap": "NAP01",
       "nodo": "NODO038",
@@ -6764,13 +6834,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 1980477,
-      "nap": "NAP05",
-      "nodo": "NODO039",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5519468,
       "nap": "NAP01",
       "nodo": "NODO039",
@@ -6799,27 +6862,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 1859328,
-      "nap": "NAP04",
-      "nodo": "NODO039",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 340608,
-      "nap": "NAP05",
-      "nodo": "NODO039",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5806926,
-      "nap": "NAP01",
-      "nodo": "NODO039",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5727225,
       "nap": "NAP05",
       "nodo": "NODO039",
@@ -6839,13 +6881,6 @@
       "nodo": "NODO039",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5593508,
-      "nap": "NAP05",
-      "nodo": "NODO039",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5363181,
@@ -6890,13 +6925,6 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5130338,
-      "nap": "NAP01",
-      "nodo": "NODO039",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5521061,
       "nap": "NAP05",
       "nodo": "NODO039",
@@ -6932,17 +6960,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5369530,
-      "nap": "NAP04",
-      "nodo": "NODO039",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5550263,
       "nap": "NAP05",
       "nodo": "NODO039",
       "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5539776,
+      "nap": "NAP01",
+      "nodo": "NODO040",
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -6953,28 +6981,35 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5137598,
+      "numero_cliente": 5403352,
+      "nap": "NAP03",
+      "nodo": "NODO040",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5431479,
       "nap": "NAP01",
       "nodo": "NODO040",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5371371,
+      "numero_cliente": 5462880,
       "nap": "NAP01",
       "nodo": "NODO040",
-      "puerto": 4,
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 339992,
-      "nap": "NAP01",
+      "numero_cliente": 337501,
+      "nap": "NAP03",
       "nodo": "NODO040",
-      "puerto": 2,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5539776,
+      "numero_cliente": 5599633,
       "nap": "NAP01",
       "nodo": "NODO040",
       "puerto": 4,
@@ -6988,59 +7023,45 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5599633,
+      "numero_cliente": 5371371,
       "nap": "NAP01",
       "nodo": "NODO040",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5462880,
-      "nap": "NAP01",
-      "nodo": "NODO040",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5515620,
-      "nap": "NAP04",
-      "nodo": "NODO040",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5431479,
+      "numero_cliente": 5137598,
       "nap": "NAP01",
       "nodo": "NODO040",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 338200,
-      "nap": "NAP01",
+      "numero_cliente": 5611026,
+      "nap": "NAP03",
       "nodo": "NODO040",
-      "puerto": 2,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 340810,
+      "numero_cliente": 5496153,
+      "nap": "NAP03",
+      "nodo": "NODO041",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5484790,
       "nap": "NAP01",
       "nodo": "NODO041",
-      "puerto": 14,
+      "puerto": 15,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5818421,
-      "nap": "NAP01",
+      "numero_cliente": 339701,
+      "nap": "NAP05",
       "nodo": "NODO041",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334392,
-      "nap": "NAP04",
-      "nodo": "NODO041",
-      "puerto": 1,
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7051,24 +7072,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5562674,
-      "nap": "NAP03",
-      "nodo": "NODO041",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 337501,
       "nap": "NAP05",
       "nodo": "NODO041",
       "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5484790,
-      "nap": "NAP01",
-      "nodo": "NODO041",
-      "puerto": 15,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7093,27 +7100,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5505063,
-      "nap": "NAP04",
-      "nodo": "NODO041",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339701,
-      "nap": "NAP05",
-      "nodo": "NODO041",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 340810,
-      "nap": "NAP01",
-      "nodo": "NODO041",
-      "puerto": 14,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
       "numero_cliente": 5815416,
       "nap": "NAP05",
       "nodo": "NODO041",
@@ -7121,10 +7107,10 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5371906,
-      "nap": "NAP04",
+      "numero_cliente": 5562674,
+      "nap": "NAP03",
       "nodo": "NODO041",
-      "puerto": 1,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7135,18 +7121,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5496153,
-      "nap": "NAP03",
-      "nodo": "NODO041",
-      "puerto": 7,
+      "numero_cliente": 340616,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5481102,
-      "nap": "NAP03",
+      "numero_cliente": 5808075,
+      "nap": "NAP01",
       "nodo": "NODO042",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 4,
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5859912,
@@ -7156,14 +7142,84 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5385680,
+      "numero_cliente": 5522663,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 9,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5522663,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336932,
       "nap": "NAP01",
       "nodo": "NODO042",
       "puerto": 4,
       "estado_probable": "CONECTADO"
     },
     {
+      "numero_cliente": 5536714,
+      "nap": "NAP02",
+      "nodo": "NODO042",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5182896,
+      "nap": "NAP02",
+      "nodo": "NODO042",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5386448,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5445962,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5139013,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5846919,
+      "nap": "NAP02",
+      "nodo": "NODO042",
+      "puerto": 6,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5445962,
+      "nap": "NAP01",
+      "nodo": "NODO042",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1994217,
+      "nap": "NAP04",
+      "nodo": "NODO042",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5385680,
       "nap": "NAP01",
       "nodo": "NODO042",
       "puerto": 4,
@@ -7177,48 +7233,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5808075,
-      "nap": "NAP01",
-      "nodo": "NODO042",
-      "puerto": 4,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5182896,
-      "nap": "NAP02",
-      "nodo": "NODO042",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 336932,
-      "nap": "NAP01",
-      "nodo": "NODO042",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5445962,
-      "nap": "NAP01",
-      "nodo": "NODO042",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5536714,
-      "nap": "NAP02",
-      "nodo": "NODO042",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5726770,
-      "nap": "NAP03",
-      "nodo": "NODO042",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5691658,
       "nap": "NAP02",
       "nodo": "NODO042",
@@ -7226,56 +7240,14 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5846919,
+      "numero_cliente": 5540996,
       "nap": "NAP02",
-      "nodo": "NODO042",
-      "puerto": 6,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5626810,
-      "nap": "NAP03",
-      "nodo": "NODO042",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5793363,
-      "nap": "NAP03",
-      "nodo": "NODO042",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 340616,
-      "nap": "NAP01",
-      "nodo": "NODO042",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 337809,
-      "nap": "NAP03",
-      "nodo": "NODO042",
+      "nodo": "NODO043",
       "puerto": 11,
       "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5588336,
-      "nap": "NAP02",
-      "nodo": "NODO043",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 776205,
-      "nap": "NAP03",
-      "nodo": "NODO043",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5544539,
       "nap": "NAP02",
       "nodo": "NODO043",
       "puerto": 11,
@@ -7289,17 +7261,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5538853,
+      "numero_cliente": 776205,
       "nap": "NAP03",
       "nodo": "NODO043",
-      "puerto": 13,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5540996,
-      "nap": "NAP02",
-      "nodo": "NODO043",
-      "puerto": 11,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7307,6 +7272,20 @@
       "nap": "NAP03",
       "nodo": "NODO043",
       "puerto": 6,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5544539,
+      "nap": "NAP02",
+      "nodo": "NODO043",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5538853,
+      "nap": "NAP03",
+      "nodo": "NODO043",
+      "puerto": 13,
       "estado_probable": "CONECTADO"
     },
     {
@@ -7357,6 +7336,13 @@
       "nodo": "NODO044",
       "puerto": 9,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 764591,
+      "nap": "NAP06",
+      "nodo": "NODO044",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5456358,
@@ -7485,6 +7471,13 @@
       "estado_probable": "CONECTADO"
     },
     {
+      "numero_cliente": 336919,
+      "nap": "NAP05",
+      "nodo": "NODO044",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5274843,
       "nap": "NAP01",
       "nodo": "NODO044",
@@ -7562,8 +7555,8 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5378784,
-      "nap": "NAP05",
+      "numero_cliente": 5532282,
+      "nap": "NAP01",
       "nodo": "NODO045",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
@@ -7590,41 +7583,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5452281,
-      "nap": "NAP02",
-      "nodo": "NODO045",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5846672,
-      "nap": "NAP06",
-      "nodo": "NODO045",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5600789,
-      "nap": "NAP02",
-      "nodo": "NODO045",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5638187,
-      "nap": "NAP02",
-      "nodo": "NODO045",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5638187,
-      "nap": "NAP02",
-      "nodo": "NODO045",
-      "puerto": 3,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5551465,
       "nap": "NAP06",
       "nodo": "NODO045",
@@ -7632,31 +7590,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5852345,
-      "nap": "NAP02",
-      "nodo": "NODO045",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5131874,
-      "nap": "NAP07",
-      "nodo": "NODO045",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5386010,
       "nap": "NAP01",
       "nodo": "NODO045",
       "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5569230,
-      "nap": "NAP07",
-      "nodo": "NODO045",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7674,10 +7611,17 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5532282,
-      "nap": "NAP01",
+      "numero_cliente": 5378784,
+      "nap": "NAP05",
       "nodo": "NODO045",
       "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5846672,
+      "nap": "NAP06",
+      "nodo": "NODO045",
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7814,6 +7758,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5312392,
+      "nap": "NAP04",
+      "nodo": "NODO046",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5611320,
       "nap": "NAP04",
       "nodo": "NODO046",
@@ -7849,8 +7800,8 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5857255,
-      "nap": "NAP03",
+      "numero_cliente": 5532975,
+      "nap": "NAP02",
       "nodo": "NODO047",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
@@ -7863,11 +7814,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5545230,
+      "numero_cliente": 5443551,
       "nap": "NAP02",
       "nodo": "NODO047",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 8,
+      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5396193,
@@ -7877,25 +7828,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5360983,
+      "numero_cliente": 5690819,
       "nap": "NAP02",
       "nodo": "NODO047",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 12,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5443551,
       "nap": "NAP02",
       "nodo": "NODO047",
       "puerto": 8,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5690819,
-      "nap": "NAP02",
-      "nodo": "NODO047",
-      "puerto": 12,
-      "estado_probable": "CONECTADO"
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5727225,
@@ -7905,25 +7849,11 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5443551,
-      "nap": "NAP02",
-      "nodo": "NODO047",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5518831,
       "nap": "NAP03",
       "nodo": "NODO047",
       "puerto": 8,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5502583,
-      "nap": "NAP02",
-      "nodo": "NODO047",
-      "puerto": 7,
-      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5515677,
@@ -7944,6 +7874,13 @@
       "nap": "NAP02",
       "nodo": "NODO047",
       "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5857255,
+      "nap": "NAP03",
+      "nodo": "NODO047",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -7996,38 +7933,38 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5532975,
+      "numero_cliente": 5545230,
       "nap": "NAP02",
       "nodo": "NODO047",
-      "puerto": 8,
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5699793,
-      "nap": "NAP11",
+      "numero_cliente": 5146083,
+      "nap": "NAP03",
       "nodo": "NODO048",
-      "puerto": 8,
+      "puerto": 11,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5462280,
-      "nap": "NAP01",
+      "numero_cliente": 5511377,
+      "nap": "NAP04",
       "nodo": "NODO048",
-      "puerto": 7,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5622641,
-      "nap": "NAP05",
+      "numero_cliente": 5565508,
+      "nap": "NAP04",
       "nodo": "NODO048",
-      "puerto": 2,
-      "estado_probable": "BAJA MOROSO"
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5796737,
-      "nap": "NAP11",
+      "numero_cliente": 5815152,
+      "nap": "NAP07",
       "nodo": "NODO048",
-      "puerto": 8,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8059,17 +7996,17 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5717457,
-      "nap": "NAP04",
-      "nodo": "NODO048",
-      "puerto": 3,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5533967,
       "nap": "NAP03",
       "nodo": "NODO048",
       "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5686986,
+      "nap": "NAP07",
+      "nodo": "NODO048",
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8078,6 +8015,13 @@
       "nodo": "NODO048",
       "puerto": 2,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5843801,
+      "nap": "NAP04",
+      "nodo": "NODO048",
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 334498,
@@ -8094,10 +8038,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5697030,
+      "nap": "NAP04",
+      "nodo": "NODO048",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5513788,
       "nap": "NAP01",
       "nodo": "NODO048",
       "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5797709,
+      "nap": "NAP07",
+      "nodo": "NODO048",
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8136,13 +8094,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5141161,
-      "nap": "NAP04",
-      "nodo": "NODO048",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5622641,
       "nap": "NAP05",
       "nodo": "NODO048",
@@ -8150,8 +8101,15 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5445618,
-      "nap": "NAP01",
+      "numero_cliente": 5565508,
+      "nap": "NAP04",
+      "nodo": "NODO048",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5484778,
+      "nap": "NAP07",
       "nodo": "NODO048",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
@@ -8164,13 +8122,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5713273,
-      "nap": "NAP11",
-      "nodo": "NODO048",
-      "puerto": 8,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5720994,
       "nap": "NAP03",
       "nodo": "NODO048",
@@ -8178,10 +8129,24 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5146083,
-      "nap": "NAP03",
+      "numero_cliente": 5462280,
+      "nap": "NAP01",
       "nodo": "NODO048",
-      "puerto": 11,
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5622641,
+      "nap": "NAP05",
+      "nodo": "NODO048",
+      "puerto": 2,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5832084,
+      "nap": "NAP03",
+      "nodo": "NODO049",
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8192,31 +8157,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5526345,
-      "nap": "NAP06",
+      "numero_cliente": 5468462,
+      "nap": "NAP03",
       "nodo": "NODO049",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339954,
-      "nap": "NAP06",
-      "nodo": "NODO049",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5720674,
-      "nap": "NAP11",
-      "nodo": "NODO049",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5786322,
-      "nap": "NAP12",
-      "nodo": "NODO049",
-      "puerto": 7,
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8227,6 +8171,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5786322,
+      "nap": "NAP12",
+      "nodo": "NODO049",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5500885,
       "nap": "NAP03",
       "nodo": "NODO049",
@@ -8234,11 +8185,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5834362,
-      "nap": "NAP06",
+      "numero_cliente": 5467655,
+      "nap": "NAP03",
       "nodo": "NODO049",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5683407,
@@ -8248,24 +8199,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5720674,
-      "nap": "NAP11",
+      "numero_cliente": 341323,
+      "nap": "NAP03",
       "nodo": "NODO049",
-      "puerto": 4,
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5542234,
-      "nap": "NAP04",
-      "nodo": "NODO050",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5369949,
-      "nap": "NAP04",
-      "nodo": "NODO050",
-      "puerto": 3,
+      "numero_cliente": 767399,
+      "nap": "NAP03",
+      "nodo": "NODO049",
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8276,6 +8220,27 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5552836,
+      "nap": "NAP01",
+      "nodo": "NODO050",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5562303,
+      "nap": "NAP01",
+      "nodo": "NODO050",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5837055,
+      "nap": "NAP01",
+      "nodo": "NODO050",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5319287,
       "nap": "NAP04",
       "nodo": "NODO050",
@@ -8283,21 +8248,35 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 1994024,
-      "nap": "NAP04",
+      "numero_cliente": 5867998,
+      "nap": "NAP01",
+      "nodo": "NODO050",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5715043,
+      "nap": "NAP01",
       "nodo": "NODO050",
       "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5668349,
+      "numero_cliente": 5537096,
       "nap": "NAP04",
       "nodo": "NODO051",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5364715,
+      "numero_cliente": 5408478,
+      "nap": "NAP04",
+      "nodo": "NODO051",
+      "puerto": 7,
+      "estado_probable": "ANULADO"
+    },
+    {
+      "numero_cliente": 5545416,
       "nap": "NAP04",
       "nodo": "NODO051",
       "puerto": 4,
@@ -8311,21 +8290,14 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5408478,
-      "nap": "NAP04",
-      "nodo": "NODO051",
-      "puerto": 7,
-      "estado_probable": "ANULADO"
-    },
-    {
-      "numero_cliente": 5810156,
+      "numero_cliente": 5364715,
       "nap": "NAP04",
       "nodo": "NODO051",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5537096,
+      "numero_cliente": 5668349,
       "nap": "NAP04",
       "nodo": "NODO051",
       "puerto": 4,
@@ -8339,49 +8311,21 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5545416,
+      "numero_cliente": 5810156,
       "nap": "NAP04",
       "nodo": "NODO051",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5560963,
+      "numero_cliente": 1961038,
       "nap": "NAP02",
       "nodo": "NODO052",
-      "puerto": 5,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5544760,
-      "nap": "NAP05",
-      "nodo": "NODO052",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5419200,
-      "nap": "NAP05",
-      "nodo": "NODO052",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5488628,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339012,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5409473,
+      "numero_cliente": 337688,
       "nap": "NAP03",
       "nodo": "NODO052",
       "puerto": 2,
@@ -8395,115 +8339,45 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 337688,
+      "numero_cliente": 5409473,
       "nap": "NAP03",
       "nodo": "NODO052",
       "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5516859,
-      "nap": "NAP05",
+      "numero_cliente": 339012,
+      "nap": "NAP02",
       "nodo": "NODO052",
-      "puerto": 4,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 335539,
-      "nap": "NAP03",
+      "numero_cliente": 5744994,
+      "nap": "NAP02",
       "nodo": "NODO052",
       "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5768948,
-      "nap": "NAP08",
-      "nodo": "NODO052",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5614218,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1850484,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334383,
+      "numero_cliente": 5488628,
       "nap": "NAP02",
       "nodo": "NODO052",
       "puerto": 8,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5702411,
-      "nap": "NAP05",
-      "nodo": "NODO052",
-      "puerto": 4,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5521901,
-      "nap": "NAP05",
-      "nodo": "NODO052",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 823673,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5751808,
-      "nap": "NAP05",
+      "numero_cliente": 334407,
+      "nap": "NAP04",
       "nodo": "NODO052",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5428262,
-      "nap": "NAP02",
-      "nodo": "NODO052",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 337688,
-      "nap": "NAP03",
+      "numero_cliente": 5419200,
+      "nap": "NAP05",
       "nodo": "NODO052",
       "puerto": 2,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5433191,
-      "nap": "NAP01",
-      "nodo": "NODO052",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5675334,
-      "nap": "NAP03",
-      "nodo": "NODO052",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5567939,
-      "nap": "NAP08",
-      "nodo": "NODO052",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8514,17 +8388,157 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 824082,
+      "numero_cliente": 5560963,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 334383,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 8,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5544760,
+      "nap": "NAP05",
+      "nodo": "NODO052",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5567939,
+      "nap": "NAP08",
+      "nodo": "NODO052",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5675334,
       "nap": "NAP03",
-      "nodo": "NODO053",
+      "nodo": "NODO052",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5433191,
+      "nap": "NAP01",
+      "nodo": "NODO052",
       "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5366191,
-      "nap": "NAP01",
+      "numero_cliente": 337688,
+      "nap": "NAP03",
+      "nodo": "NODO052",
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5428262,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5751808,
+      "nap": "NAP05",
+      "nodo": "NODO052",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5521901,
+      "nap": "NAP05",
+      "nodo": "NODO052",
+      "puerto": 2,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5702411,
+      "nap": "NAP05",
+      "nodo": "NODO052",
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5513506,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5474583,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1850484,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5614218,
+      "nap": "NAP02",
+      "nodo": "NODO052",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5768948,
+      "nap": "NAP08",
+      "nodo": "NODO052",
+      "puerto": 4,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 335539,
+      "nap": "NAP03",
+      "nodo": "NODO052",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5516859,
+      "nap": "NAP05",
+      "nodo": "NODO052",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5866845,
+      "nap": "NAP07",
       "nodo": "NODO053",
       "puerto": 1,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5392388,
+      "nap": "NAP05",
+      "nodo": "NODO053",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5702473,
+      "nap": "NAP05",
+      "nodo": "NODO053",
+      "puerto": 2,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5644929,
+      "nap": "NAP04",
+      "nodo": "NODO053",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8542,6 +8556,41 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 338955,
+      "nap": "NAP03",
+      "nodo": "NODO053",
+      "puerto": 3,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 824082,
+      "nap": "NAP03",
+      "nodo": "NODO053",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 337688,
+      "nap": "NAP07",
+      "nodo": "NODO053",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5703068,
+      "nap": "NAP01",
+      "nodo": "NODO053",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5481617,
+      "nap": "NAP08",
+      "nodo": "NODO053",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 337774,
       "nap": "NAP08",
       "nodo": "NODO053",
@@ -8556,17 +8605,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5392388,
+      "numero_cliente": 5789042,
       "nap": "NAP05",
       "nodo": "NODO053",
       "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1977418,
-      "nap": "NAP08",
-      "nodo": "NODO053",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8577,45 +8619,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5481617,
-      "nap": "NAP08",
-      "nodo": "NODO053",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5703068,
+      "numero_cliente": 5366191,
       "nap": "NAP01",
       "nodo": "NODO053",
       "puerto": 1,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 338955,
-      "nap": "NAP03",
-      "nodo": "NODO053",
-      "puerto": 3,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5644929,
-      "nap": "NAP04",
-      "nodo": "NODO053",
-      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5702473,
+      "numero_cliente": 5554993,
       "nap": "NAP05",
-      "nodo": "NODO053",
+      "nodo": "NODO054",
       "puerto": 2,
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5789042,
-      "nap": "NAP05",
-      "nodo": "NODO053",
-      "puerto": 2,
+      "numero_cliente": 5556285,
+      "nap": "NAP04",
+      "nodo": "NODO054",
+      "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8626,10 +8647,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5717457,
-      "nap": "NAP02",
+      "numero_cliente": 5452781,
+      "nap": "NAP04",
       "nodo": "NODO054",
-      "puerto": 15,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8637,13 +8658,6 @@
       "nap": "NAP02",
       "nodo": "NODO054",
       "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5452381,
-      "nap": "NAP02",
-      "nodo": "NODO054",
-      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8682,11 +8696,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5554993,
-      "nap": "NAP05",
+      "numero_cliente": 5717457,
+      "nap": "NAP02",
       "nodo": "NODO054",
-      "puerto": 2,
-      "estado_probable": "BAJA MOROSO"
+      "puerto": 15,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5607425,
@@ -8703,13 +8717,6 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5486174,
-      "nap": "NAP02",
-      "nodo": "NODO054",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5717457,
       "nap": "NAP02",
       "nodo": "NODO054",
@@ -8724,13 +8731,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5867631,
-      "nap": "NAP02",
-      "nodo": "NODO054",
-      "puerto": 12,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5443687,
       "nap": "NAP04",
       "nodo": "NODO054",
@@ -8742,13 +8742,6 @@
       "nap": "NAP02",
       "nodo": "NODO054",
       "puerto": 15,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5556285,
-      "nap": "NAP04",
-      "nodo": "NODO054",
-      "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8801,24 +8794,24 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5452781,
+      "numero_cliente": 5659292,
       "nap": "NAP04",
-      "nodo": "NODO054",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5486257,
-      "nap": "NAP02",
       "nodo": "NODO055",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 16,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5566106,
       "nap": "NAP04",
       "nodo": "NODO055",
       "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336390,
+      "nap": "NAP01",
+      "nodo": "NODO055",
+      "puerto": 9,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8913,13 +8906,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5659292,
-      "nap": "NAP04",
-      "nodo": "NODO055",
-      "puerto": 16,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5513563,
       "nap": "NAP04",
       "nodo": "NODO055",
@@ -8955,10 +8941,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336390,
-      "nap": "NAP01",
+      "numero_cliente": 5486257,
+      "nap": "NAP02",
       "nodo": "NODO055",
-      "puerto": 9,
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5617989,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5722057,
+      "nap": "NAP03",
+      "nodo": "NODO056",
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -8988,6 +8988,13 @@
       "nodo": "NODO056",
       "puerto": 11,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5841558,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5448594,
@@ -9025,10 +9032,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5193480,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5570904,
       "nap": "NAP04",
       "nodo": "NODO056",
       "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5544316,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9046,24 +9067,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5778270,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 337591,
       "nap": "NAP01",
       "nodo": "NODO056",
       "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5617989,
-      "nap": "NAP01",
-      "nodo": "NODO056",
-      "puerto": 11,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5652444,
-      "nap": "NAP05",
-      "nodo": "NODO056",
-      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9088,6 +9102,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5548975,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5652444,
       "nap": "NAP05",
       "nodo": "NODO056",
@@ -9095,11 +9116,25 @@
       "estado_probable": "BAJA PENDIENTE"
     },
     {
+      "numero_cliente": 339034,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5722057,
       "nap": "NAP03",
       "nodo": "NODO056",
       "puerto": 1,
       "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5473068,
+      "nap": "NAP01",
+      "nodo": "NODO056",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 338042,
@@ -9123,42 +9158,35 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5722057,
-      "nap": "NAP03",
+      "numero_cliente": 5652444,
+      "nap": "NAP05",
       "nodo": "NODO056",
-      "puerto": 1,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5673729,
-      "nap": "NAP06",
+      "numero_cliente": 5554984,
+      "nap": "NAP02",
       "nodo": "NODO057",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336191,
-      "nap": "NAP03",
-      "nodo": "NODO057",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 334225,
-      "nap": "NAP03",
-      "nodo": "NODO057",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5793363,
+      "numero_cliente": 5723253,
       "nap": "NAP01",
       "nodo": "NODO057",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336633,
+      "numero_cliente": 772706,
+      "nap": "NAP06",
+      "nodo": "NODO057",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5534819,
       "nap": "NAP03",
       "nodo": "NODO057",
       "puerto": 4,
@@ -9172,29 +9200,22 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5517743,
+      "numero_cliente": 5793363,
       "nap": "NAP01",
       "nodo": "NODO057",
       "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5723253,
-      "nap": "NAP01",
-      "nodo": "NODO057",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5534819,
-      "nap": "NAP03",
-      "nodo": "NODO057",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 336043,
       "nap": "NAP08",
+      "nodo": "NODO057",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336191,
+      "nap": "NAP03",
       "nodo": "NODO057",
       "puerto": 4,
       "estado_probable": "DESCONECTADO"
@@ -9207,16 +9228,128 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 772706,
+      "numero_cliente": 5517743,
+      "nap": "NAP01",
+      "nodo": "NODO057",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5673729,
       "nap": "NAP06",
       "nodo": "NODO057",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5554984,
-      "nap": "NAP02",
+      "numero_cliente": 334225,
+      "nap": "NAP03",
       "nodo": "NODO057",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 336633,
+      "nap": "NAP03",
+      "nodo": "NODO057",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5471129,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 7,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5661963,
+      "nap": "NAP07",
+      "nodo": "NODO058",
+      "puerto": 6,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5627811,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5726464,
+      "nap": "NAP04",
+      "nodo": "NODO058",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 343981,
+      "nap": "NAP03",
+      "nodo": "NODO058",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5496142,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1865168,
+      "nap": "NAP04",
+      "nodo": "NODO058",
+      "puerto": 9,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5489105,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 343928,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5560516,
+      "nap": "NAP07",
+      "nodo": "NODO058",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5425734,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 338161,
+      "nap": "NAP04",
+      "nodo": "NODO058",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5372183,
+      "nap": "NAP04",
+      "nodo": "NODO058",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 763299,
+      "nap": "NAP06",
+      "nodo": "NODO058",
       "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
@@ -9228,143 +9361,10 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 763299,
-      "nap": "NAP06",
-      "nodo": "NODO058",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5372183,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 338161,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5471129,
+      "numero_cliente": 337553,
       "nap": "NAP02",
       "nodo": "NODO058",
-      "puerto": 7,
-      "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5431505,
-      "nap": "NAP06",
-      "nodo": "NODO058",
-      "puerto": 6,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 343928,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5489105,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1865168,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5496142,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 343981,
-      "nap": "NAP03",
-      "nodo": "NODO058",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5726464,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5627811,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5425734,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5560516,
-      "nap": "NAP07",
-      "nodo": "NODO058",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5661963,
-      "nap": "NAP07",
-      "nodo": "NODO058",
-      "puerto": 6,
-      "estado_probable": "BAJA PENDIENTE"
-    },
-    {
-      "numero_cliente": 5472638,
-      "nap": "NAP03",
-      "nodo": "NODO058",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5431505,
-      "nap": "NAP06",
-      "nodo": "NODO058",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5469851,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5425734,
-      "nap": "NAP02",
-      "nodo": "NODO058",
-      "puerto": 7,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5584002,
-      "nap": "NAP04",
-      "nodo": "NODO058",
-      "puerto": 14,
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9375,17 +9375,108 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 337553,
-      "nap": "NAP02",
+      "numero_cliente": 5584002,
+      "nap": "NAP04",
       "nodo": "NODO058",
-      "puerto": 1,
+      "puerto": 14,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5710692,
+      "numero_cliente": 5469851,
+      "nap": "NAP04",
+      "nodo": "NODO058",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5431505,
+      "nap": "NAP06",
+      "nodo": "NODO058",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5472638,
+      "nap": "NAP03",
+      "nodo": "NODO058",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5425734,
+      "nap": "NAP02",
+      "nodo": "NODO058",
+      "puerto": 7,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5566849,
+      "nap": "NAP08",
+      "nodo": "NODO059",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5436306,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5436782,
+      "nap": "NAP02",
+      "nodo": "NODO059",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5626441,
+      "nap": "NAP02",
+      "nodo": "NODO059",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5785495,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5534706,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5567096,
+      "nap": "NAP08",
+      "nodo": "NODO059",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5782658,
+      "nap": "NAP03",
+      "nodo": "NODO059",
+      "puerto": 7,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5480794,
       "nap": "NAP02",
       "nodo": "NODO059",
       "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5782658,
+      "nap": "NAP03",
+      "nodo": "NODO059",
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9396,11 +9487,32 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5626441,
+      "numero_cliente": 5530496,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5710692,
       "nap": "NAP02",
       "nodo": "NODO059",
-      "puerto": 2,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 1968350,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5656458,
+      "nap": "NAP09",
+      "nodo": "NODO059",
+      "puerto": 1,
+      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5488542,
@@ -9424,108 +9536,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5571884,
-      "nap": "NAP08",
-      "nodo": "NODO059",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5804611,
       "nap": "NAP01",
       "nodo": "NODO059",
       "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5436306,
-      "nap": "NAP01",
-      "nodo": "NODO059",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5436782,
-      "nap": "NAP02",
-      "nodo": "NODO059",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5480794,
-      "nap": "NAP02",
-      "nodo": "NODO059",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5567096,
-      "nap": "NAP08",
-      "nodo": "NODO059",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5534706,
-      "nap": "NAP01",
-      "nodo": "NODO059",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5566849,
-      "nap": "NAP08",
-      "nodo": "NODO059",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5785495,
-      "nap": "NAP01",
-      "nodo": "NODO059",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5824034,
-      "nap": "NAP02",
-      "nodo": "NODO059",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5371969,
-      "nap": "NAP01",
-      "nodo": "NODO059",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5433584,
-      "nap": "NAP08",
-      "nodo": "NODO059",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5181234,
-      "nap": "NAP03",
-      "nodo": "NODO059",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5534425,
-      "nap": "NAP03",
-      "nodo": "NODO059",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5530496,
-      "nap": "NAP01",
-      "nodo": "NODO059",
-      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9536,17 +9550,45 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5656458,
-      "nap": "NAP09",
-      "nodo": "NODO059",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 1968350,
-      "nap": "NAP01",
+      "numero_cliente": 5534425,
+      "nap": "NAP03",
       "nodo": "NODO059",
       "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5371969,
+      "nap": "NAP01",
+      "nodo": "NODO059",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5424200,
+      "nap": "NAP07",
+      "nodo": "NODO059",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5824034,
+      "nap": "NAP02",
+      "nodo": "NODO059",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5680098,
+      "nap": "NAP03",
+      "nodo": "NODO060",
+      "puerto": 12,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5485648,
+      "nap": "NAP06",
+      "nodo": "NODO060",
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9557,11 +9599,18 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5832843,
-      "nap": "NAP01",
+      "numero_cliente": 5781130,
+      "nap": "NAP03",
       "nodo": "NODO060",
-      "puerto": 1,
-      "estado_probable": "CONECTADO"
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5517583,
+      "nap": "NAP06",
+      "nodo": "NODO060",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5790937,
@@ -9575,6 +9624,13 @@
       "nap": "NAP05",
       "nodo": "NODO060",
       "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5539978,
+      "nap": "NAP03",
+      "nodo": "NODO060",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9599,17 +9655,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5680098,
+      "numero_cliente": 1835672,
       "nap": "NAP03",
       "nodo": "NODO060",
-      "puerto": 12,
+      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5680098,
-      "nap": "NAP03",
+      "numero_cliente": 5832843,
+      "nap": "NAP01",
       "nodo": "NODO060",
-      "puerto": 12,
+      "puerto": 1,
       "estado_probable": "CONECTADO"
     },
     {
@@ -9625,13 +9681,6 @@
       "nodo": "NODO060",
       "puerto": 5,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5781130,
-      "nap": "NAP03",
-      "nodo": "NODO060",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5739434,
@@ -9669,13 +9718,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5539978,
-      "nap": "NAP03",
-      "nodo": "NODO060",
-      "puerto": 13,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5703729,
       "nap": "NAP06",
       "nodo": "NODO060",
@@ -9697,24 +9739,17 @@
       "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5485648,
-      "nap": "NAP06",
-      "nodo": "NODO060",
-      "puerto": 12,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 1835672,
+      "numero_cliente": 5680098,
       "nap": "NAP03",
       "nodo": "NODO060",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 12,
+      "estado_probable": "CONECTADO"
     },
     {
-      "numero_cliente": 5517583,
-      "nap": "NAP06",
-      "nodo": "NODO060",
-      "puerto": 14,
+      "numero_cliente": 5364747,
+      "nap": "NAP05",
+      "nodo": "NODO061",
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9725,10 +9760,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5715163,
+      "numero_cliente": 453276,
       "nap": "NAP04",
       "nodo": "NODO061",
-      "puerto": 6,
+      "puerto": 1,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9830,10 +9865,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5364747,
-      "nap": "NAP05",
+      "numero_cliente": 5715163,
+      "nap": "NAP04",
       "nodo": "NODO061",
-      "puerto": 1,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9935,13 +9970,6 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 453276,
-      "nap": "NAP04",
-      "nodo": "NODO061",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5461322,
       "nap": "NAP03",
       "nodo": "NODO062",
@@ -9949,17 +9977,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5574386,
-      "nap": "NAP08",
+      "numero_cliente": 337412,
+      "nap": "NAP06",
       "nodo": "NODO062",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5787146,
-      "nap": "NAP07",
+      "numero_cliente": 5541029,
+      "nap": "NAP08",
       "nodo": "NODO062",
-      "puerto": 7,
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -9977,25 +10005,32 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5559055,
+      "nap": "NAP06",
+      "nodo": "NODO062",
+      "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5510399,
+      "nap": "NAP03",
+      "nodo": "NODO062",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5565472,
+      "nap": "NAP06",
+      "nodo": "NODO062",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 1973844,
       "nap": "NAP08",
       "nodo": "NODO062",
       "puerto": 7,
       "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5686846,
-      "nap": "NAP08",
-      "nodo": "NODO062",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5504983,
-      "nap": "NAP03",
-      "nodo": "NODO062",
-      "puerto": 6,
-      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5726920,
@@ -10016,20 +10051,6 @@
       "nap": "NAP07",
       "nodo": "NODO062",
       "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339962,
-      "nap": "NAP08",
-      "nodo": "NODO062",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 337088,
-      "nap": "NAP03",
-      "nodo": "NODO062",
-      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10054,20 +10075,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5510399,
-      "nap": "NAP03",
-      "nodo": "NODO062",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5565472,
-      "nap": "NAP06",
-      "nodo": "NODO062",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5513992,
       "nap": "NAP04",
       "nodo": "NODO062",
@@ -10079,13 +10086,6 @@
       "nap": "NAP07",
       "nodo": "NODO062",
       "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5547868,
-      "nap": "NAP08",
-      "nodo": "NODO062",
-      "puerto": 2,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10117,24 +10117,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5394005,
-      "nap": "NAP08",
+      "numero_cliente": 5787146,
+      "nap": "NAP07",
       "nodo": "NODO062",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 337412,
-      "nap": "NAP06",
-      "nodo": "NODO062",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5574386,
-      "nap": "NAP08",
-      "nodo": "NODO062",
-      "puerto": 2,
+      "puerto": 7,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10145,8 +10131,15 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5460903,
-      "nap": "NAP07",
+      "numero_cliente": 5549812,
+      "nap": "NAP05",
+      "nodo": "NODO063",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5575767,
+      "nap": "NAP02",
       "nodo": "NODO063",
       "puerto": 5,
       "estado_probable": "DESCONECTADO"
@@ -10201,6 +10194,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5535541,
+      "nap": "NAP08",
+      "nodo": "NODO063",
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5570934,
       "nap": "NAP07",
       "nodo": "NODO063",
@@ -10220,6 +10220,13 @@
       "nodo": "NODO063",
       "puerto": 5,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5739261,
+      "nap": "NAP02",
+      "nodo": "NODO063",
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5570934,
@@ -10257,6 +10264,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5868079,
+      "nap": "NAP03",
+      "nodo": "NODO063",
+      "puerto": 6,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 5834988,
       "nap": "NAP02",
       "nodo": "NODO063",
@@ -10268,6 +10282,13 @@
       "nap": "NAP01",
       "nodo": "NODO063",
       "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5562846,
+      "nap": "NAP02",
+      "nodo": "NODO063",
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10320,11 +10341,11 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5535541,
-      "nap": "NAP08",
+      "numero_cliente": 5575767,
+      "nap": "NAP02",
       "nodo": "NODO063",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
+      "puerto": 5,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5506082,
@@ -10345,6 +10366,13 @@
       "nap": "NAP08",
       "nodo": "NODO063",
       "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5460903,
+      "nap": "NAP07",
+      "nodo": "NODO063",
+      "puerto": 5,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10565,13 +10593,6 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 767352,
-      "nap": "NAP02",
-      "nodo": "NODO065",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5767163,
       "nap": "NAP05",
       "nodo": "NODO065",
@@ -10621,17 +10642,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5730911,
+      "nap": "NAP04",
+      "nodo": "NODO065",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5563173,
       "nap": "NAP04",
       "nodo": "NODO065",
       "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 341527,
-      "nap": "NAP05",
-      "nodo": "NODO065",
-      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10642,17 +10663,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5581780,
-      "nap": "NAP03",
-      "nodo": "NODO065",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5482040,
       "nap": "NAP04",
       "nodo": "NODO065",
       "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 344052,
+      "nap": "NAP04",
+      "nodo": "NODO065",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10670,13 +10691,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 336603,
-      "nap": "NAP03",
-      "nodo": "NODO065",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5541769,
       "nap": "NAP02",
       "nodo": "NODO065",
@@ -10688,6 +10702,13 @@
       "nap": "NAP03",
       "nodo": "NODO065",
       "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5567746,
+      "nap": "NAP04",
+      "nodo": "NODO065",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10712,32 +10733,46 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5776724,
-      "nap": "NAP05",
+      "numero_cliente": 767352,
+      "nap": "NAP02",
       "nodo": "NODO065",
-      "puerto": 4,
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 774460,
-      "nap": "NAP01",
+      "numero_cliente": 5728131,
+      "nap": "NAP03",
       "nodo": "NODO066",
-      "puerto": 13,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5592331,
-      "nap": "NAP01",
+      "numero_cliente": 338975,
+      "nap": "NAP03",
       "nodo": "NODO066",
-      "puerto": 15,
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5834887,
-      "nap": "NAP01",
+      "numero_cliente": 1983175,
+      "nap": "NAP03",
       "nodo": "NODO066",
-      "puerto": 13,
-      "estado_probable": "CONECTADO"
+      "puerto": 3,
+      "estado_probable": "BAJA MOROSO"
+    },
+    {
+      "numero_cliente": 5359908,
+      "nap": "NAP03",
+      "nodo": "NODO066",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5725840,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5586911,
@@ -10747,31 +10782,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5628414,
+      "numero_cliente": 5608187,
       "nap": "NAP02",
       "nodo": "NODO067",
-      "puerto": 2,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5598685,
-      "nap": "NAP04",
+      "numero_cliente": 5795678,
+      "nap": "NAP02",
       "nodo": "NODO067",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5585692,
-      "nap": "NAP04",
-      "nodo": "NODO067",
-      "puerto": 14,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5588833,
-      "nap": "NAP04",
-      "nodo": "NODO067",
-      "puerto": 10,
+      "puerto": 16,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10782,6 +10803,55 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5770870,
+      "nap": "NAP02",
+      "nodo": "NODO067",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5865342,
+      "nap": "NAP02",
+      "nodo": "NODO067",
+      "puerto": 16,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5585692,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5353201,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 11,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5588833,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5598685,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5588546,
+      "nap": "NAP04",
+      "nodo": "NODO067",
+      "puerto": 11,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5657423,
       "nap": "NAP01",
       "nodo": "NODO068",
@@ -10789,10 +10859,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5710987,
-      "nap": "NAP04",
+      "numero_cliente": 5790258,
+      "nap": "NAP08",
       "nodo": "NODO068",
-      "puerto": 12,
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10842,6 +10912,20 @@
       "nap": "NAP02",
       "nodo": "NODO068",
       "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5720423,
+      "nap": "NAP02",
+      "nodo": "NODO068",
+      "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5744877,
+      "nap": "NAP05",
+      "nodo": "NODO068",
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -10978,20 +11062,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5720423,
-      "nap": "NAP02",
-      "nodo": "NODO068",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5744877,
-      "nap": "NAP05",
-      "nodo": "NODO068",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 339854,
       "nap": "NAP04",
       "nodo": "NODO068",
@@ -11069,10 +11139,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5790258,
-      "nap": "NAP08",
+      "numero_cliente": 5710987,
+      "nap": "NAP04",
       "nodo": "NODO068",
-      "puerto": 4,
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11083,10 +11153,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5694276,
-      "nap": "NAP02",
+      "numero_cliente": 5417369,
+      "nap": "NAP04",
       "nodo": "NODO069",
-      "puerto": 10,
+      "puerto": 4,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5686914,
+      "nap": "NAP01",
+      "nodo": "NODO069",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11095,6 +11172,13 @@
       "nodo": "NODO069",
       "puerto": 7,
       "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5686914,
+      "nap": "NAP01",
+      "nodo": "NODO069",
+      "puerto": 13,
+      "estado_probable": "CONECTADO"
     },
     {
       "numero_cliente": 5170178,
@@ -11125,13 +11209,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5619595,
-      "nap": "NAP01",
-      "nodo": "NODO069",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5684586,
       "nap": "NAP02",
       "nodo": "NODO069",
@@ -11153,6 +11230,13 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5755983,
+      "nap": "NAP05",
+      "nodo": "NODO069",
+      "puerto": 9,
+      "estado_probable": "CONECTADO"
+    },
+    {
       "numero_cliente": 373600,
       "nap": "NAP04",
       "nodo": "NODO069",
@@ -11160,17 +11244,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5600613,
-      "nap": "NAP09",
-      "nodo": "NODO069",
-      "puerto": 2,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5658731,
       "nap": "NAP03",
       "nodo": "NODO069",
       "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5694276,
+      "nap": "NAP02",
+      "nodo": "NODO069",
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11202,17 +11286,10 @@
       "estado_probable": "BAJA MOROSO"
     },
     {
-      "numero_cliente": 5600275,
-      "nap": "NAP09",
+      "numero_cliente": 5602744,
+      "nap": "NAP04",
       "nodo": "NODO069",
-      "puerto": 2,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 1973197,
-      "nap": "NAP01",
-      "nodo": "NODO069",
-      "puerto": 8,
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11220,6 +11297,13 @@
       "nap": "NAP04",
       "nodo": "NODO069",
       "puerto": 6,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5664528,
+      "nap": "NAP01",
+      "nodo": "NODO069",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11244,17 +11328,17 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5602474,
-      "nap": "NAP01",
-      "nodo": "NODO069",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5790006,
       "nap": "NAP09",
       "nodo": "NODO069",
       "puerto": 14,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5781130,
+      "nap": "NAP02",
+      "nodo": "NODO070",
+      "puerto": 13,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11263,13 +11347,6 @@
       "nodo": "NODO070",
       "puerto": 8,
       "estado_probable": "BAJA MOROSO"
-    },
-    {
-      "numero_cliente": 5128751,
-      "nap": "NAP07",
-      "nodo": "NODO070",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 485097,
@@ -11321,13 +11398,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5781130,
-      "nap": "NAP02",
-      "nodo": "NODO070",
-      "puerto": 13,
-      "estado_probable": "CONECTADO"
-    },
-    {
       "numero_cliente": 5216254,
       "nap": "NAP07",
       "nodo": "NODO070",
@@ -11363,10 +11433,38 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5859386,
+      "numero_cliente": 5643447,
       "nap": "NAP07",
       "nodo": "NODO070",
-      "puerto": 1,
+      "puerto": 6,
+      "estado_probable": "CONECTADO"
+    },
+    {
+      "numero_cliente": 5631030,
+      "nap": "NAP01",
+      "nodo": "NODO070",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5624174,
+      "nap": "NAP07",
+      "nodo": "NODO070",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5743085,
+      "nap": "NAP07",
+      "nodo": "NODO070",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 430950,
+      "nap": "NAP03",
+      "nodo": "NODO070",
+      "puerto": 4,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11405,87 +11503,24 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 430950,
-      "nap": "NAP03",
-      "nodo": "NODO070",
-      "puerto": 4,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5743085,
-      "nap": "NAP07",
-      "nodo": "NODO070",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5624174,
-      "nap": "NAP07",
-      "nodo": "NODO070",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5631030,
-      "nap": "NAP01",
-      "nodo": "NODO070",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5643447,
-      "nap": "NAP07",
-      "nodo": "NODO070",
-      "puerto": 6,
-      "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 5730683,
-      "nap": "NAP04",
+      "numero_cliente": 5791230,
+      "nap": "NAO06",
       "nodo": "NODO071",
-      "puerto": 10,
+      "puerto": 12,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 768138,
-      "nap": "NAP07",
-      "nodo": "NODO071",
-      "puerto": 9,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5679428,
-      "nap": "NAP08",
-      "nodo": "NODO071",
-      "puerto": 5,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5747142,
-      "nap": "NAP01",
-      "nodo": "NODO071",
-      "puerto": 3,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 339441,
-      "nap": "NAP01",
-      "nodo": "NODO071",
-      "puerto": 7,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5604381,
-      "nap": "NAP01",
-      "nodo": "NODO071",
-      "puerto": 3,
-      "estado_probable": "BAJA PENDIENTE"
     },
     {
       "numero_cliente": 5664565,
       "nap": "NAP04",
       "nodo": "NODO071",
       "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 367242,
+      "nap": "NAP03",
+      "nodo": "NODO071",
+      "puerto": 10,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11503,10 +11538,87 @@
       "estado_probable": "DESCONECTADO"
     },
     {
+      "numero_cliente": 5739863,
+      "nap": "NAP05",
+      "nodo": "NODO071",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5730683,
+      "nap": "NAP04",
+      "nodo": "NODO071",
+      "puerto": 10,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5747142,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 3,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 339441,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5679428,
+      "nap": "NAP08",
+      "nodo": "NODO071",
+      "puerto": 5,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5679428,
+      "nap": "NAP08",
+      "nodo": "NODO071",
+      "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5831102,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5732807,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
       "numero_cliente": 5603853,
       "nap": "NAP08",
       "nodo": "NODO071",
       "puerto": 1,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5604381,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 3,
+      "estado_probable": "BAJA PENDIENTE"
+    },
+    {
+      "numero_cliente": 5685272,
+      "nap": "NAP01",
+      "nodo": "NODO071",
+      "puerto": 8,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 768138,
+      "nap": "NAP07",
+      "nodo": "NODO071",
+      "puerto": 9,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11517,24 +11629,10 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 367242,
-      "nap": "NAP03",
-      "nodo": "NODO071",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5739863,
-      "nap": "NAP05",
-      "nodo": "NODO071",
-      "puerto": 10,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5679428,
-      "nap": "NAP08",
-      "nodo": "NODO071",
-      "puerto": 1,
+      "numero_cliente": 770640,
+      "nap": "NAP02",
+      "nodo": "NODO072",
+      "puerto": 6,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11584,6 +11682,13 @@
       "nap": "NAP06",
       "nodo": "NODO072",
       "puerto": 2,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5357539,
+      "nap": "NAP07",
+      "nodo": "NODO072",
+      "puerto": 8,
       "estado_probable": "DESCONECTADO"
     },
     {
@@ -11711,13 +11816,6 @@
       "nodo": "NODO072",
       "puerto": 6,
       "estado_probable": "CONECTADO"
-    },
-    {
-      "numero_cliente": 770640,
-      "nap": "NAP02",
-      "nodo": "NODO072",
-      "puerto": 6,
-      "estado_probable": "DESCONECTADO"
     },
     {
       "numero_cliente": 5658699,
@@ -11853,13 +11951,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5357539,
-      "nap": "NAP07",
-      "nodo": "NODO072",
-      "puerto": 8,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5650099,
       "nap": "NAP03",
       "nodo": "NODO073",
@@ -11886,13 +11977,6 @@
       "nodo": "NODO073",
       "puerto": 1,
       "estado_probable": "DESCONECTADO"
-    },
-    {
-      "numero_cliente": 5619022,
-      "nap": "NAPO6",
-      "nodo": "NODO073",
-      "puerto": 3,
-      "estado_probable": "BAJA MOROSO"
     },
     {
       "numero_cliente": 5612789,
@@ -12070,13 +12154,6 @@
       "estado_probable": "DESCONECTADO"
     },
     {
-      "numero_cliente": 5610818,
-      "nap": "NAP13",
-      "nodo": "NODO073",
-      "puerto": 1,
-      "estado_probable": "DESCONECTADO"
-    },
-    {
       "numero_cliente": 5644871,
       "nap": "NAP08",
       "nodo": "NODO073",
@@ -12123,6 +12200,13 @@
       "nap": "NAP08",
       "nodo": "NODO073",
       "puerto": 7,
+      "estado_probable": "DESCONECTADO"
+    },
+    {
+      "numero_cliente": 5699210,
+      "nap": "NAP12",
+      "nodo": "NODO073",
+      "puerto": 3,
       "estado_probable": "DESCONECTADO"
     },
     {
